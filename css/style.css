@@ -1,5 +1,5 @@
 .intro-box {
-    padding-bottom: 300px;
+    padding-bottom: 200px;
     background: rgba(8, 114, 228, 0.82);
     /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(rgb(227, 242, 253), rgba(8, 114, 228, 0.82));
@@ -18,13 +18,26 @@
     font-size: 6em;
 }
 
-.intro-box h4 {
-    padding-top: 50px;
-    font-size: 2.5em;
-    color: lightcyan;
+
+.about-box {
+    padding-bottom: 300px;
 }
 
-.about-box{
+.details {
+    padding-top: 50px;
+}
 
-  padding-bottom: 300px;
+.avatar {
+    margin: -140px auto;
+    padding-top: 10px;
+    border-radius: 100%;
+}
+.about-me{
+  padding-top: 200px;
+}
+.about-me h4{
+  font-size: 2.5em;
+}
+.about-me p{
+  font-size: 2.5em;
 }

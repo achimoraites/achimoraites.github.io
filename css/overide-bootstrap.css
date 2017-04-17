@@ -5,3 +5,7 @@ span.icon-bar {
 a.navbar-brand{
   color: #d223b4;
 }
+
+.nav>li>a{
+  font-size: 2em;
+}
