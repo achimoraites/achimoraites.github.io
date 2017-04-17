@@ -1,0 +1,30 @@
+.intro-box {
+    padding-bottom: 300px;
+    background: rgba(8, 114, 228, 0.82);
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgb(227, 242, 253), rgba(8, 114, 228, 0.82));
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgb(227, 242, 253), rgba(8, 114, 228, 0.82));
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgb(227, 242, 253), rgba(8, 114, 228, 0.82));
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgb(227, 242, 253), rgba(8, 114, 228, 0.82));
+    /* Standard syntax */
+    padding-top: 100px;
+    margin-top: -20px;
+}
+
+.intro-box h1 {
+    font-size: 6em;
+}
+
+.intro-box h4 {
+    padding-top: 50px;
+    font-size: 2.5em;
+    color: lightcyan;
+}
+
+.about-box{
+
+  padding-bottom: 300px;
+}
