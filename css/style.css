@@ -1,5 +1,5 @@
 .intro-box {
-    padding-bottom: 200px;
+    padding-bottom: 300px;
     background: rgba(8, 114, 228, 0.82);
     /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(rgb(227, 242, 253), rgba(8, 114, 228, 0.82));
@@ -14,30 +14,41 @@
     margin-top: -20px;
 }
 
-.intro-box h1 {
+.about-me h1 {
     font-size: 6em;
+    color: white;
 }
 
+.about-me {
+    padding-top: 200px;
+}
 
-.about-box {
+.about-me h4 {
+    color: white;
+    font-size: 2.5em;
+}
+
+.wrapper-box {
     padding-bottom: 300px;
 }
-
+.wrapper-box h1{
+  font-size: 4em;
+}
+.wrapper-box p{
+  font-size: 2em;
+}
 .details {
     padding-top: 50px;
 }
 
 .avatar {
-    margin: -140px auto;
+    margin: 0 auto;
     padding-top: 10px;
-    border-radius: 100%;
+
 }
-.about-me{
-  padding-top: 200px;
+.skill{
+  margin:20px;
 }
-.about-me h4{
-  font-size: 2.5em;
-}
-.about-me p{
-  font-size: 2.5em;
+.skill-box{
+  
 }
