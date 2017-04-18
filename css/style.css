@@ -31,12 +31,15 @@
 .wrapper-box {
     padding-bottom: 300px;
 }
-.wrapper-box h1{
-  font-size: 4em;
+
+.wrapper-box h1 {
+    font-size: 4em;
 }
-.wrapper-box p{
-  font-size: 2em;
+
+.wrapper-box p {
+    font-size: 2em;
 }
+
 .details {
     padding-top: 50px;
 }
@@ -44,11 +47,11 @@
 .avatar {
     margin: 0 auto;
     padding-top: 10px;
+}
 
+.skill {
+    margin: 20px;
+    width: 90px;
 }
-.skill{
-  margin:20px;
-}
-.skill-box{
-  
-}
+
+.skill-box {}
