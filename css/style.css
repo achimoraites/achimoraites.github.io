@@ -45,13 +45,22 @@
 }
 
 .avatar {
-    margin: 0 auto;
+    margin: 0 auto 40px;
     padding-top: 10px;
 }
 
 .skill {
-    margin: 20px;
-    width: 90px;
+    margin: 10px;
+    width: 60px;
 }
 
-.skill-box {}
+.skill-box {
+    margin: 50px;
+    border-radius: 4px;
+    background-color: rgb(227, 242, 253);
+}
+
+footer {
+    background-color: #398dea;
+    padding-bottom: 170px;
+}

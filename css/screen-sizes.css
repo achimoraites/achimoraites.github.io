@@ -1,0 +1,24 @@
+@media screen and (max-width: 500px) {
+  .about-me h1 {
+      font-size: 4em;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+  .skill {
+
+      width: 60px;
+  }
+  .skill-box {
+    margin: 0px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .skill {
+      margin: 20px;
+      width: 90px;
+  }
+
+}
