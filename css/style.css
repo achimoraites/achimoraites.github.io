@@ -41,7 +41,7 @@
 }
 
 .details {
-    padding-top: 50px;
+    padding-top: 20px;
 }
 
 .avatar {
@@ -60,7 +60,39 @@
     background-color: rgb(227, 242, 253);
 }
 
+.social-box {
+    padding-top: 80px;
+}
+
+.btn-circle {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    padding: 3px 0;
+    font-size: 2.6em;
+    line-height: 2.00;
+    border-radius: 50px;
+    margin: 5px;
+    color: rgb(255, 255, 255);
+    border: 3px solid white;
+    background-color: rgb(50, 105, 169);
+}
+
+footer p {
+    font-size: 2em;
+}
+
 footer {
+    color: white;
     background-color: #398dea;
-    padding-bottom: 170px;
+    padding-bottom: 20px;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgb(55, 140, 233), rgba(5, 71, 146, 0.82));
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgb(rgb(55, 140, 233), rgba(5, 71, 146, 0.82));
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgb(rgb(55, 140, 233), rgba(5, 71, 146, 0.82));
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgb(rgb(55, 140, 233), rgba(5, 71, 146, 0.82));
+    /* Standard syntax */
 }
