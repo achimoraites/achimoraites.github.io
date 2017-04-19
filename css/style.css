@@ -1,3 +1,5 @@
+/* HOME SECTION and INDEX */
+
 .intro-box {
     padding-bottom: 300px;
     background: rgba(8, 114, 228, 0.82);
@@ -47,6 +49,7 @@
 .avatar {
     margin: 0 auto 40px;
     padding-top: 10px;
+    width: 420px;
 }
 
 .skill {
@@ -55,9 +58,20 @@
 }
 
 .skill-box {
-    margin: 50px;
-    border-radius: 4px;
+    margin: 10px 50px;
+    border-radius: 0px;
     background-color: rgb(227, 242, 253);
+}
+
+.skill-btn, .skill-btn2 , .project-btn {
+    font-size: 2em;
+    background-color: #3789e4;
+    margin: 0px 8px;
+    border-radius: 0px;
+}
+
+.skill-btn2 {
+    background-color: red;
 }
 
 .social-box {
@@ -78,8 +92,22 @@
     background-color: rgb(50, 105, 169);
 }
 
+/* PROJECTS */
+.project-box{
+margin-top: 50px;
+}
+.project-box img{
+  width: 450px;
+  margin-bottom: 20px;
+}
+.project-btn{
+  margin: 20px 0px 20px;;
+}
+
+
+
 footer p {
-  padding-top: 20px;
+    padding-top: 20px;
     font-size: 2em;
 }
 
