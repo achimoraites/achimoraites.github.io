@@ -31,7 +31,7 @@
 }
 
 .wrapper-box {
-    padding-bottom: 300px;
+    padding-bottom: 50px;
 }
 
 .wrapper-box h1 {
@@ -47,7 +47,7 @@
 }
 
 .avatar {
-    margin: 0 auto 40px;
+    margin: 0px 10px 40px;
     padding-top: 10px;
     width: 420px;
 }
@@ -66,7 +66,7 @@
 .skill-btn, .skill-btn2 , .project-btn {
     font-size: 2em;
     background-color: #3789e4;
-    margin: 0px 8px;
+    margin: 5px 8px;
     border-radius: 0px;
 }
 
@@ -97,11 +97,62 @@
 margin-top: 50px;
 }
 .project-box img{
-  width: 450px;
+  width: 250px;
   margin-bottom: 20px;
+
 }
 .project-btn{
   margin: 20px 0px 20px;;
+}
+
+/* CONTACT */
+.contact {
+
+  padding-top: 10px;
+  padding-bottom: 80px;
+  font-size: 1.5em;
+}
+
+.contact h1 {
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
+.contact p {
+  padding: 60px 75px 0px 20px;
+}
+
+form {
+  padding: 60px 20px 0px 30px;
+}
+
+.input-lg {
+  height: 80px;
+  font-size: 2em;
+  border: none;
+  border-bottom: 2px solid rgb(233, 177, 131);
+  border-radius: 0px;
+
+}
+
+#msg,
+#name,
+#phone,
+#email {
+  color: white;
+}
+
+#sub-btn {
+  padding: 20px 40px 20px 40px;
+  background-color: rgb(141, 191, 243);
+  font-size: 1.5em;
+  margin: 40px 100px 60px 0px;
+  color: azure;
+}
+
+#sub-btn:hover {
+  color: rgb(255, 255, 255);
+  background-color: #aee20f;
 }
 
 

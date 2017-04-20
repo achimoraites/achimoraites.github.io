@@ -2,7 +2,7 @@
   .about-me h1 {
       font-size: 4em;
     }
-  
+
 }
 
 @media screen and (max-width: 800px) {
@@ -13,12 +13,21 @@
   .skill-box {
     margin: 0px;
   }
+  .avatar{
+        margin: 0px auto 40px;
+  }
 }
+
 
 @media screen and (min-width: 1440px) {
   .skill {
       margin: 20px;
       width: 90px;
   }
+
+  .project-box img{
+        width: 450px;
+        padding:30px;
+    }
 
 }
