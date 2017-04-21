@@ -19,6 +19,9 @@ app.config(function($routeProvider) {
   .when('/contact', {
     templateUrl: '/partials/contact.html'
   })
+  .when('/cv', {
+    templateUrl: '/partials/cv.html'
+  })
   .otherwise({
     redirectTo:'/home'});
 });
@@ -65,7 +68,7 @@ $scope.myProjects = [
     img : '/img/projects/radom_quote_machine.png',
     description: 'Simple radom quote machine',
     skills : ' JQuery, Json, Twitter ',
-    url: 'https://codepen.io/achimoraites/pen/VPeGZe'
+    url: 'https://codepen.io/achimoraites/full/VPeGZe'
 
   }
 ];

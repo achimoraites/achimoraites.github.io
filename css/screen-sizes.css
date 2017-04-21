@@ -1,37 +1,49 @@
 @media screen and (max-width: 500px) {
-  .about-me h1 {
-      font-size: 4em;
+    .about-me h1 {
+        font-size: 4em;
+    }
+    .exp-box {
+        margin: 50px 5px;
+    }
+    .school p, .work p, .certs p, .skills p, .exp p{
+      font-size: 1.6em;
     }
 
 }
 
 @media screen and (max-width: 800px) {
-  .skill {
-
-      width: 60px;
-  }
-  .skill-box {
-    margin: 0px;
-  }
-  .avatar{
+    .skill {
+        width: 60px;
+    }
+    .skill-box {
+        margin: 0px;
+    }
+    .avatar {
         margin: 0px auto 40px;
-  }
-  .contact a , .contact p , .input-lg , #sub-btn{
-    font-size: 1em;
-    padding: 10px;
-  }
-}
-
-
-@media screen and (min-width: 1440px) {
-  .skill {
-      margin: 20px;
-      width: 90px;
-  }
-
-  .project-box img{
-        width: 450px;
-        padding:30px;
+    }
+    .contact a, .contact p, .input-lg, #sub-btn {
+        font-size: 1em;
+        padding: 10px;
+    }
+    .exp-box {
+        margin: 50px 30px;
     }
 
+    .school, .work, .certs, .skills, .exp{
+      margin: 9px 10px 120px 3px;
+    }
+
+  
+
+}
+
+@media screen and (min-width: 1440px) {
+    .skill {
+        margin: 20px;
+        width: 90px;
+    }
+    .project-box img {
+        width: 450px;
+        padding: 30px;
+    }
 }
