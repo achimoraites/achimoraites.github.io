@@ -16,6 +16,10 @@
   .avatar{
         margin: 0px auto 40px;
   }
+  .contact a , .contact p , .input-lg , #sub-btn{
+    font-size: 1em;
+    padding: 10px;
+  }
 }
 
 
