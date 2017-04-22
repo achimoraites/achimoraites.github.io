@@ -177,9 +177,29 @@ form {
     background-color: white;
 }
 
+.cv-intro img{
+margin-bottom: 30px;
+}
+
+p.date {
+    font-size: 1.5em;
+    padding-top: 50px;
+    text-align: right;
+}
+
 .exp-box {
     border-left: 5px solid black;
     margin: 150px 0px 0px 150px;
+}
+
+.exp-box h1 {
+    font-size: 2.9em;
+}
+
+h1.exp-section {
+    font-weight: 800;
+    font-size: 4em;
+    padding-bottom: 40px;
 }
 
 .exp-circle, .work-circle, .certs-circle, .skills-circle {
@@ -218,7 +238,7 @@ form {
 }
 
 .school, .work, .certs, .skills, .exp {
-    margin: 10px 110px 120px 3px;
+    margin: 10px 110px 120px 30px;
     background-color: aquamarine;
 }
 
