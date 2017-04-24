@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>https://cyb3rn4u7.github.io/#!/home</loc>
+  <image:image>
+       <image:loc>https://cyb3rn4u7.github.io/img/avatar.jpg</image:loc>
+       <image:caption>Achilles Moraites Picture</image:caption>
+    </image:image>
+  <lastmod>2017-04-23T19:40:56+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+
+<url>
+  <loc>https://cyb3rn4u7.github.io/#!/cv</loc>
+  <lastmod>2017-04-23T19:40:56+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+
+<url>
+  <loc>https://cyb3rn4u7.github.io/#!/projects</loc>
+  <lastmod>2017-04-23T19:40:56+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+
+<url>
+  <loc>https://cyb3rn4u7.github.io/#!/contact</loc>
+  <lastmod>2017-04-23T19:40:56+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+
+</urlset>
