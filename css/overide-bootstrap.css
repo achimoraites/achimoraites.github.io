@@ -9,3 +9,8 @@ a.navbar-brand{
 .nav>li>a{
   font-size: 2em;
 }
+
+.nav>li>a:hover {
+    background-color: aquamarine;
+    /* color: white; */
+}
