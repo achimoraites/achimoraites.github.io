@@ -2,15 +2,16 @@ span.icon-bar {
     background-color: black;
     padding: 2px;
 }
-a.navbar-brand{
-  color: #d223b4;
+
+a.navbar-brand {
+    color: #d223b4;
 }
 
-.nav>li>a{
-  font-size: 2em;
+.nav>li>a {
+    font-size: 2em;
 }
 
 .nav>li>a:hover {
-    background-color: aquamarine;
-    /* color: white; */
+    background-color: #3268a9;
+    color: white;
 }
