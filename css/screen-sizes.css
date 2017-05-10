@@ -5,9 +5,15 @@
     .exp-box {
         margin: 50px 5px;
     }
-    .school p, .work p, .certs p, .skills p, .exp p{
-      font-size: 1.6em;
+    .school p, .work p, .certs p, .skills p, .exp p {
+        font-size: 1.6em;
     }
+    .school, .work, .certs, .skills, .exp {
+        margin: 9px -74px 120px;
+    }
+    .wrapper-box p {
+    font-size: 1.5em;
+}
 
 }
 
@@ -28,13 +34,9 @@
     .exp-box {
         margin: 50px 30px;
     }
-
-    .school, .work, .certs, .skills, .exp{
-      margin: 9px 10px 120px 3px;
+    .school, .work, .certs, .skills, .exp {
+        margin: 9px 10px 120px 3px;
     }
-
-  
-
 }
 
 @media screen and (min-width: 1440px) {
