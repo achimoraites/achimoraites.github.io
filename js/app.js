@@ -70,6 +70,14 @@ $scope.myProjects = [
     skills : ' JQuery, Json, Twitter ',
     url: 'https://codepen.io/achimoraites/full/VPeGZe'
 
+  },
+  {
+    name: "Bootable USB Creator",
+    img : '/img/projects/bootable-usb-creator.jpg',
+    description: 'Create bootable usb drives fast and easy !',
+    skills : ' Software Dev , AutoIT , Automation ',
+    url: 'http://www.mediafire.com/file/ejpo73wjie91k3n/USB+Creator.zip'
+
   }
 ];
 
