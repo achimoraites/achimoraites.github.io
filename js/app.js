@@ -64,6 +64,14 @@ $scope.myProjects = [
 
   },
   {
+    name: "A Portfolio Template",
+    img : '/img/projects/portfolio-template1.png',
+    description: 'Simple Portfolio template ',
+    skills : ' jQuery, CSS3 ',
+    url: 'https://codepen.io/achimoraites/full/jVgdZQ/'
+
+  },
+  {
     name: "Quote Machine",
     img : '/img/projects/radom_quote_machine.png',
     description: 'Simple radom quote machine',
