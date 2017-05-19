@@ -225,7 +225,7 @@ h1.exp-section {
 }
 
 .certs-circle {
-    background-color: #33ac0c;
+    background-color: rgba(12, 61, 172, 0.53);
 }
 
 .skills-circle {
@@ -253,7 +253,7 @@ h1.exp-section {
 }
 
 .certs {
-    background-color: #33ac0c;
+    background-color: rgba(12, 61, 172, 0.53);
     color: white;
 }
 
