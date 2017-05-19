@@ -225,7 +225,8 @@ h1.exp-section {
 }
 
 .certs-circle {
-    background-color: rgba(12, 61, 172, 0.53);
+    background-color: rgb(227, 242, 253);
+    color:black;
 }
 
 .skills-circle {
@@ -253,8 +254,8 @@ h1.exp-section {
 }
 
 .certs {
-    background-color: rgba(12, 61, 172, 0.53);
-    color: white;
+    background-color: rgb(227, 242, 253);
+    color: black;
 }
 
 .skills {
