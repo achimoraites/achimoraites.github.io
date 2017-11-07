@@ -36,7 +36,7 @@ $scope.myProjects = [
     img : 'https://raw.githubusercontent.com/Cyb3rN4u7/Cyb3rN4u7.github.io/master/img/projects/basketball_tracker_app.png',
     description: 'An android app to track of a basketball game',
     skills : ' Android , Java , XML ',
-    url: 'https://cyb3rn4u7.github.io/'
+    url: 'https://cyb3rn4u7.github.io/ScoreTrackerApp/'
 
   },
  {
