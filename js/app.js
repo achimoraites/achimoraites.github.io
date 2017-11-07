@@ -32,7 +32,7 @@ if (window.location.hash === '#_=_') window.location.hash = '#!';
 app.controller('projectsCtrl',['$scope',function($scope){
 $scope.myProjects = [
    {
-    name: "Basketball Tracking App",
+    name: "Tracking App",
     img : 'https://raw.githubusercontent.com/Cyb3rN4u7/Cyb3rN4u7.github.io/master/img/projects/basketball_tracker_app.png',
     description: 'An android app to track of a basketball game',
     skills : ' Android , Java , XML ',
