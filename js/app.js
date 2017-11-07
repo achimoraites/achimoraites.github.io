@@ -31,7 +31,15 @@ if (window.location.hash === '#_=_') window.location.hash = '#!';
 // controllers
 app.controller('projectsCtrl',['$scope',function($scope){
 $scope.myProjects = [
-  {
+   {
+    name: "Basketball Tracking App",
+    img : 'https://raw.githubusercontent.com/Cyb3rN4u7/Open-Weather-Map-Angular-App/master/app/img/basketball_tracker_app.png',
+    description: 'An android app to track of a basketball game',
+    skills : ' Android , Java , XML ',
+    url: 'https://cyb3rn4u7.github.io/'
+
+  },
+ {
     name: "Weather App",
     img : 'https://raw.githubusercontent.com/Cyb3rN4u7/Open-Weather-Map-Angular-App/master/app/img/weather-app-main.png',
     description: 'A weather forecast Application',
