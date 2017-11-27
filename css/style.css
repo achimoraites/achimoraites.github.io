@@ -21,6 +21,15 @@
     color: white;
 }
 
+
+.about-me-title {
+    font-size: 3em;
+    color: black;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
 .about-me {
     padding-top: 200px;
 }
@@ -293,9 +302,13 @@ a:hover {
 }
 
 .blog-box {
-    margin: 10px 50px;
+    margin: 50px 50px;
     border-radius: 0px;
 
+}
+
+.blog-article-preview{
+  font-size: 1em !important;
 }
 
 
