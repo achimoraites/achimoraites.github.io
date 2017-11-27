@@ -64,7 +64,7 @@
     background-color: rgb(227, 242, 253);
 }
 
-.skill-btn, .skill-btn2, .project-btn {
+.skill-btn, .skill-btn2, .project-btn , .blog-btn {
     font-size: 2em;
     background-color: #3789e4;
     margin: 5px 8px;
@@ -73,6 +73,10 @@
 
 .skill-btn2 {
     background-color: red;
+}
+
+.blog-btn {
+    background-color: orange;
 }
 
 .social-box {
@@ -269,6 +273,31 @@ a:hover {
 
 
 /* CV END*/
+
+/*  Blog  */
+
+.blog-img{
+  width: 200px;
+  margin-bottom: 16px;
+}
+.blog-text{
+  margin-top: 32px;
+  text-decoration: none;
+  color: black;
+
+}
+.blog-title{
+  font-size: 3em;
+  font-weight: bold;
+  color: black;
+}
+
+.blog-box {
+    margin: 10px 50px;
+    border-radius: 0px;
+
+}
+
 
 footer p {
     padding-top: 20px;
