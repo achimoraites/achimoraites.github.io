@@ -1,6 +1,12 @@
 @media screen and (max-width: 500px) {
+
+  .intro-box {
+      padding-bottom: 32px;
+    }
+
     .about-me h1 {
         font-size: 4em;
+          padding-top: 8px;
     }
     .exp-box {
         margin: 50px 5px;
@@ -17,6 +23,7 @@
 }
 
 @media screen and (max-width: 800px) {
+
     .skill {
         width: 60px;
     }
@@ -39,6 +46,7 @@
 }
 
 @media screen and (min-width: 1440px) {
+
     .skill {
         margin: 20px;
         width: 90px;

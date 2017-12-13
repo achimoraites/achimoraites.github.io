@@ -1,7 +1,7 @@
 /* HOME SECTION and INDEX */
 
 .intro-box {
-    padding-bottom: 300px;
+    padding-bottom: 100px;
     background: rgba(8, 114, 228, 0.82);
     /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(rgb(227, 242, 253), rgba(8, 114, 228, 0.82));
@@ -30,8 +30,8 @@
 }
 
 
-.about-me {
-    padding-top: 200px;
+.about-me h1 {
+      padding-top: 100px;
 }
 
 .about-me h4 {
@@ -302,7 +302,7 @@ a:hover {
 }
 
 .blog-box {
-    margin: 50px 50px;
+    margin: 0px 24px 0px 24px;
     border-radius: 0px;
 
 }
