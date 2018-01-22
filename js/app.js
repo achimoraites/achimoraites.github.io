@@ -31,6 +31,14 @@ if (window.location.hash === '#_=_') window.location.hash = '#!';
 // controllers
 app.controller('projectsCtrl',['$scope',function($scope){
 $scope.myProjects = [
+  {
+   name: "QR Code Scanner",
+   img : 'https://raw.githubusercontent.com/Cyb3rN4u7/Cyb3rN4u7.github.io/master/img/projects/qrCodeScanner.png',
+   description: 'An android app to scan QR Codes',
+   skills : ' Android , Java , XML , zxing',
+   url: '#'
+
+ },
    {
     name: "Tracking App",
     img : 'https://raw.githubusercontent.com/Cyb3rN4u7/Cyb3rN4u7.github.io/master/img/projects/basketball_tracker_app.png',
