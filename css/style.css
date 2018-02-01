@@ -286,7 +286,7 @@ a:hover {
 /*  Blog  */
 
 .blog-img{
-  width: 200px;
+
   margin-bottom: 16px;
 }
 .blog-text{
@@ -310,6 +310,7 @@ a:hover {
 
 .blog-article-preview{
   font-size: 1em !important;
+  font-style: oblique;
 }
 
 
