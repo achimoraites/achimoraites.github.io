@@ -159,7 +159,7 @@ app.filter('getImgUrl', function() {
     return function(text) {
       var regex = new RegExp('src="https?:\/\/.*\.(?:png|jpg|gif)"');
       var imgSrc = String(regex.exec(text));
-      return "<img " + imgSrc + "/>" ;
+      return "<img class='img-responsive' " + imgSrc + "/>" ;
     };
   }
 );
