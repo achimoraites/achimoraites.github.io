@@ -1,4 +1,4 @@
-var app = angular.module('myApp',['ngRoute']);
+var app = angular.module('myApp',['ngRoute','ngSanitize']);
 
 
 app.config(['$locationProvider',
@@ -106,3 +106,54 @@ $scope.myProjects = [
 ];
 
 }]);
+
+// blog feed
+app.controller('bloggerCtrl',['$scope','bloggerApi','$timeout','$sce',function($scope, bloggerApi, $timeout, $sce){
+$scope.numLimit = 3;
+
+
+            bloggerApi.getBlogPosts()
+                .success(function(result) {
+                    $scope.posts = result.items;
+                    $scope.content = result.items.content;
+
+
+                })
+                .error(function(error, status) {
+                    $scope.error = 'Status : ' + status + ' Something went wrong!';
+
+});
+
+
+
+}]);
+
+app.factory('bloggerApi', ['$http', function openWeatherApiFactory($http) {
+        var apiUrl = 'https://www.googleapis.com/blogger/v3/blogs/7900380589360458141/posts?key=AIzaSyDJZx2Tx3kW65FrvjXonMRSmNap4z7Rw-o&callback=JSON_CALLBACK';
+
+
+        return {
+
+            getBlogPosts: function() {
+
+                return $http.jsonp(apiUrl);
+            }
+
+        };
+
+
+}])
+.
+  filter('htmlToPlaintext', function() {
+    return function(text) {
+      return  text ? String(text).replace(/<[^>]+>/gm, '') : '';
+    };
+  }
+)
+.
+  filter('dotsInTheEnd', function() {
+    return function(text) {
+      return  text ? String(text).replace(text.substring(277,280),"...") : '...';
+    };
+  }
+);

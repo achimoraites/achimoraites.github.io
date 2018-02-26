@@ -2,54 +2,38 @@
 
 
 </br>
-<div class='row blog-box'>
-<h3 class="blog-title">My Latest Articles</h3>
 
-<div class="col-md-3">
-    <a href="https://achimoraites.blogspot.gr/2018/02/qr-code-scanner.html" alt="QR Code Scanner" target="_blank">
-      <p class="blog-text">QR Code Scanner</p>
-      <img class="img-responsive blog-img" src="img/projects/qrCodeScanner.png"
-      </a>
-    <a href="" alt="" target="_blank"></a>
-    <p class="blog-article-preview text-left">
-      Scan and connect to WiFi networks that provide qr code within the app!  no more typing and time wasting!
-   </p>
- </div>
 
-    <div class="col-md-3">
-      <a href="https://achimoraites.blogspot.gr/2017/11/design-patterns-advanced-iterator.html" alt="Advanced Iterator Pattern" target="_blank">
-        <p class="blog-text">Advanced Iterator Pattern</p>
-        <img class="img-responsive blog-img" src="/img/blog/iterator-pattern-uml.png"
-        </a>
-      <a href="" alt="" target="_blank"></a>
-      <p class="blog-article-preview text-left">
-        In the Basic Iterator article you have used an existing iterator to simplify our Car Parts Store ,
-         having learned about iterators you might have wondered if you can create your own iterator...
-      </p>
-    </div>
+<div ng-controller='bloggerCtrl'>
 
-  <div class="col-md-3">
-      <a href="https://achimoraites.blogspot.gr/2017/11/design-patterns-basic-iterator.html" alt="Basic Iterator Pattern" target="_blank">
-        <p class="blog-text">Basic Iterator Pattern</p>
-        <img class="img-responsive blog-img" src="/img/blog/iterator-pattern-uml.png"
-        </a>
-      <a href="" alt="" target="_blank"></a>
-      <p class="blog-article-preview text-left">
-        Among the most common things in a collection of items is the ability to iterate through the collection ,
-         in Java for example there are data structures that allowing ...
-      </p>
-  </div>
+              <div class="row blog-box">
+                <h3 class="blog-title">My Latest Articles</h3>
+                  <div ng-repeat="post in posts" ng-if="$index < 3" >
+                        <div class="col-md-4">
+                  <a ng-href={{post.url}} alt={{post.title}} target="_blank">
+                    <p class="blog-text text-center">{{post.title}}</p>
+                   <div >
+              <p style="float:left"  class="blog-article-preview text-left" ng-bind-html="post.content  | htmlToPlaintext | dotsInTheEnd |limitTo:280">
+                {{post.content.replace(post.content.substring(-3),"...") }}
 
-  <div class="col-md-3">
-      <a href="https://achimoraites.blogspot.gr/2017/11/design-patterns-observer.html" alt="Observer Pattern" target="_blank">
-        <p class="blog-text">Observer Design Pattern</p>
-        <img class="img-responsive blog-img" src="/img/blog/observer-pattern-uml.png"
-        </a>
-      <a href="" alt="" target="_blank"></a>
-      <p class="blog-article-preview text-left">
-        The observer design pattern is useful in cases we want a change in an object (subject) to be known to one or more other objects...
-      </p>
-    </div>
+              </p>
+
+
+                  </div>
+                    <img style="margin-bottom: 10px" class="img-responsive center-block" src="img/blog/post.png" />
+                    </a>
+
+                    <div ng-repeat="l in post.labels" style="float:left;margin-right: 5px;">
+                      <p class="blog-article-preview text-center">  {{l}}  </p>
+                    </div>
+
+
+                </div>
+
+                </div>
+            </div>
+            </div>
+
 
 
 </br>
