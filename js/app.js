@@ -142,18 +142,24 @@ app.factory('bloggerApi', ['$http', function openWeatherApiFactory($http) {
         };
 
 
-}])
-.
-  filter('htmlToPlaintext', function() {
+}]);
+app.filter('htmlToPlaintext', function() {
     return function(text) {
       return  text ? String(text).replace(/<[^>]+>/gm, '') : '';
     };
   }
-)
-.
-  filter('dotsInTheEnd', function() {
+);
+app.filter('dotsInTheEnd', function() {
     return function(text) {
       return  text ? String(text).replace(text.substring(277,280),"...") : '...';
+    };
+  }
+);
+app.filter('getImgUrl', function() {
+    return function(text) {
+      var regex = new RegExp('src="https?:\/\/.*\.(?:png|jpg|gif)"');
+      var imgSrc = String(regex.exec(text));
+      return "<img " + imgSrc + "/>" ;
     };
   }
 );
