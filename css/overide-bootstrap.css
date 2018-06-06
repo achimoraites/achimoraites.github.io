@@ -25,8 +25,16 @@ a.btn:hover {
     animation-duration: 1s;
     /* stay at the animation color */
     animation-fill-mode: forwards;
-    color: white;
-    transform: scale(1.1);
+    
+
+}
+a.btn.btn-circle.btn-primary:hover{
+    
+
+    animation-name: hover-btn-circle-animation;
+    animation-duration: 1s;
+    /* stay at the animation color */
+    animation-fill-mode: forwards;
 }
 
 
@@ -40,7 +48,16 @@ a.btn:hover {
 @keyframes hover-btn-animation{
   
     100%{
-        background-color: var(--support-color);
-        border: 1px solid black; 
+        background-color:var(--support-color);
+        
+    }
+}
+
+@keyframes hover-btn-circle-animation{
+  
+    100%{
+        background-color:black;
+        color: yellow;
+        border-color: yellow;
     }
 }

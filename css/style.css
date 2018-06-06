@@ -294,7 +294,7 @@ h1.exp-section {
     background-color: var(--base-color);
     color: yellow;
 }
-div.certs:nth-child(2) > h1:nth-child(1){
+div.certs h1{
     color: yellow;
 }
 div.certs.well img{
