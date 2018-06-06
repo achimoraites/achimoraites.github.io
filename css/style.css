@@ -1,16 +1,26 @@
 /* HOME SECTION and INDEX */
 
+:root{
+    --base-color:  rgb(5, 54, 100);
+    --support-color: rgba(139,109,43,1);
+    --base-color-tint: rgba(8, 114, 228, 0.1);
+    --support-color-tint: rgb(5, 54, 100);
+    --title-font-color:rgb(255, 255, 255);
+    --inner-titles-color: rgb(5, 54, 100);
+ 
+}
+
 .intro-box {
     padding-bottom: 100px;
-    background: rgba(8, 114, 228, 0.82);
+    background: var(--base-color);
     /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(rgb(227, 242, 253), rgba(8, 114, 228, 0.82));
+    background: -webkit-linear-gradient(var(--base-color-tint), var(--base-color));
     /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(rgb(227, 242, 253), rgba(8, 114, 228, 0.82));
+    background: -o-linear-gradient(var(--base-color-tint), var(--base-color));
     /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(rgb(227, 242, 253), rgba(8, 114, 228, 0.82));
+    background: -moz-linear-gradient(var(--base-color-tint), var(--base-color));
     /* For Firefox 3.6 to 15 */
-    background: linear-gradient(rgb(227, 242, 253), rgba(8, 114, 228, 0.82));
+    background: linear-gradient(var(--base-color-tint), var(--base-color));
     /* Standard syntax */
     padding-top: 100px;
     margin-top: -20px;
@@ -18,24 +28,25 @@
 
 .about-me h1 {
     font-size: 6em;
-    color: white;
+    color: var(--title-font-color);
+    padding-top: 100px;
 }
 
+h1,h2,h3{
+    color:var(--inner-titles-color);
+}
 
 .about-me-title {
     font-size: 3em;
-    color: black;
+    color: var(--inner-titles-color);
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
 
-.about-me h1 {
-      padding-top: 100px;
-}
 
 .about-me h4 {
-    color: white;
+    color: var(--title-font-color);
     font-size: 2.5em;
 }
 
@@ -70,7 +81,7 @@
 .skill-box {
     margin: 10px 50px;
     border-radius: 0px;
-    background-color: rgb(227, 242, 253);
+
 }
 
 .skill-btn, .skill-btn2, .project-btn , .blog-btn {
@@ -103,7 +114,7 @@
     margin: 5px;
     color: rgb(255, 255, 255);
     border: 3px solid white;
-    background-color: rgb(50, 105, 169);
+    background-color: var(--base-color);
 }
 
 
@@ -111,18 +122,27 @@
 
 .project-box {
     margin-top: 50px;
+   
 }
 
-.project-box img {
-    width: 250px;
+
+#projects img{
+    width: 55%;
     margin-bottom: 20px;
 }
 
+
+
+
 .project-btn {
     margin: 20px 0px 20px;
-    ;
+   
+    background-color: var(--base-color);
+    
 }
-
+#projects{
+    background-color: white;
+}
 
 /* CONTACT */
 
@@ -171,15 +191,15 @@ form {
 
 #sub-btn {
     padding: 20px 40px 20px 40px;
-    background-color: rgb(141, 191, 243);
+    background-color: var(--support-color);
     font-size: 1.5em;
-    color: azure;
+    color: white;
     margin-top: 50px;
 }
 
 #sub-btn:hover {
     color: rgb(255, 255, 255);
-    background-color: #aee20f;
+    background-color: var(--base-color);
 }
 
 
@@ -208,6 +228,7 @@ p.date {
 .exp-box h1 {
     font-size: 2.9em;
 }
+.work h1
 
 h1.exp-section {
     font-weight: 800;
@@ -238,8 +259,8 @@ h1.exp-section {
 }
 
 .certs-circle {
-    background-color: rgb(227, 242, 253);
-    color:black;
+    background-color: var(--base-color);
+    color:yellow;
 }
 
 .skills-circle {
@@ -265,12 +286,20 @@ h1.exp-section {
     background-color: #3684db;
     color: white;
 }
-
-.certs {
-    background-color: rgb(227, 242, 253);
-    color: black;
+.work-title{
+    color: white;
 }
 
+.certs {
+    background-color: var(--base-color);
+    color: yellow;
+}
+div.certs:nth-child(2) > h1:nth-child(1){
+    color: yellow;
+}
+div.certs.well img{
+    background-color: white;
+}
 .skills {
     background-color: black;
     color: white;
@@ -292,14 +321,14 @@ a:hover {
 .blog-text{
   margin-top: 32px;
   text-decoration: none;
-  color: black;
+  color: var(--inner-titles-color);
   font-weight: bold;
 
 }
 .blog-title{
   font-size: 3em;
   font-weight: bold;
-  color: black;
+  color: var(--inner-titles-color);
 }
 
 .blog-box {
@@ -311,7 +340,11 @@ a:hover {
 .blog-article-preview{
   font-size: 1em !important;
   font-style: oblique;
-  color: black;
+  color: var(--inner-titles-color);
+}
+
+.blog-box img:hover{
+    transform: scale(1.1);
 }
 
 
@@ -321,8 +354,8 @@ footer p {
 }
 
 footer {
-    color: white;
-    background-color: #398dea;
+    color: var(--title-font-color);
+    background-color: var(--base-color);
     padding-bottom: 20px;
     /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(rgb(55, 140, 233), rgba(5, 71, 146, 0.82));

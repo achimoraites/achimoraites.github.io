@@ -20,9 +20,10 @@
 }
 
 
+
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 767px) {
 
     .skill {
         width: 60px;
@@ -42,6 +43,21 @@
     }
     .school, .work, .certs, .skills, .exp {
         margin: 9px -74px 120px;
+    }
+
+    .nav>li>a{
+        left: 25px;
+    }
+    
+}
+
+@media screen and (min-width: 800px){
+    #projects img:hover{
+        transform: scale(1.4);
+    }
+    #projects img{
+        width: 65%;
+        margin-bottom: 20px;
     }
 }
 

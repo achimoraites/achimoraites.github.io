@@ -11,7 +11,36 @@ a.navbar-brand {
     font-size: 2em;
 }
 
-.nav>li>a:hover {
-    background-color: #3268a9;
+.nav>li>a:hover{
+    animation-name: hover-animation;
+    animation-duration: 1s;
+    /* stay at the animation color */
+    animation-fill-mode: forwards;
     color: white;
+    transform: scale(1.1);
+   
+}
+a.btn:hover {
+    animation-name: hover-btn-animation;
+    animation-duration: 1s;
+    /* stay at the animation color */
+    animation-fill-mode: forwards;
+    color: white;
+    transform: scale(1.1);
+}
+
+
+@keyframes hover-animation{
+  
+    100%{
+        background-color: var(--base-color);
+    }
+}
+
+@keyframes hover-btn-animation{
+  
+    100%{
+        background-color: var(--support-color);
+        border: 1px solid black; 
+    }
 }
