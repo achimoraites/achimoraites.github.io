@@ -1,65 +1,69 @@
 </br>
 
+<main>
+  <div ng-controller='bloggerCtrl'>
 
-<div ng-controller='bloggerCtrl'>
+    <div class="row text-center blog-box">
+      <h2 class="blog-title">My Latest Articles</h2>
+      <div ng-repeat="post in posts" ng-if="$index < 6">
+        <div class="clearfix" ng-if="$index % 3 == 0"></div>
+        <article class="col-md-4 ">
+          <a ng-href={{post.url}} alt={{post.title}} target="_blank">
+            <section>
+              <h3 class="blog-text">{{post.title}}</h3>
 
-  <div class="row text-center blog-box">
-    <h3 class="blog-title">My Latest Articles</h3>
-    <div ng-repeat="post in posts" ng-if="$index < 6">
-<div class="clearfix" ng-if="$index % 3 == 0"></div>
-      <div class="col-md-4 ">
-        <a ng-href={{post.url}} alt={{post.title}} target="_blank">
-          <p class="blog-text">{{post.title}}</p>
+              <p style="float:left" class="blog-article-preview text-left" ng-bind-html="post.content  | htmlToPlaintext | dotsInTheEnd |limitTo:280">
+                {{post.content}}
+              </p>
+            </section>
+            <div ng-bind-html="post.content | getImgUrl">
+              {{post.content}}
+            </div>
 
-          <p style="float:left" class="blog-article-preview text-left" ng-bind-html="post.content  | htmlToPlaintext | dotsInTheEnd |limitTo:280">
-            {{post.content}}
-          </p>
+            <p>
 
-          <div ng-bind-html="post.content | getImgUrl">
-            {{post.content}}
-          </div>
+            </p>
+          </a>
 
-          <p>
-
-          </p>
-        </a>
+        </article>
 
       </div>
-
-    </div>
-  </div>
-</div>
-
-
-
-</br>
-<h3 class="about-me-title">About me</h3>
-<div class='row text-left well skill-box'>
-
-  <div class='col-md-4 col-md-4 '>
-    <img class='img-responsive center-block avatar' src='/img/avatar.jpg' />
-    <a href="#!/projects" class='btn btn-primary skill-btn'>My Projects</a>
-    <a href="#!/cv" class='btn btn-primary skill-btn2'>My CV</a>
-    <a href="https://achimoraites.blogspot.gr" target="_blank" class='btn btn-primary  blog-btn'>Blog</a>
-  </div>
-  <div class='col-md-8 details '>
-
-    <p>Hi! I am a self taught Web Developer , a Network Engineer , a Nature Lover and a curious individual. </p>
-    </br>
-    <p>Currently i am working to expand my knowledge in Full Stack Web Development and Android development</p>
-    </br>
-    <p>My programming skills include : Java, Angular , NodeJS , Python and MongoDB.</p>
-    </br>
-    <p></p>
-    </br>
-    <div class="text-center skill-box">
-
-      <img class='skill' src='/img/skills-icons/Angular.png' alt='Angular' title='Angular' />
-      <img class='skill' src='/img/skills-icons/Javascript.png' alt='JavaScript' title='JavaScript' />
-      <img class='skill' src='/img/skills-icons/Node.png' alt='Node' title='Node' />
-      <img class='skill' src='/img/skills-icons/Python.png' alt='Python' title='Python' />
-      <img class='skill' src='/img/skills-icons/GitHub.png' alt='Git version control' title='Git' />
     </div>
   </div>
 
-</div>
+
+
+  </br>
+  
+  <article class='row text-left well skill-box'>
+      <h2 class="about-me-title text-center">About me</h2>
+    <div class='col-md-4 col-md-4 '>
+      <img class='img-responsive center-block avatar' src='/img/avatar.jpg' />
+      <a href="#!/projects" class='btn btn-primary skill-btn'>My Projects</a>
+      <a href="#!/cv" class='btn btn-primary skill-btn2'>My CV</a>
+      <a href="https://achimoraites.blogspot.gr" target="_blank" class='btn btn-primary  blog-btn'>Blog</a>
+    </div>
+    <section class='col-md-8 details '>
+      <h3 class="text-center">Description</h3>
+      <p>Hi! I am a self taught Web Developer , a Network Engineer , a Nature Lover and a curious individual. </p>
+      </br>
+      <p>Currently i am working to expand my knowledge in Full Stack Web Development and Android development</p>
+      </br>
+      <p>My programming skills include : Java, Angular , NodeJS , Python and MongoDB.</p>
+      </br>
+  
+      </br>
+      <div class="text-center skill-box">
+
+        <img class='skill' src='/img/skills-icons/Angular.png' alt='Angular' title='Angular' />
+        <img class='skill' src='/img/skills-icons/Javascript.png' alt='JavaScript' title='JavaScript' />
+        <img class='skill' src='/img/skills-icons/Node.png' alt='Node' title='Node' />
+        <img class='skill' src='/img/skills-icons/Python.png' alt='Python' title='Python' />
+        <img class='skill' src='/img/skills-icons/GitHub.png' alt='Git version control' title='Git' />
+      </div>
+    </section>
+
+  </article>
+
+
+</main>

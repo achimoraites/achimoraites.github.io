@@ -45,7 +45,7 @@ h1,h2,h3{
 
 
 
-.about-me h4 {
+.about-me h2 {
     color: var(--title-font-color);
     font-size: 2.5em;
 }
@@ -60,11 +60,14 @@ h1,h2,h3{
 }
 
 .wrapper-box p {
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .details {
     padding-top: 20px;
+}
+section.details>h3{
+    font-size: 2.3em;
 }
 
 .avatar {
@@ -124,6 +127,11 @@ h1,h2,h3{
     margin-top: 50px;
    
 }
+
+article.project-box h2{
+    margin: 0em 0em 0.5em;
+}
+
 
 
 #projects img{
@@ -225,14 +233,16 @@ p.date {
     margin: 150px 0px 0px 150px;
 }
 
-.exp-box h1 {
+article h2, h2.exp-section {
     font-size: 2.9em;
+    font-weight: 600;
+    margin-bottom: 1em;
 }
-.work h1
 
-h1.exp-section {
-    font-weight: 800;
-    font-size: 4em;
+
+
+.exp-box h3 {
+    font-size: 2.2em;
     padding-bottom: 40px;
 }
 
@@ -294,10 +304,10 @@ h1.exp-section {
     background-color: var(--base-color);
     color: yellow;
 }
-div.certs h1{
+article.certs h3{
     color: yellow;
 }
-div.certs.well img{
+article.certs.well img{
     background-color: white;
 }
 .skills {
@@ -324,6 +334,9 @@ a:hover {
   color: var(--inner-titles-color);
   font-weight: bold;
 
+}
+h3.blog-text{
+    font-size: 2.2em;
 }
 .blog-title{
   font-size: 3em;

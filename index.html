@@ -7,50 +7,51 @@
 <!--<![endif]-->
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Achilles Moraites </title>
-    <meta name="description" content="Welcome to my portfolio page, here you can find info about me and see my projects! ,
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Achilles Moraites </title>
+  <meta name="description" content="Welcome to my portfolio page, here you can find info about me and see my projects! ,
     Achilles Moraites is a Web Developer and a Network Professional who studies full stack web development at Free Code Camp.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.css">
-    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/overide-bootstrap.css">
-    <link rel="stylesheet" href="/css/style.css">
-      <link rel="stylesheet" href="/css/screen-sizes.css">
+  <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/overide-bootstrap.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/screen-sizes.css">
 
 
 
 </head>
 
 <body>
-
+  
     <!-- Menu -->
-    <nav class="navbar navbar-light navbar-fixed-top" style="background-color: #e3f2fd;box-shadow: -2px 7px 20px 2px #ffffff;" ng-include='"partials/menu.html"'></nav>
+    <nav class="navbar navbar-light navbar-fixed-top" style="background-color: #e3f2fd;box-shadow: -2px 7px 20px 2px #ffffff;"
+      ng-include='"partials/menu.html"'></nav>
 
     <!-- Intro -->
     <div class="container-fluid text-center intro-box">
 
 
-        <div class="about-me">
-            <h1>Achilles Moraites</h1>
-          </br>
-            <h4>Software Developer</h4>
+      <div class="about-me">
+        <h1>Achilles Moraites</h1>
+        </br>
+        <h2>Software Developer</h2>
 
-        </div>
+      </div>
 
-<a href="#!/start"></a>
+      <a href="#!/start"></a>
     </div>
 
     <!-- wrapper-box -->
-    <div class="container-fluid text-center wrapper-box">
+    <main class="container-fluid text-center wrapper-box">
       <ng-view></ng-view>
-    </div>
+    </main>
 
 
 
-<footer ng-include="'/partials/footer.html'"></footer>
+    <footer ng-include="'/partials/footer.html'"></footer>
 
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -64,7 +65,7 @@
     <script src="/lib/bootstrap/dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/lib/angular/angular.js"></script>
     <script type="text/javascript" src="/lib/angular-route/angular-route.js"></script>
-      <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.32/angular-sanitize.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.32/angular-sanitize.js"></script>
     <!-- -->
 
     <script type="text/javascript" src="/js/app.js"></script>
