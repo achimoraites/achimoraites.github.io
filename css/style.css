@@ -134,6 +134,7 @@ article.skill-box{
 
 article.project-box h2{
     margin: 0em 0em 0.5em;
+    color: var(--base-color);
 }
 
 
