@@ -52,6 +52,7 @@ h1,h2,h3{
 
 .wrapper-box {
     padding-bottom: 50px;
+    background: linear-gradient(#073865,#368ae5);
 }
 
 .wrapper-box h1 {
@@ -85,6 +86,9 @@ section.details>h3{
     margin: 10px 50px;
     border-radius: 0px;
 
+}
+article.skill-box{
+    box-shadow: 5px 5px 10px;
 }
 
 .skill-btn, .skill-btn2, .project-btn , .blog-btn {
@@ -150,6 +154,9 @@ article.project-box h2{
 }
 #projects{
     background-color: white;
+    margin: 3.5em;
+    padding: 2em;
+    box-shadow: 5px 5px 10px;
 }
 
 /* CONTACT */
@@ -344,16 +351,22 @@ h3.blog-text{
   color: var(--inner-titles-color);
 }
 
-.blog-box {
+.blog-box, .contact {
     margin: 0px 24px 0px 24px;
     border-radius: 0px;
-
+    box-shadow: 5px 5px 10px;
+    background-color: aliceblue;
+    margin: auto 3.5em 5em 3.5em;
+    padding: 3em;
 }
 
 .blog-article-preview{
   font-size: 1em !important;
   font-style: oblique;
-  color: var(--inner-titles-color);
+  color: #186ec0;
+  line-height: 1.7em;
+  margin: 1em 0em 2em;
+  font-weight: bold;
 }
 
 .blog-box img:hover{
