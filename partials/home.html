@@ -7,7 +7,7 @@
       <h2 class="blog-title">My Latest Articles</h2>
       <div ng-repeat="post in posts" ng-if="$index < 6">
         <div class="clearfix" ng-if="$index % 3 == 0"></div>
-        <article class="col-md-4 ">
+        <article class="col-md-4 post">
           <a ng-href={{post.url}} alt={{post.title}} target="_blank">
             <section>
               <h3 class="blog-text">{{post.title}}</h3>

@@ -23,12 +23,7 @@
     font-size: 1em;
     word-wrap: break-word;
 }
-#projects, .blog-box, article.skill-box,.contact{
-    margin: -1em;
-}
-article.skill-box{
- margin-top: 2em;
-}
+
 
 
 
@@ -58,6 +53,35 @@ article.skill-box{
 
     .nav>li>a{
         left: 25px;
+    }
+
+    /*Optimize space for elements*/
+    #projects, .blog-box, article.skill-box{
+        margin: -1em;
+    }
+    
+    article.skill-box{
+     margin-top: 2em;
+    }
+    
+  /*Optimize visibillity for elements*/
+    .post, .project-box, .contact-box form{
+        background-color: #a4b7c7;
+        margin: -1em;
+        margin-top: 3em;
+        padding: 1.5em;
+        border-radius: 3px;
+        box-shadow: 0px 2px 4px;
+    }
+    .contact{
+        margin: -2em;
+    }
+    .project-box p{
+        color: #09569e;
+        font-weight: 700;
+        margin-top: 2em;
+        margin-bottom: 1em;
+        
     }
     
 }
