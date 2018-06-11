@@ -14,6 +14,9 @@
     --nav-bg-color: #1f1b3e;
  
 }
+body p{
+    font-family: 'Montserrat', sans-serif; 
+}
 
 .intro-box {
     padding-bottom: 100px;
@@ -377,7 +380,6 @@ h3.blog-text{
 
 .blog-article-preview{
   font-size: 1em !important;
-  font-style: oblique;
   color: #186ec0;
   line-height: 1.7em;
   margin: 1em 0em 2em;
