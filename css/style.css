@@ -1,12 +1,17 @@
 /* HOME SECTION and INDEX */
 
 :root{
+    /* Base colors and shadows */
     --base-color:  rgb(5, 54, 100);
-    --support-color: rgba(139,109,43,1);
+    --base-shadow: #000;
+    --main-title-color:rgb(255, 255, 255);
+    --support-color: rgb(180, 7, 7);
     --base-color-tint: rgba(8, 114, 228, 0.1);
-    --support-color-tint: rgb(5, 54, 100);
-    --title-font-color:rgb(255, 255, 255);
-    --inner-titles-color: rgb(5, 54, 100);
+    
+
+    /* Nav bar */
+    --nav-font-color: #3f9ae8;
+    --nav-bg-color: #1f1b3e;
  
 }
 
@@ -28,17 +33,17 @@
 
 .about-me h1 {
     font-size: 6em;
-    color: var(--title-font-color);
+    color: var(--main-title-color);
     padding-top: 100px;
 }
 
 h1,h2,h3{
-    color:var(--inner-titles-color);
+    color:var(--base-color);
 }
 
 .about-me-title {
     font-size: 3em;
-    color: var(--inner-titles-color);
+    color: var(--base-color);
     margin-top: 50px;
     margin-bottom: 50px;
 }
@@ -46,7 +51,7 @@ h1,h2,h3{
 
 
 .about-me h2 {
-    color: var(--title-font-color);
+    color: var(--main-title-color);
     font-size: 2.5em;
 }
 
@@ -222,7 +227,7 @@ form {
 /* CV */
 
 #intro{
-    color: var(--inner-titles-color);
+    color: var(--base-color);
 }
 
 .cv-intro {
@@ -348,7 +353,7 @@ a:hover {
 .blog-text{
   margin-top: 32px;
   text-decoration: none;
-  color: var(--inner-titles-color);
+  color: var(--base-color);
   font-weight: bold;
 
 }
@@ -358,7 +363,7 @@ h3.blog-text{
 .blog-title{
   font-size: 3em;
   font-weight: bold;
-  color: var(--inner-titles-color);
+  color: var(--base-color);
 }
 
 .blog-box, .contact {
@@ -392,7 +397,7 @@ footer p {
 }
 
 footer {
-    color: var(--title-font-color);
+    color: var(--main-title-color);
     background-color: var(--base-color);
     padding-bottom: 20px;
     /* For browsers that do not support gradients */
