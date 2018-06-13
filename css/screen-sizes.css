@@ -78,12 +78,20 @@
     .post,
     .project-box,
     .contact-box form {
-        background-color: #a4b7c7;
+        background-color: #073861;
         margin: -1em;
         margin-top: 3em;
         padding: 1.5em;
         border-radius: 3px;
         box-shadow: 0px 2px 4px;
+        color: #000;
+    }
+    h3.blog-text, article.project-box h2{
+        color: #d1e20e;
+        text-shadow: 1px 0px 3px #052432;
+    }
+    .blog-article-preview, .project-box p{
+        color:#eef5fb;
     }
 
     .school,
@@ -103,7 +111,6 @@
         margin: -2em;
     }
     .project-box p {
-        color: #09569e;
         font-weight: 700;
         margin-top: 2em;
         margin-bottom: 1em;
