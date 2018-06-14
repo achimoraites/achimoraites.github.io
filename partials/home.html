@@ -5,6 +5,8 @@
 
     <div class="row text-center blog-box">
       <h2 class="blog-title">My Latest Articles</h2>
+      <hr style="border: 1px solid var(--base-color)" hr>
+      
       <div ng-repeat="post in posts" ng-if="$index < 6">
         <div class="clearfix" ng-if="$index % 3 == 0"></div>
         <article class="col-md-4 post">

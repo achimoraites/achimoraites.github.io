@@ -1,7 +1,9 @@
 <div  ng-controller='projectsCtrl'>
   <!--This allows for better onganization  -->
-
+  
   <div id="projects" class="row">
+      <h2  class="blog-title">Projects</h2>
+      <hr style="border: 1px solid var(--base-color)" hr>
     <div ng-repeat="project in myProjects">
       <div class="clearfix" ng-if="$index % 3 == 0"></div>
       <article class="col-md-4 project-box">
