@@ -16,6 +16,9 @@ a.navbar-brand {
     font-size: 2em;
     color: var(--nav-font-color);
 }
+.nav > li:nth-child(4) > a:nth-child(1){
+    margin-right: 0.5em;
+}
 
 .nav>li>a:hover {
     animation-name: hover-animation;
