@@ -168,7 +168,8 @@ app.filter('getTimeEstimate', function() {
 );
 app.filter('dotsInTheEnd', function() {
     return function(text) {
-      return  text ? String(text).replace(text.substring(277,280),"...") : '...';
+      
+      return text + "...";
     };
   }
 );
