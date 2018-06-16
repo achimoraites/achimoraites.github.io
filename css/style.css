@@ -349,14 +349,15 @@ a:hover {
 /* CV END*/
 
 /*  Blog  */
-#read_time{
+.read_time{
     font-weight: 500;
     font-style: italic;
 }
 
+
 .blog-img{
 
-  margin-bottom: 16px;
+  margin-bottom: 1em;
 }
 .blog-text{
   margin-top: 32px;
@@ -384,7 +385,7 @@ h3.blog-text{
 }
 
 .blog-article-preview{
-  font-size: 1em !important;
+  font-size: 1.1em !important;
   color: #186ec0;
   line-height: 1.7em;
   margin: 1em 0em 3em;
