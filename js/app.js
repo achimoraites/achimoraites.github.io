@@ -112,11 +112,14 @@ app.controller('bloggerCtrl',['$scope','bloggerApi','$timeout','$sce',function($
 $scope.numLimit = 3;
 
 
+
+
+
             bloggerApi.getBlogPosts()
                 .success(function(result) {
                     $scope.posts = result.items;
                     $scope.content = result.items.content;
-
+                 
 
                 })
                 .error(function(error, status) {
@@ -128,7 +131,7 @@ $scope.numLimit = 3;
 
 }]);
 
-app.factory('bloggerApi', ['$http', function openWeatherApiFactory($http) {
+app.factory('bloggerApi', ['$http', function bloggerApiFactory($http) {
         var apiUrl = 'https://www.googleapis.com/blogger/v3/blogs/7900380589360458141/posts?key=AIzaSyDJZx2Tx3kW65FrvjXonMRSmNap4z7Rw-o&callback=JSON_CALLBACK';
 
 
@@ -148,6 +151,15 @@ app.filter('htmlToPlaintext', function() {
       return  text ? String(text).replace(/<[^>]+>/gm, '') : '';
     };
   }
+);
+app.filter('getTimeEstimate', function() {
+  return function(text) {
+    var content =  text ? String(text).replace(/<[^>]+>/gm, '') : '';
+    var words = content.split(" ").length;
+    var mins = Math.round(words/100);
+    return mins + " mins ";
+  };
+}
 );
 app.filter('dotsInTheEnd', function() {
     return function(text) {
