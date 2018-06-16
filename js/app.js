@@ -154,9 +154,14 @@ app.filter('htmlToPlaintext', function() {
 );
 app.filter('getTimeEstimate', function() {
   return function(text) {
+    // remove html characters
     var content =  text ? String(text).replace(/<[^>]+>/gm, '') : '';
+    // get the number of words
     var words = content.split(" ").length;
+    // get the number of minutes assuming 
+    //reading speed 1min for every 100 words
     var mins = Math.round(words/100);
+    // return the estimate
     return mins + " mins ";
   };
 }
