@@ -16,6 +16,7 @@
 }
 body p{
     font-family: 'Montserrat', sans-serif; 
+    
 }
 
 .intro-box {
@@ -149,7 +150,7 @@ article.project-box h2{
 
 
 #projects img{
-    width: 55%;
+ 
     margin-bottom: 20px;
 }
 
@@ -349,8 +350,9 @@ a:hover {
 
 /*  Blog  */
 #read_time{
-    font-size: 1em;
-    
+
+    font-family: monospace;
+    font-style: italic;
 }
 
 .blog-img{
@@ -378,7 +380,7 @@ h3.blog-text{
     border-radius: 0px;
     box-shadow: 0px 1px 5px;
     background-color: white;
-    margin: auto 3.5em 5em 3.5em;
+    margin: 2em 3.5em 5em 3.5em;
     padding: 2.4em 2.4em 5em;
 }
 
@@ -393,7 +395,6 @@ h3.blog-text{
 .blog-box img:hover{
     transform: scale(1.1);
 }
-
 
 
 

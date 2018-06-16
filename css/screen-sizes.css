@@ -25,7 +25,9 @@
         word-wrap: break-word;
     }
 
-   
+    #projects img {
+        width: 60vw !important;
+    }
   
 
 
@@ -35,7 +37,7 @@
     
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
     .skill {
         width: 60px;
     }
@@ -86,6 +88,9 @@
         box-shadow: 0px 2px 4px;
         color: #000;
     }
+    #projects img {
+        width: 30vw;
+    }
     h3.blog-text, article.project-box h2{
         color: #d1e20e;
         text-shadow: 1px 0px 3px #052432;
@@ -93,6 +98,7 @@
     .blog-article-preview, .project-box p{
         color:#eef5fb;
     }
+    
 
     .school,
     .work,
@@ -124,12 +130,12 @@
     }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 992px) {
     #projects img:hover {
         transform: scale(1.4);
     }
     #projects img {
-        width: 65%;
+        width: 30vw;
         margin-bottom: 20px;
     }
 
