@@ -166,6 +166,18 @@ app.filter('getTimeEstimate', function() {
   };
 }
 );
+app.filter('limitContent', function() {
+  return function(text) {
+ 
+    // get the words
+    var words = text.split(" ");
+    // splice
+    var content = words.slice(0,40);
+    // return the new content
+    return content.join(" ");
+  };
+}
+);
 app.filter('dotsInTheEnd', function() {
     return function(text) {
       

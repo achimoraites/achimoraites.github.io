@@ -1,4 +1,3 @@
-</br>
 
 <main>
   <div ng-controller='bloggerCtrl'>
@@ -16,7 +15,7 @@
               <p  class="blog-article-preview read_time" ><i class="fa fa-clock-o" aria-hidden="true"></i> {{post.content | getTimeEstimate}} read</p>
 
 
-              <p style="float:left" class="blog-article-preview text-left" ng-bind-html="post.content  | htmlToPlaintext |limitTo:280 | dotsInTheEnd">
+              <p style="float:left" class="blog-article-preview text-left" ng-bind-html="post.content  | htmlToPlaintext |limitContent | dotsInTheEnd">
                 {{post.content}}
               </p>
             </section>

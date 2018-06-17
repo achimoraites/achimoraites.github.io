@@ -17,7 +17,7 @@ a.navbar-brand {
     color: var(--nav-font-color);
 }
 .nav > li:nth-child(4) > a:nth-child(1){
-    margin-right: 0.5em;
+    margin-right: 1em;
 }
 
 .nav>li>a:hover {
