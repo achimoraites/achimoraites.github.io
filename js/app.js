@@ -169,9 +169,9 @@ app.filter('getTimeEstimate', function() {
 app.filter('limitContent', function() {
   return function(text) {
  
-    // get the words
+    // get the words from the text
     var words = text.split(" ");
-    // splice
+    // get a number of them 
     var content = words.slice(0,40);
     // return the new content
     return content.join(" ");
@@ -180,15 +180,17 @@ app.filter('limitContent', function() {
 );
 app.filter('dotsInTheEnd', function() {
     return function(text) {
-      
+      // simply add ... in the end
       return text + "...";
     };
   }
 );
 app.filter('getImgUrl', function() {
     return function(text) {
+      // locate the 1st image src in the text
       var regex = new RegExp('src="https?:\/\/.*\.(?:png|jpg|gif)"');
       var imgSrc = String(regex.exec(text));
+      // return the image in html tag for usage
       return "<img class='img-responsive center-block' " + imgSrc + "/>" ;
     };
   }

@@ -100,7 +100,9 @@
         font-weight: 500;
     }
     
-
+    .read_time{
+        color: #00b2ff !important;
+    }
     .school,
     .work,
     .certs,
