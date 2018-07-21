@@ -16,7 +16,7 @@
 }
 body p{
     font-family: 'Montserrat', sans-serif; 
-    transition: all 1s;
+    transition: all 0.2s;
 }
 
 body{
