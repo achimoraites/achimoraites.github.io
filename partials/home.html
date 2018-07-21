@@ -38,10 +38,10 @@
   
   <article class='row text-left well skill-box'>
       <h2 class="about-me-title text-center">About me</h2>
-    <div class='col-md-4 col-md-4 '>
+    <div class='col-md-4 col-md-4 ' ng-controller="scrollCtrl">
       <img class='img-responsive center-block avatar' src='/img/avatar.jpg' />
-      <a href="#!/projects" class='btn btn-primary skill-btn'>My Projects</a>
-      <a href="#!/cv" class='btn btn-primary skill-btn2'>My CV</a>
+      <a href="#!/projects" class='btn btn-primary skill-btn' ng-click="goToTop()">My Projects</a>
+      <a href="#!/cv" class='btn btn-primary skill-btn2' ng-click="goToTop()">My CV</a>
       <a href="https://achimoraites.blogspot.gr" target="_blank" class='btn btn-primary  blog-btn'>Blog</a>
     </div>
     <section class='col-md-8 details '>
