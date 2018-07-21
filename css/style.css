@@ -416,15 +416,16 @@ footer p {
 
 footer {
     color: var(--main-title-color);
-    background-color: var(--base-color);
+    background-color: #1f1b3e;
     padding-bottom: 20px;
+    box-shadow: 0px 0px 1.5px white;
     /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(rgb(55, 140, 233), rgba(5, 71, 146, 0.82));
+    /* background: -webkit-linear-gradient(rgb(55, 140, 233), rgba(5, 71, 146, 0.82)); */
     /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(rgb(rgb(55, 140, 233), rgba(5, 71, 146, 0.82));
+    /* background: -o-linear-gradient(rgb(rgb(55, 140, 233), rgba(5, 71, 146, 0.82)); */
     /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(rgb(rgb(55, 140, 233), rgba(5, 71, 146, 0.82));
+    /* background: -moz-linear-gradient(rgb(rgb(55, 140, 233), rgba(5, 71, 146, 0.82)); */
     /* For Firefox 3.6 to 15 */
-    background: linear-gradient(rgb(rgb(55, 140, 233), rgba(5, 71, 146, 0.82));
+    /* background: linear-gradient(rgb(rgb(55, 140, 233), rgba(5, 71, 146, 0.82)); */
     /* Standard syntax */
 }
