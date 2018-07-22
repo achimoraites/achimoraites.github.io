@@ -26,7 +26,7 @@ a.navbar-brand {
     animation-duration: 1s;
     /* stay at the animation color */
     animation-fill-mode: forwards;
-    color: white;
+    color: rgb(199, 216, 42);
     transform: scale(1.1);
 }
 
