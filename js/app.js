@@ -14,7 +14,7 @@ app.config(function($routeProvider) {
     controller: 'projectsCtrl'
   })
   .when('/projects',{
-    templateUrl: '/partials/projects.html'
+    templateUrl: '/partials/projects.1.html'
   })
   .when('/contact', {
     templateUrl: '/partials/contact.html'

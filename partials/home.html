@@ -1,17 +1,21 @@
 
-<main>
-  <div ng-controller='bloggerCtrl'>
 
-    <div class="row text-center blog-box">
+ 
+
+    <div class="row text-center blog-box" ng-controller='bloggerCtrl'>
+
       <h2 class="blog-title">My Latest Articles</h2>
       <hr style="border: 1px solid var(--base-color)" hr>
       
       <div ng-repeat="post in posts" ng-if="$index < 6">
         <div class="clearfix" ng-if="$index % 3 == 0"></div>
         <article class="col-md-4 post">
-          <a ng-href={{post.url}} alt={{post.title}} target="_blank">
-            <section>
+          <header>
               <h3 class="blog-text">{{post.title}}</h3>
+          </header>
+          <a ng-href={{post.url}} alt={{post.title}} target="_blank">
+            
+              
               <p  class="blog-article-preview read_time" ><i class="fa fa-clock-o" aria-hidden="true"></i> {{post.content | getTimeEstimate}} read</p>
 
 
@@ -20,19 +24,17 @@
               <div ng-bind-html="post.content | getImgUrl">
                 {{post.content}}
               </div>
-            </section>
+        
             
 
-            <p>
-
-            </p>
+           
           </a>
 
         </article>
 
       </div>
     </div>
-  </div>
+  
 
 
 
@@ -69,4 +71,3 @@
   </article>
 
 
-</main>
