@@ -7,6 +7,14 @@
         font-size: 4em;
         padding-top: 8px;
     }
+    .about-me h2 {
+        font-size: 1.6em;
+    }
+    h2.blog-title{
+        font-size: 2em;
+    }
+      
+    
     .exp-box {
         margin: 50px 5px;
     }
@@ -145,6 +153,10 @@
     article.certs.well img {
 
         width: 20vw;
+    }
+    .contact h2 {
+        font-size: 2.5em;
+        font-weight: 600;
     }
 }
 

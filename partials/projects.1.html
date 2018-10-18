@@ -1,0 +1,23 @@
+<main ng-controller='projectsCtrl'>
+  <!--This allows for better onganization  -->
+
+  <section id="projects" class="row">
+    <header>
+      <h2 class="blog-title">Projects</h2>
+    </header>
+    <div ng-repeat="project in myProjects">
+      <div class="clearfix" ng-if="$index % 3 == 0"></div>
+      <article>
+        <header>
+          <h3>{{project.name}}</h3>
+        </header>
+      </article>
+
+
+
+
+
+    </div>
+  </section>
+
+</main>

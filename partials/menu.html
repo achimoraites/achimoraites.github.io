@@ -1,6 +1,6 @@
 
   <!-- Navbar content -->
-  <div class="container-fluid">
+  <div class="container-fluid" ng-controller="scrollCtrl">
       <div class="navbar-header">
         <button id="nav-button" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
           <span class="icon-bar"></span>
@@ -11,10 +11,10 @@
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="#!/home">Home</a></li>
-          <li><a href="#!/projects">Projects</a></li>
-          <li><a href="#!/cv">CV</a></li>
-          <li><a href="#!/contact">Contact</a></li>
+          <li class="active" ><a href="#!/home" ng-click="goToTop()">Home</a></li>
+          <li><a href="#!/projects" ng-click="goToTop()">Projects</a></li>
+          <li><a href="#!/cv" ng-click="goToTop()">CV</a></li>
+          <li><a href="#!/contact" ng-click="goToTop()">Contact</a></li>
         </ul>
 
       </div>

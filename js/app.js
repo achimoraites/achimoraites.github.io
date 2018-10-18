@@ -58,7 +58,7 @@ $scope.myProjects = [
   {
     name: "TwitchTV App",
     img : 'https://raw.githubusercontent.com/Cyb3rN4u7/TwitchTV-Angular-App/master/app/img/project-status.png',
-    description: 'A Free Code Camp project , this app gets information from TwitchTV and displays them back to user.',
+    description: 'A Free Code Camp project , this app gets information from TwitchTV and displays it back to user.',
     skills : ' Angular , TwitchTV ',
     url: 'https://cyb3rn4u7.github.io/TwitchTV-Angular-App/app/'
 
@@ -130,6 +130,24 @@ $scope.numLimit = 3;
 
 
 }]);
+
+app.controller('scrollCtrl', ['$scope', '$location', '$anchorScroll',
+function($scope, $location, $anchorScroll) {
+  $scope.goToTop= function() {
+    // set the location.hash to the id of
+    // the element you wish to scroll to.
+    $location.hash('top');
+  
+
+
+    // call $anchorScroll()
+    $anchorScroll();
+  };
+}]);
+
+  
+  
+  
 
 app.factory('bloggerApi', ['$http', function bloggerApiFactory($http) {
         var apiUrl = 'https://www.googleapis.com/blogger/v3/blogs/7900380589360458141/posts?key=AIzaSyDJZx2Tx3kW65FrvjXonMRSmNap4z7Rw-o&callback=JSON_CALLBACK';

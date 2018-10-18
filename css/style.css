@@ -10,27 +10,22 @@
     
 
     /* Nav bar */
-    --nav-font-color: #3f9ae8;
+    --nav-font-color: #ffffff;
     --nav-bg-color: #1f1b3e;
  
 }
 body p{
     font-family: 'Montserrat', sans-serif; 
-    
+    transition: all 0.2s;
+}
+
+body{
+    scroll-behavior: smooth;
 }
 
 .intro-box {
     padding-bottom: 100px;
-    background: var(--base-color),#073865;
-    /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(var(--base-color-tint), var(--base-color));
-    /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(var(--base-color-tint), var(--base-color));
-    /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(var(--base-color-tint), var(--base-color));
-    /* For Firefox 3.6 to 15 */
-    background: linear-gradient(var(--base-color-tint), var(--base-color));
-    /* Standard syntax */
+    background:  #083967;
     padding-top: 100px;
     margin-top: -20px;
 }
@@ -43,6 +38,7 @@ body p{
 
 h1,h2,h3{
     color:var(--base-color);
+    
 }
 
 .about-me-title {
@@ -58,6 +54,8 @@ h1,h2,h3{
     color: var(--main-title-color);
     font-size: 2.5em;
 }
+
+
 
 .wrapper-box {
     padding-bottom: 50px;
@@ -116,9 +114,6 @@ article.skill-box{
     background-color: orange;
 }
 
-.social-box {
-    padding-top: 80px;
-}
 
 .btn-circle {
     width: 80px;
@@ -178,7 +173,6 @@ article.project-box h2{
 }
 
 .contact h2 {
-    font-size: 2.5em;
     font-weight: 600;
 }
 
@@ -403,6 +397,8 @@ article.col-md-4.post{
     padding-bottom: 2em;
 }
 
+
+
 footer p {
     padding-top: 20px;
     font-size: 2em;
@@ -410,15 +406,16 @@ footer p {
 
 footer {
     color: var(--main-title-color);
-    background-color: var(--base-color);
-    padding-bottom: 20px;
+    background-color: #1f1b3e;
+    padding: 2.5em 0 1em;
+    box-shadow: 0px 0px 1.5px white;
     /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(rgb(55, 140, 233), rgba(5, 71, 146, 0.82));
+    /* background: -webkit-linear-gradient(rgb(55, 140, 233), rgba(5, 71, 146, 0.82)); */
     /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(rgb(rgb(55, 140, 233), rgba(5, 71, 146, 0.82));
+    /* background: -o-linear-gradient(rgb(rgb(55, 140, 233), rgba(5, 71, 146, 0.82)); */
     /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(rgb(rgb(55, 140, 233), rgba(5, 71, 146, 0.82));
+    /* background: -moz-linear-gradient(rgb(rgb(55, 140, 233), rgba(5, 71, 146, 0.82)); */
     /* For Firefox 3.6 to 15 */
-    background: linear-gradient(rgb(rgb(55, 140, 233), rgba(5, 71, 146, 0.82));
+    /* background: linear-gradient(rgb(rgb(55, 140, 233), rgba(5, 71, 146, 0.82)); */
     /* Standard syntax */
 }
