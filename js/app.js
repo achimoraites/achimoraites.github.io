@@ -41,7 +41,7 @@ $scope.myProjects = [
  },
    {
     name: "Music Master (Course)",
-    img : 'https://raw.githubusercontent.com/Cyb3rN4u7/Cyb3rN4u7.github.io/master/img/projects/basketball_tracker_app.png',
+    img : 'https://raw.githubusercontent.com/Cyb3rN4u7/Cyb3rN4u7.github.io/master/img/projects/Music_Master.png',
     description: 'React app that uses the Spotify api to search artists and play songs',
     skills : ' React, JavaScript, Spotify API, HTML/CSS ',
     url: '#'
