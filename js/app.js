@@ -40,11 +40,11 @@ $scope.myProjects = [
 
  },
    {
-    name: "Tracking App",
+    name: "Music Master (Course)",
     img : 'https://raw.githubusercontent.com/Cyb3rN4u7/Cyb3rN4u7.github.io/master/img/projects/basketball_tracker_app.png',
-    description: 'An android app to track of a basketball game',
-    skills : ' Android , Java , XML ',
-    url: 'https://cyb3rn4u7.github.io/ScoreTrackerApp/'
+    description: 'React app that uses the Spotify api to search artists and play songs',
+    skills : ' React, JavaScript, Spotify API, HTML/CSS ',
+    url: '#'
 
   },
  {
