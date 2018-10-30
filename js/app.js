@@ -78,30 +78,6 @@ $scope.myProjects = [
     skills : ' Angular, Wikipedia Api ',
     url: 'https://codepen.io/achimoraites/full/dNvjJN/'
 
-  },
-  {
-    name: "A Portfolio Template",
-    img : '/img/projects/portfolio-template1.png',
-    description: 'Simple Portfolio template ',
-    skills : ' jQuery, CSS3 ',
-    url: 'https://codepen.io/achimoraites/full/jVgdZQ/'
-
-  },
-  {
-    name: "Quote Machine",
-    img : '/img/projects/radom_quote_machine.png',
-    description: 'Simple radom quote machine',
-    skills : ' JQuery, Json, Twitter ',
-    url: 'https://codepen.io/achimoraites/full/VPeGZe'
-
-  },
-  {
-    name: "Bootable USB Creator",
-    img : '/img/projects/bootable-usb-creator.jpg',
-    description: 'Create bootable usb drives fast and easy !',
-    skills : ' Software Dev , AutoIT , Automation ',
-    url: 'http://www.mediafire.com/file/ejpo73wjie91k3n/USB+Creator.zip'
-
   }
 ];
 
