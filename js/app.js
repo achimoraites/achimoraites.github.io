@@ -74,7 +74,7 @@ $scope.myProjects = [
   {
     name: "Wikipedia Viewer",
     img : '/img/projects/wikipedia-viewer.png',
-    description: 'Simple Wikipedia Viewer',
+    description: 'Simple Wikipedia Viewer, allows the user to search and view articles',
     skills : ' Angular, Wikipedia Api ',
     url: 'https://codepen.io/achimoraites/full/dNvjJN/'
 
