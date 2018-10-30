@@ -40,7 +40,7 @@ $scope.myProjects = [
 
  },
    {
-    name: "Music Master (Course)",
+    name: "Music Master ",
     img : 'https://raw.githubusercontent.com/Cyb3rN4u7/Cyb3rN4u7.github.io/master/img/projects/Music_Master.png',
     description: 'React app that uses the Spotify api to search artists and play songs',
     skills : ' React, JavaScript, Spotify API, HTML/CSS ',
@@ -48,11 +48,11 @@ $scope.myProjects = [
 
   },
  {
-    name: "Weather App",
-    img : 'https://raw.githubusercontent.com/Cyb3rN4u7/Open-Weather-Map-Angular-App/master/app/img/weather-app-main.png',
-    description: 'A weather forecast Application',
-    skills : ' Angular , GoogleMaps api , Open Weather Map api ',
-    url: 'https://cyb3rn4u7.github.io/Open-Weather-Map-Angular-App/'
+    name: "Personality Test",
+    img : 'https://raw.githubusercontent.com/Cyb3rN4u7/Cyb3rN4u7.github.io/master/img/projects/personalityTest.png',
+    description: 'Application for taking a color personality test made with JQuery, bootstrap and Django in the Back-end. ',
+    skills : ' JavaScript, JQuery UI, Bootstrap, Django ',
+    url: 'https://afternoon-headland-41285.herokuapp.com/'
 
   },
   {
