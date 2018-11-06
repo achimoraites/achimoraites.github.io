@@ -4,9 +4,9 @@
   <main id="projects" class="row">
     <section>
       <header>
-          <h2 class="blog-title">Projects</h2>
+        <h2 class="blog-title">Projects</h2>
       </header>
-      
+
       <hr style="border: 1px solid var(--base-color)" hr>
 
       <div ng-repeat="project in myProjects">
@@ -18,7 +18,19 @@
           </header>
 
           <p class="text-muted">{{project.description}}</p>
-          <img class="img-responsive center-block" ng-src={{project.img}} />
+          <img id={{$index}} class="img-responsive center-block myImg" ng-src={{project.img}}
+          ng-click = "toggleModal('modal'+$index)"
+          />
+          <!-- The Modal -->
+
+          <div id={{'modal'+$index}} class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id={{'img'+$index}} ng-src={{project.img}}
+            ng-click = "closeModal('modal'+$index)"
+            >
+            <div id="caption"></div>
+          </div>
+
           </br>
           <p class='text-muted'>{{project.skills}}
             <i class="fa fa-tags" aria-hidden="true"></i>
