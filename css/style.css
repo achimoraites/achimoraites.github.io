@@ -452,6 +452,7 @@ footer {
     display: block;
     width: 80% !important;
     max-width: 700px;
+    padding: 3px !important;
 }
 .modal-content:hover{
     transform: scale(1) !important;
@@ -511,5 +512,6 @@ footer {
 @media only screen and (max-width: 700px){
     .modal-content {
         width: 100% !important;
+        padding: 1px !important;
     }
 }
