@@ -44,7 +44,7 @@ app.controller('projectsCtrl', ['$scope', function ($scope) {
   $scope.myProjects = [{
       name: "QR Code Scanner",
       img: 'https://raw.githubusercontent.com/Cyb3rN4u7/Cyb3rN4u7.github.io/master/img/projects/qrCodeScanner.png',
-      description: 'An android app to scan QR Codes',
+      description: 'An android app for scanning QR Codes. After scanning the user can use the information in the code : Contacts, emails, maps, products and more.',
       skills: ' Android , Java , XML , zxing ',
       url: 'https://play.google.com/store/apps/details?id=io.github.cyb3rn4u7.qrcodescanner'
 
