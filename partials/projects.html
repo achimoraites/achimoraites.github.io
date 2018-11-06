@@ -24,9 +24,8 @@
           <!-- The Modal -->
 
           <div id={{'modal'+$index}} class="modal">
-            <span class="close">&times;</span>
+            <span ng-click = "closeModal('modal'+$index)" class="close">&times;</span>
             <img class="modal-content" id={{'img'+$index}} ng-src={{project.img}}
-            ng-click = "closeModal('modal'+$index)"
             >
             <div id="caption"></div>
           </div>
