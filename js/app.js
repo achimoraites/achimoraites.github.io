@@ -52,7 +52,7 @@ app.controller('projectsCtrl', ['$scope', function ($scope) {
     {
       name: "Music Master ",
       img: 'https://raw.githubusercontent.com/Cyb3rN4u7/Cyb3rN4u7.github.io/master/img/projects/Music_Master.png',
-      description: 'React app that uses the Spotify api to search artists and play songs',
+      description: 'React app that uses the Spotify api to search artists, play songs & recommend Artists based on the user preferences.',
       skills: ' React, JavaScript, Spotify API, HTML/CSS ',
       url: '#'
 
