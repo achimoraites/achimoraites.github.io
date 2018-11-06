@@ -451,7 +451,7 @@ footer {
     margin: auto;
     display: block;
     width: 80% !important;
-    max-width: 700px;
+    max-width: 1024px;
     padding: 3px !important;
 }
 .modal-content:hover{
