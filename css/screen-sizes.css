@@ -13,6 +13,10 @@
     h2.blog-title{
         font-size: 2em;
     }
+
+    .about-me {
+        margin-top: 40vh !important;
+    }
       
     
     .exp-box {

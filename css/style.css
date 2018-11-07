@@ -27,15 +27,12 @@ body {
 .intro-box {
     padding-bottom: 100px;
     background: #211126;
-    padding-top: 100px;
-    margin-top: -20px;
     height: 100vh;
 }
 
 .about-me h1 {
     font-size: 8em;
     color: var(--main-title-color);
-    padding-top: 25vh;
 
 }
 
@@ -60,6 +57,9 @@ h3 {
     font-size: 2.5em;
 }
 
+.about-me {
+    margin-top: 30vh;
+}
 
 
 .wrapper-box {
