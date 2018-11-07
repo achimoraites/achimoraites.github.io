@@ -1,44 +1,49 @@
 /* HOME SECTION and INDEX */
 
-:root{
+:root {
     /* Base colors and shadows */
-    --base-color:  rgb(5, 54, 100);
+    --base-color: rgb(5, 54, 100);
     --base-shadow: #000;
-    --main-title-color:rgb(255, 255, 255);
+    --main-title-color: rgb(255, 255, 255);
     --support-color: rgb(180, 7, 7);
     --base-color-tint: rgba(8, 114, 228, 0.1);
-    
+
 
     /* Nav bar */
     --nav-font-color: #ffffff;
     --nav-bg-color: #1f1b3e;
- 
+
 }
-body p{
-    font-family: 'Montserrat', sans-serif; 
+
+body p {
+    font-family: 'Montserrat', sans-serif;
     transition: all 0.2s;
 }
 
-body{
+body {
     scroll-behavior: smooth;
 }
 
 .intro-box {
     padding-bottom: 100px;
-    background:  #083967;
+    background: #211126;
     padding-top: 100px;
     margin-top: -20px;
+    height: 100vh;
 }
 
 .about-me h1 {
     font-size: 8em;
     color: var(--main-title-color);
-    padding-top: 100px;
+    padding-top: 25vh;
+
 }
 
-h1,h2,h3{
-    color:var(--base-color);
-    
+h1,
+h2,
+h3 {
+    color: var(--base-color);
+
 }
 
 .about-me-title {
@@ -59,8 +64,8 @@ h1,h2,h3{
 
 .wrapper-box {
     padding-bottom: 50px;
-    background: linear-gradient(#073865,#368ae5),#073865;
-  
+    background: linear-gradient(#073865, #368ae5), #073865;
+
 }
 
 .wrapper-box h1 {
@@ -75,7 +80,8 @@ h1,h2,h3{
 .details {
     padding-top: 20px;
 }
-section.details>h3{
+
+section.details>h3 {
     font-size: 2.3em;
 }
 
@@ -95,11 +101,15 @@ section.details>h3{
     border-radius: 0px;
 
 }
-article.skill-box{
+
+article.skill-box {
     box-shadow: 0px 1px 5px;
 }
 
-.skill-btn, .skill-btn2, .project-btn , .blog-btn {
+.skill-btn,
+.skill-btn2,
+.project-btn,
+.blog-btn {
     font-size: 2em;
     background-color: #3789e4;
     margin: 5px 8px;
@@ -134,18 +144,18 @@ article.skill-box{
 
 .project-box {
     margin-top: 50px;
-   
+
 }
 
-article.project-box h2{
+article.project-box h2 {
     margin: 0em 0em 0.5em;
     color: var(--base-color);
 }
 
 
 
-#projects img{
- 
+#projects img {
+
     margin-bottom: 20px;
 }
 
@@ -155,9 +165,10 @@ article.project-box h2{
 .project-btn {
     margin: 20px 0px 20px;
     background-color: orangered;
-    
+
 }
-#projects{
+
+#projects {
     background-color: white;
     margin: 3.5em;
     padding: 2em;
@@ -204,7 +215,10 @@ form {
     border-radius: 0px;
 }
 
-#msg, #name, #phone, #email {
+#msg,
+#name,
+#phone,
+#email {
     color: black;
 }
 
@@ -224,7 +238,7 @@ form {
 
 /* CV */
 
-#intro{
+#intro {
     color: var(--base-color);
 }
 
@@ -233,9 +247,9 @@ form {
     background-color: white;
 }
 
-.cv-intro img{
-margin-bottom: 30px;
-width: 50vw;
+.cv-intro img {
+    margin-bottom: 30px;
+    width: 50vw;
 }
 
 p.date {
@@ -249,12 +263,13 @@ p.date {
     margin: 150px 0px 0px 150px;
 }
 
-article h2, h2.exp-section {
+article h2,
+h2.exp-section {
     font-size: 2.9em;
     font-weight: 600;
     margin-bottom: 1em;
     color: white;
-    
+
 }
 
 
@@ -264,7 +279,10 @@ article h2, h2.exp-section {
     padding-bottom: 40px;
 }
 
-.exp-circle, .work-circle, .certs-circle, .skills-circle {
+.exp-circle,
+.work-circle,
+.certs-circle,
+.skills-circle {
     margin: 0px -42px;
     border: 5px solid black;
     width: 80px;
@@ -289,7 +307,7 @@ article h2, h2.exp-section {
 
 .certs-circle {
     background-color: var(--base-color);
-    color:yellow;
+    color: yellow;
 }
 
 .skills-circle {
@@ -301,7 +319,11 @@ article h2, h2.exp-section {
     margin-top: -92px;
 }
 
-.school, .work, .certs, .skills, .exp {
+.school,
+.work,
+.certs,
+.skills,
+.exp {
     margin: 10px 110px 120px 30px;
     background-color: aquamarine;
     box-shadow: 0px 1px 5px black;
@@ -316,7 +338,8 @@ article h2, h2.exp-section {
     background-color: #3684db;
     color: white;
 }
-.work-title{
+
+.work-title {
     color: white;
 }
 
@@ -324,12 +347,15 @@ article h2, h2.exp-section {
     background-color: var(--base-color);
     color: yellow;
 }
-article.certs h3{
+
+article.certs h3 {
     color: yellow;
 }
-article.certs.well img{
+
+article.certs.well img {
     background-color: white;
 }
+
 .skills {
     background-color: black;
     color: white;
@@ -343,35 +369,39 @@ a:hover {
 /* CV END*/
 
 /*  Blog  */
-.read_time{
+.read_time {
     font-weight: 500;
     font-style: italic;
     color: #637207 !important;
 }
 
 
-.blog-img{
+.blog-img {
 
-  margin-bottom: 1em;
+    margin-bottom: 1em;
 }
-.blog-text{
-  margin-top: 32px;
-  text-decoration: none;
-  color: var(--base-color);
-  font-weight: bold;
+
+.blog-text {
+    margin-top: 32px;
+    text-decoration: none;
+    color: var(--base-color);
+    font-weight: bold;
 
 }
-h3.blog-text{
+
+h3.blog-text {
     font-size: 2.5em;
 }
-.blog-title{
-  font-size: 3.8em;
-  font-weight: bold;
-  color: var(--base-color);
+
+.blog-title {
+    font-size: 3.8em;
+    font-weight: bold;
+    color: var(--base-color);
 }
 
-.blog-box, .contact {
-  
+.blog-box,
+.contact {
+
     border-radius: 0px;
     box-shadow: 0px 1px 5px;
     background-color: white;
@@ -379,20 +409,20 @@ h3.blog-text{
     padding: 2.4em 2.4em 5em;
 }
 
-.blog-article-preview{
-  font-size: 1.2em !important;
-  color: #186ec0;
-  line-height: 1.7em;
-  margin: 1em 0em 3em;
-  font-weight: 600;
-  font-family: monospace;
+.blog-article-preview {
+    font-size: 1.2em !important;
+    color: #186ec0;
+    line-height: 1.7em;
+    margin: 1em 0em 3em;
+    font-weight: 600;
+    font-family: monospace;
 }
 
-.blog-box img:hover{
+.blog-box img:hover {
     transform: scale(1.1);
 }
 
-article.col-md-4.post{
+article.col-md-4.post {
     margin-top: 2em;
     padding-bottom: 2em;
 }
@@ -429,21 +459,32 @@ footer {
     transition: 0.3s;
 }
 
-.myImg:hover {opacity: 0.7;}
+.myImg:hover {
+    opacity: 0.7;
+}
 
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1050 !important; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1050 !important;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.95); /* Black w/ opacity */ 
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.95);
+    /* Black w/ opacity */
 }
 
 /* Modal Content (image) */
@@ -454,7 +495,8 @@ footer {
     max-width: 1024px;
     padding: 3px !important;
 }
-.modal-content:hover{
+
+.modal-content:hover {
     transform: scale(1) !important;
 }
 
@@ -472,7 +514,7 @@ footer {
 }
 
 /* Add Animation */
-.modal-content {    
+.modal-content {
     -webkit-animation-name: zoom;
     -webkit-animation-duration: 0.6s;
     animation-name: zoom;
@@ -480,13 +522,23 @@ footer {
 }
 
 @-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)} 
-    to {-webkit-transform:scale(1)}
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
 }
 
 @keyframes zoom {
-    from {transform:scale(0)} 
-    to {transform:scale(1)}
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
 }
 
 /* The Close Button */
@@ -509,7 +561,7 @@ footer {
 }
 
 /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 700px) {
     .modal-content {
         width: 100% !important;
         padding: 1px !important;
