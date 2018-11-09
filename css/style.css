@@ -240,7 +240,7 @@ form {
 /* CV */
 
 #intro {
-    color: var(--base-color);
+    color: #c6fa2f;
 }
 
 .btn-collection {
@@ -252,7 +252,8 @@ form {
 
 .cv-intro {
     margin-top: 50px;
-    background-color: white;
+    background-color: #211126;
+    color: aliceblue;
 }
 
 .cv-intro img {
