@@ -242,6 +242,13 @@ form {
     color: var(--base-color);
 }
 
+.btn-collection {
+    top: 10em;
+    position: fixed;
+    right: 2em;
+    left: 6em;
+}
+
 .cv-intro {
     margin-top: 50px;
     background-color: white;
