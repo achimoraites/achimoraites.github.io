@@ -19,7 +19,7 @@
               <p  class="blog-article-preview read_time" ><i class="fa fa-clock-o" aria-hidden="true"></i> {{post.content | getTimeEstimate}} read</p>
 
 
-              <p style="float:left" class="blog-article-preview text-left" ng-bind-html="post.content  | limitt"></p>
+              <p style="float:left" class="blog-article-preview text-left" ng-bind-html="post.content  | htmlToPlaintext |limitContent | dotsInTheEnd"></p>
 
               <div ng-bind-html="post.content | getImgUrl">
                 {{post.content}}
