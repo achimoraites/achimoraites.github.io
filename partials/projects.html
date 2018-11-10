@@ -14,10 +14,10 @@
 
         <article class="col-md-4 project-box">
           <header>
-            <h2>{{project.name}}</h2>
+            <h2>{{::project.name}}</h2>
           </header>
 
-          <p class="text-muted">{{project.description}}</p>
+          <p class="text-muted">{{::project.description}}</p>
           <img id={{$index}} class="img-responsive center-block myImg" ng-src={{project.img}}
           ng-click = "toggleModal('modal'+$index)"
           />
@@ -27,14 +27,14 @@
             <span ng-click = "closeModal('modal'+$index)" class="close">&times;</span>
             <img class="modal-content" id={{'img'+$index}} ng-src={{project.img}}
             >
-            <div class="caption">{{project.description}}</div>
+            <div class="caption">{{::project.description}}</div>
           </div>
 
           </br>
-          <p class='text-muted'>{{project.skills}}
+          <p class='text-muted'>{{::project.skills}}
             <i class="fa fa-tags" aria-hidden="true"></i>
           </p>
-          <a class='btn btn-primary project-btn' ng-href={{project.url}}>Visit {{project.name}}</a>
+          <a class='btn btn-primary project-btn' ng-href={{project.url}}>Visit {{::project.name}}</a>
         </article>
       </div>
 
