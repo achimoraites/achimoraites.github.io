@@ -3,12 +3,12 @@ var app = angular.module('myApp', ['ngRoute', 'ngSanitize']);
 
 
 app.config(['$locationProvider',
-  function ($locationProvider) {
+     $locationProvider => {
     $locationProvider.hashPrefix('!');
   }
 ]);
 
-app.config(function ($routeProvider) {
+app.config($routeProvider => {
 
   $routeProvider.when('/home', {
       templateUrl: '/partials/home.html',
@@ -30,12 +30,12 @@ if (window.location.hash === '#_=_') window.location.hash = '#!';
 // controllers
 app.controller('projectsCtrl', ['$scope', function ($scope) {
 
-  $scope.toggleModal = function (modalId) {
+  $scope.toggleModal = modalId => {
     const modal = document.getElementById(modalId);
     modal.style.display = "block";
 
   }
-  $scope.closeModal = function(modalId){
+  $scope.closeModal = modalId => {
     const modal = document.getElementById(modalId);
     modal.style.display = "none";
   }
@@ -101,36 +101,23 @@ app.controller('projectsCtrl', ['$scope', function ($scope) {
 app.controller('bloggerCtrl', ['$scope', 'bloggerApi', '$timeout', '$sce', function ($scope, bloggerApi, $timeout, $sce) {
   $scope.numLimit = 3;
 
-
-
-
-
-  bloggerApi.getBlogPosts()
-    .then(function (result) {
-      console.log('res',result);
+ bloggerApi.getBlogPosts()
+    .then(result => {
       const items = result.data.items;
-      console.log(items);
       $scope.posts = items;
       $scope.content = items.content;
-
     })
-    .catch(function (error, status) {
+    .catch((error, status) => {
       $scope.error = 'Status : ' + status + ' Something went wrong!';
     });
-
-
-
 }]);
 
 app.controller('scrollCtrl', ['$scope', '$location', '$anchorScroll',
   function ($scope, $location, $anchorScroll) {
-    $scope.goToTop = function () {
+    $scope.goToTop =  () => {
       // set the location.hash to the id of
       // the element you wish to scroll to.
       $location.hash('top');
-
-
-
       // call $anchorScroll()
       $anchorScroll();
     };
@@ -138,64 +125,54 @@ app.controller('scrollCtrl', ['$scope', '$location', '$anchorScroll',
 ]);
 
 
-
-
-
 app.service('bloggerApi', ['$http','$sce', function bloggerApiService($http,$sce) {
   const apiUrl = 'https://www.googleapis.com/blogger/v3/blogs/7900380589360458141/posts?key=AIzaSyDJZx2Tx3kW65FrvjXonMRSmNap4z7Rw-o';
   const trustedUrl = $sce.trustAsResourceUrl(apiUrl);
   return {
-
-    getBlogPosts: function () {
-
+    getBlogPosts:  () => {
       return $http.jsonp(trustedUrl,{jsonpCallbackParam: 'callback'});
     }
-
   };
-
-
 }]);
-app.filter('htmlToPlaintext', function () {
-  return function (text) {
+app.filter('htmlToPlaintext',() => {
+  return text => {
     return text ? String(text).replace(/<[^>]+>/gm, '') : '';
   };
 });
-app.filter('getTimeEstimate', function () {
-  return function (text) {
+app.filter('getTimeEstimate', () => {
+  return  text => {
     // remove html characters
-    var content = text ? String(text).replace(/<[^>]+>/gm, '') : '';
+    const content = text ? String(text).replace(/<[^>]+>/gm, '') : '';
     // get the number of words
-    var words = content.split(" ").length;
+    const words = content.split(" ").length;
     // get the number of minutes assuming 
-    //reading speed 1min for every 100 words
-    var mins = Math.round(words / 100);
+    // reading speed 1min for every 100 words
+    const mins = Math.round(words / 100);
     // return the estimate
-    return mins + " mins ";
+    return `${mins} mins `;
   };
 });
-app.filter('limitContent', function () {
-  return function (text) {
-
+app.filter('limitContent',() => {
+  return text => {
     // get the words from the text
-    var words = text.split(" ");
+    const words = text.split(" ");
     // get a number of them 
-    var content = words.slice(0, 40);
+    const content = words.slice(0, 40);
     // return the new content
     return content.join(" ");
   };
 });
-app.filter('dotsInTheEnd', function () {
-  return function (text) {
-    // simply add ... in the end
-    return text + "...";
+app.filter('dotsInTheEnd',() => {
+  return  text => {
+    return `${text} ...`;
   };
 });
-app.filter('getImgUrl', function () {
-  return function (text) {
+app.filter('getImgUrl',() => {
+  return text => {
     // locate the 1st image src in the text
-    var regex = new RegExp('src="https?:\/\/.*\.(?:png|jpg|gif)"');
-    var imgSrc = String(regex.exec(text));
+    const regex = new RegExp('src="https?:\/\/.*\.(?:png|jpg|gif)"');
+    const imgSrc = String(regex.exec(text));
     // return the image in html tag for usage
-    return "<img class='img-responsive center-block' " + imgSrc + "/>";
+    return `<img class='img-responsive center-block' ${imgSrc} />`;
   };
 });
