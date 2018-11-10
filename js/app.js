@@ -39,6 +39,7 @@ app.controller('projectsCtrl', ['$scope', function ($scope) {
     modal.style.display = "none";
   }
   $scope.myProjects = [{
+      id: 0,
       name: "QR Code Scanner",
       img: 'https://raw.githubusercontent.com/Cyb3rN4u7/Cyb3rN4u7.github.io/master/img/projects/qrCodeScanner.png',
       description: 'An android app for scanning QR Codes. After scanning the user can use the information in the code : Contacts, emails, maps, products and more.',
@@ -47,6 +48,7 @@ app.controller('projectsCtrl', ['$scope', function ($scope) {
 
     },
     {
+      id: 1,
       name: "Music Master ",
       img: 'https://raw.githubusercontent.com/Cyb3rN4u7/Cyb3rN4u7.github.io/master/img/projects/Music_Master.png',
       description: 'React app that uses the Spotify api to search artists, play songs & recommend Artists based on the user preferences.',
@@ -55,6 +57,7 @@ app.controller('projectsCtrl', ['$scope', function ($scope) {
 
     },
     {
+      id: 2,
       name: "Personality Test",
       img: 'https://raw.githubusercontent.com/Cyb3rN4u7/Cyb3rN4u7.github.io/master/img/projects/personalityTest.png',
       description: 'Application for taking a color personality test made with JQuery, bootstrap and Django in the Back-end. ',
@@ -63,6 +66,7 @@ app.controller('projectsCtrl', ['$scope', function ($scope) {
 
     },
     {
+      id: 3,
       name: "TwitchTV App",
       img: 'https://raw.githubusercontent.com/Cyb3rN4u7/TwitchTV-Angular-App/master/app/img/project-status.png',
       description: 'A Free Code Camp project , this app gets information from TwitchTV and displays it back to user.',
@@ -71,6 +75,7 @@ app.controller('projectsCtrl', ['$scope', function ($scope) {
 
     },
     {
+      id: 4,
       name: "Python Image Converter",
       img: 'https://raw.githubusercontent.com/Cyb3rN4u7/Python-Image-Converter/master/app/img/sample.png',
       description: 'Simple Python Image Converter for quick batch conversions of raw images to jpg',
@@ -79,6 +84,7 @@ app.controller('projectsCtrl', ['$scope', function ($scope) {
 
     },
     {
+      id: 5,
       name: "Wikipedia Viewer",
       img: '/img/projects/wikipedia-viewer.png',
       description: 'Simple Wikipedia Viewer, allows the user to search and view articles',
