@@ -1,3 +1,4 @@
+
 var app = angular.module('myApp', ['ngRoute', 'ngSanitize']);
 
 
@@ -105,15 +106,16 @@ app.controller('bloggerCtrl', ['$scope', 'bloggerApi', '$timeout', '$sce', funct
 
 
   bloggerApi.getBlogPosts()
-    .success(function (result) {
-      $scope.posts = result.items;
-      $scope.content = result.items.content;
-
+    .then(function (result) {
+      console.log('res',result);
+      const items = result.data.items;
+      console.log(items);
+      $scope.posts = items;
+      $scope.content = items.content;
 
     })
-    .error(function (error, status) {
+    .catch(function (error, status) {
       $scope.error = 'Status : ' + status + ' Something went wrong!';
-
     });
 
 
@@ -139,15 +141,14 @@ app.controller('scrollCtrl', ['$scope', '$location', '$anchorScroll',
 
 
 
-app.factory('bloggerApi', ['$http', function bloggerApiFactory($http) {
-  var apiUrl = 'https://www.googleapis.com/blogger/v3/blogs/7900380589360458141/posts?key=AIzaSyDJZx2Tx3kW65FrvjXonMRSmNap4z7Rw-o&callback=JSON_CALLBACK';
-
-
+app.service('bloggerApi', ['$http','$sce', function bloggerApiService($http,$sce) {
+  const apiUrl = 'https://www.googleapis.com/blogger/v3/blogs/7900380589360458141/posts?key=AIzaSyDJZx2Tx3kW65FrvjXonMRSmNap4z7Rw-o';
+  const trustedUrl = $sce.trustAsResourceUrl(apiUrl);
   return {
 
     getBlogPosts: function () {
 
-      return $http.jsonp(apiUrl);
+      return $http.jsonp(trustedUrl,{jsonpCallbackParam: 'callback'});
     }
 
   };
