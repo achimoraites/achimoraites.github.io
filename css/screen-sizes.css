@@ -18,10 +18,6 @@
         margin-top: 28vh !important;
     }
       
-    
-    .exp-box {
-        margin: 50px 5px;
-    }
     .school p,
     .work p,
     .certs p,
@@ -66,9 +62,7 @@
         font-size: 1em;
         padding: 10px;
     }
-    .exp-box {
-        margin: 50px 30px;
-    }
+   
     .school,
     .work,
     .certs,
@@ -136,13 +130,7 @@
         margin-top: 2em;
         margin-bottom: 1em;
     }
-    .cv-intro img {
-        margin: auto;
-        margin-bottom: 2em;
-    }
-    .exp-box{
-        margin-left: 0.5em;
-    }
+    
 }
 
 @media screen and (min-width: 992px) {

@@ -239,27 +239,7 @@ form {
 
 /* CV */
 
-#intro {
-    color: #c6fa2f;
-}
 
-.btn-collection {
-    top: 10em;
-    position: fixed;
-    right: 2em;
-    left: 6em;
-}
-
-.cv-intro {
-    margin-top: 50px;
-    background-color: #211126;
-    color: aliceblue;
-}
-
-.cv-intro img {
-    margin-bottom: 30px;
-    width: 50vw;
-}
 
 p.date {
     font-size: 1.5em;
@@ -267,108 +247,14 @@ p.date {
     text-align: right;
 }
 
-.exp-box {
-    border-left: 5px solid black;
-    margin: 150px 0px 0px 150px;
-}
 
-article h2,
-h2.exp-section {
+article h2 {
     font-size: 2.9em;
     font-weight: 600;
     margin-bottom: 1em;
     color: white;
-
 }
 
-
-
-.exp-box h3 {
-    font-size: 2.2em;
-    padding-bottom: 40px;
-}
-
-.exp-circle,
-.work-circle,
-.certs-circle,
-.skills-circle {
-    margin: 0px -42px;
-    border: 5px solid black;
-    width: 80px;
-    height: 80px;
-    text-align: center;
-    padding: 3px 0;
-    font-size: 2.6em;
-    line-height: 2.00;
-    border-radius: 50px;
-    color: rgb(255, 255, 255);
-}
-
-.exp-circle {
-    color: black;
-    background-color: aquamarine;
-}
-
-.work-circle {
-    background-color: #3684db;
-    text-shadow: 1px 1px 3px brown;
-}
-
-.certs-circle {
-    background-color: var(--base-color);
-    color: yellow;
-}
-
-.skills-circle {
-    background-color: black;
-}
-
-.exp-details {
-    padding-left: 80px;
-    margin-top: -92px;
-}
-
-.school,
-.work,
-.certs,
-.skills,
-.exp {
-    margin: 10px 110px 120px 30px;
-    background-color: aquamarine;
-    box-shadow: 0px 1px 5px black;
-}
-
-.exp {
-    background-color: aquamarine;
-    color: black;
-}
-
-.work {
-    background-color: #3684db;
-    color: white;
-}
-
-.work-title {
-    color: white;
-}
-
-.certs {
-    background-color: var(--base-color);
-    color: yellow;
-}
-
-article.certs h3 {
-    color: yellow;
-}
-
-article.certs.well img {
-    background-color: white;
-}
-
-.skills {
-    background-color: black;
-    color: white;
-}
 
 a:hover {
     text-decoration: none;
