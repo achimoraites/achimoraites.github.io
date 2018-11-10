@@ -46,6 +46,17 @@
 }
 
 @media screen and (max-width: 991px) {
+    #navbar{
+        background-color: #30165e;
+    }
+    .navbar-right {
+        margin-right: 0px !important;
+        font-size: 1em;
+        padding: 0.4em;
+    }
+    .navbar-brand {
+        margin-top: 0.4em;
+    }
     .skill {
         width: 60px;
     }
@@ -86,10 +97,11 @@
     .post,
     .project-box,
     .contact-box form {
-        background-color: #073861;
+        background-color: #031b2f;
         margin: -1em;
         margin-top: 4em;
         padding: 1.5em;
+        padding-bottom: 8em !important;
         border-radius: 3px;
         box-shadow: 0px 2px 4px;
         color: #000;
