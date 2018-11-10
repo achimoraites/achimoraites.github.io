@@ -53,7 +53,7 @@ h3 {
 
 
 .about-me h2 {
-    color: var(--main-title-color);
+    color: gold;
     font-size: 2.5em;
 }
 
@@ -64,7 +64,8 @@ h3 {
 
 .wrapper-box {
     padding-bottom: 50px;
-    background: linear-gradient(#073865, #368ae5), #073865;
+    /* background: linear-gradient(#073865, #368ae5), #073865; */
+    background-color: #4d495f;
 
 }
 
@@ -239,12 +240,20 @@ form {
 /* CV */
 
 #intro {
-    color: var(--base-color);
+    color: #c6fa2f;
+}
+
+.btn-collection {
+    top: 10em;
+    position: fixed;
+    right: 2em;
+    left: 6em;
 }
 
 .cv-intro {
     margin-top: 50px;
-    background-color: white;
+    background-color: #211126;
+    color: aliceblue;
 }
 
 .cv-intro img {

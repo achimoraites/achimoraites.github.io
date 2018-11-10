@@ -19,9 +19,6 @@ app.config(function ($routeProvider) {
     .when('/contact', {
       templateUrl: '/partials/contact.html'
     })
-    .when('/cv', {
-      templateUrl: '/partials/cv.html'
-    })
     .otherwise({
       redirectTo: '/home'
     });
