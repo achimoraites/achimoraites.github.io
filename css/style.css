@@ -55,6 +55,8 @@ h3 {
 .about-me h2 {
     color: gold;
     font-size: 2.5em;
+    font-family: monospace;
+    font-weight: bold;
 }
 
 .about-me {
