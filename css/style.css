@@ -81,7 +81,8 @@ h3 {
 }
 
 .details {
-    padding-top: 20px;
+    line-height: 3rem;
+    margin: 1rem auto;
 }
 
 section.details>h3 {
