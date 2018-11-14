@@ -22,7 +22,7 @@
           <picture id={{$index}} class="img-responsive center-block myImg lazyload" ng-click = "toggleModal('modal'+$index)">
             <source type="image/webp" data-ng-src={{project.imgWebp}}>
             <source type="image/png" data-ng-src={{project.img}}>
-              <img class="lazyload" data-ng-src={{project.img}} alt={{iproject.name}}">
+              <img class="lazyload" data-ng-src={{project.imgWebp}} alt={{project.name}}">
           </picture>
           <!-- The Modal -->
 
