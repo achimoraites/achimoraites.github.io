@@ -68,36 +68,6 @@ app.controller('projectsCtrl', ['$scope', function ($scope) {
       skills: ' JavaScript, JQuery UI, Bootstrap, Django ',
       url: 'https://afternoon-headland-41285.herokuapp.com/'
 
-    },
-    {
-      id: 3,
-      name: "TwitchTV App",
-      img: '/img/projects/twitch.png',
-      imgWebp: '/img/projects/twitch.webp',
-      description: 'A Free Code Camp project , this app gets information from TwitchTV and displays it back to user.',
-      skills: ' Angular , TwitchTV ',
-      url: 'https://cyb3rn4u7.github.io/TwitchTV-Angular-App/app/'
-
-    },
-    {
-      id: 4,
-      name: "Python Image Converter",
-      img: '/img/projects/sample.png',
-      imgWebp: '/img/projects/sample.webp',
-      description: 'Simple Python Image Converter for quick batch conversions of raw images to jpg',
-      skills: ' Python, Multithreaded, Console ',
-      url: 'https://cyb3rn4u7.github.io/Python-Image-Converter/'
-
-    },
-    {
-      id: 5,
-      name: "Wikipedia Viewer",
-      img: '/img/projects/wikipedia-viewer.png',
-      imgWebp: '/img/projects/wikipedia-viewer.webp',
-      description: 'Simple Wikipedia Viewer, allows the user to search and view articles',
-      skills: ' Angular, Wikipedia Api ',
-      url: 'https://codepen.io/achimoraites/full/dNvjJN/'
-
     }
   ];
 
