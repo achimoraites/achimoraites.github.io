@@ -72,8 +72,8 @@ app.controller('projectsCtrl', ['$scope', function ($scope) {
     {
       id: 3,
       name: "TwitchTV App",
-      img: 'https://raw.githubusercontent.com/Cyb3rN4u7/TwitchTV-Angular-App/master/app/img/project-status.png',
-      imgWebp: 'https://raw.githubusercontent.com/Cyb3rN4u7/TwitchTV-Angular-App/master/app/img/project-status.webp',
+      img: '/img/projects/twitch-tv.png',
+      imgWebp: '/img/projects/twitch-tv.webp',
       description: 'A Free Code Camp project , this app gets information from TwitchTV and displays it back to user.',
       skills: ' Angular , TwitchTV ',
       url: 'https://cyb3rn4u7.github.io/TwitchTV-Angular-App/app/'
@@ -83,7 +83,7 @@ app.controller('projectsCtrl', ['$scope', function ($scope) {
       id: 4,
       name: "Python Image Converter",
       img: 'https://raw.githubusercontent.com/Cyb3rN4u7/Python-Image-Converter/master/app/img/sample.png',
-      imgWebp: 'https://raw.githubusercontent.com/Cyb3rN4u7/Python-Image-Converter/master/app/img/sample.webp',
+      imgWebp: '/img/projects/sample.webp',
       description: 'Simple Python Image Converter for quick batch conversions of raw images to jpg',
       skills: ' Python, Multithreaded, Console ',
       url: 'https://cyb3rn4u7.github.io/Python-Image-Converter/'
