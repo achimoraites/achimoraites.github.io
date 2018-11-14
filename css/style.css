@@ -83,6 +83,7 @@ h3 {
 .details {
     line-height: 3rem;
     margin: 1rem auto;
+    padding: 0 3em;
 }
 
 section.details>h3 {
