@@ -182,6 +182,3 @@ app.filter('getImgUrl',() => {
     return `<img alt='article' class='img-responsive center-block lazyload' ${imgSrc} />`;
   };
 });
-
-require('angular-route');
-require('angular-sanitize');
