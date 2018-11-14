@@ -42,7 +42,8 @@ app.controller('projectsCtrl', ['$scope', function ($scope) {
   $scope.myProjects = [{
       id: 0,
       name: "QR Code Scanner",
-      img: 'https://raw.githubusercontent.com/Cyb3rN4u7/Cyb3rN4u7.github.io/master/img/projects/qrCodeScanner.png',
+      img: '/img/projects/qrCodeScanner.png',
+      imgWebp: '/img/projects/qrCodeScanner.webp',
       description: 'An android app for scanning QR Codes. After scanning the user can use the information in the code : Contacts, emails, maps, products and more.',
       skills: ' Android , Java , XML , zxing ',
       url: 'https://play.google.com/store/apps/details?id=io.github.cyb3rn4u7.qrcodescanner'
@@ -51,7 +52,8 @@ app.controller('projectsCtrl', ['$scope', function ($scope) {
     {
       id: 1,
       name: "Music Master ",
-      img: 'https://raw.githubusercontent.com/Cyb3rN4u7/Cyb3rN4u7.github.io/master/img/projects/Music_Master.png',
+      img: '/img/projects/Music_Master.png',
+      imgWebp: '/img/projects/Music_Master.webp',
       description: 'React app that uses the Spotify api to search artists, play songs & recommend Artists based on the user preferences.',
       skills: ' React, JavaScript, Spotify API, HTML/CSS ',
       url: '#'
@@ -60,7 +62,8 @@ app.controller('projectsCtrl', ['$scope', function ($scope) {
     {
       id: 2,
       name: "Personality Test",
-      img: 'https://raw.githubusercontent.com/Cyb3rN4u7/Cyb3rN4u7.github.io/master/img/projects/personalityTest.png',
+      img: '/img/projects/personalityTest.png',
+      imgWebp: '/img/projects/personalityTest.webp',
       description: 'Application for taking a color personality test made with JQuery, bootstrap and Django in the Back-end. ',
       skills: ' JavaScript, JQuery UI, Bootstrap, Django ',
       url: 'https://afternoon-headland-41285.herokuapp.com/'
@@ -70,6 +73,7 @@ app.controller('projectsCtrl', ['$scope', function ($scope) {
       id: 3,
       name: "TwitchTV App",
       img: 'https://raw.githubusercontent.com/Cyb3rN4u7/TwitchTV-Angular-App/master/app/img/project-status.png',
+      imgWebp: 'https://raw.githubusercontent.com/Cyb3rN4u7/TwitchTV-Angular-App/master/app/img/project-status.webp',
       description: 'A Free Code Camp project , this app gets information from TwitchTV and displays it back to user.',
       skills: ' Angular , TwitchTV ',
       url: 'https://cyb3rn4u7.github.io/TwitchTV-Angular-App/app/'
@@ -79,6 +83,7 @@ app.controller('projectsCtrl', ['$scope', function ($scope) {
       id: 4,
       name: "Python Image Converter",
       img: 'https://raw.githubusercontent.com/Cyb3rN4u7/Python-Image-Converter/master/app/img/sample.png',
+      imgWebp: 'https://raw.githubusercontent.com/Cyb3rN4u7/Python-Image-Converter/master/app/img/sample.webp',
       description: 'Simple Python Image Converter for quick batch conversions of raw images to jpg',
       skills: ' Python, Multithreaded, Console ',
       url: 'https://cyb3rn4u7.github.io/Python-Image-Converter/'
@@ -88,6 +93,7 @@ app.controller('projectsCtrl', ['$scope', function ($scope) {
       id: 5,
       name: "Wikipedia Viewer",
       img: '/img/projects/wikipedia-viewer.png',
+      imgWebp: '/img/projects/wikipedia-viewer.webp',
       description: 'Simple Wikipedia Viewer, allows the user to search and view articles',
       skills: ' Angular, Wikipedia Api ',
       url: 'https://codepen.io/achimoraites/full/dNvjJN/'

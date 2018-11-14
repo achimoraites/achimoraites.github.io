@@ -18,9 +18,14 @@
           </header>
 
           <p class="text-muted">{{::project.description}}</p>
-          <img id={{$index}} class="img-responsive center-block myImg" ng-src={{project.img}}
+          <!-- <img id={{$index}} class="img-responsive center-block myImg" ng-src={{project.img}}
           ng-click = "toggleModal('modal'+$index)"
-          />
+          /> -->
+          <picture id={{$index}} class="img-responsive center-block myImg" ng-click = "toggleModal('modal'+$index)">
+            <source type="image/webp" ng-src={{project.imgWebp}}>
+            <source type="image/png" ng-src={{project.img}}>
+              <img ng-src={{project.img}} alt="">
+          </picture>
           <!-- The Modal -->
 
           <div id={{'modal'+$index}} class="modal">
