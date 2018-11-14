@@ -179,7 +179,7 @@ app.filter('getImgUrl',() => {
     const regex = new RegExp('src="https?:\/\/.*\.(?:png|jpg|gif)"');
     const imgSrc = String(regex.exec(text));
     // return the image in html tag for usage
-    return `<img class='img-responsive center-block lazyload' ${imgSrc} />`;
+    return `<img alt='article' class='img-responsive center-block lazyload' ${imgSrc} />`;
   };
 });
 
