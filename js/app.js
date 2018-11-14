@@ -82,7 +82,7 @@ app.controller('projectsCtrl', ['$scope', function ($scope) {
     {
       id: 4,
       name: "Python Image Converter",
-      img: 'https://raw.githubusercontent.com/Cyb3rN4u7/Python-Image-Converter/master/app/img/sample.png',
+      img: '/img/projects/sample.png',
       imgWebp: '/img/projects/sample.webp',
       description: 'Simple Python Image Converter for quick batch conversions of raw images to jpg',
       skills: ' Python, Multithreaded, Console ',
