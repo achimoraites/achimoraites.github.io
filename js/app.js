@@ -72,8 +72,8 @@ app.controller('projectsCtrl', ['$scope', function ($scope) {
     {
       id: 3,
       name: "TwitchTV App",
-      img: '/img/projects/twitch-tv.png',
-      imgWebp: '/img/projects/twitch-tv.webp',
+      img: '/img/projects/twitch.png',
+      imgWebp: '/img/projects/twitch.webp',
       description: 'A Free Code Camp project , this app gets information from TwitchTV and displays it back to user.',
       skills: ' Angular , TwitchTV ',
       url: 'https://cyb3rn4u7.github.io/TwitchTV-Angular-App/app/'
