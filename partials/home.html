@@ -13,7 +13,7 @@
           <header>
               <h3 class="blog-text">{{::post.title}}</h3>
           </header>
-          <a ng-href={{::post.url}} alt={{::post.title}} target="_blank">
+          <a ng-href={{::post.url}} alt={{::post.title}} target="_blank" rel="noopener">
                
               <p  class="blog-article-preview read_time" ><i class="fa fa-clock-o" aria-hidden="true"></i> {{::post.content | getTimeEstimate}} read</p>
 
@@ -35,9 +35,9 @@
   <section class='row text-left well skill-box'>
       <h2 class="about-me-title text-center">About me</h2>
     <div class='col-md-4 col-md-4 ' ng-controller="scrollCtrl">
-      <img class='img-responsive center-block avatar' src='/img/avatar.jpg' />
-      <a href="#!/projects" class='btn btn-primary skill-btn' ng-click="goToTop()">My Projects</a>
-      <a href="https://achimoraites.blogspot.gr" target="_blank" class='btn btn-primary  blog-btn'>Blog</a>
+      <img alt="Achilles Moraites Photo" class='img-responsive center-block avatar' src='/img/avatar.jpg' />
+      <a alt="projects" href="#!/projects" class='btn btn-primary skill-btn' ng-click="goToTop()" rel="noopener">My Projects</a>
+      <a alt="blog" href="https://achimoraites.blogspot.gr" target="_blank" class='btn btn-primary blog-btn' rel="noopener">Blog</a>
     </div>
     <article id="details" class='col-md-8 details '>
 
