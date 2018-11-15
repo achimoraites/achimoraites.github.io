@@ -96,6 +96,11 @@ section.details>h3 {
     width: 420px;
 }
 
+#projects img {
+    margin-bottom: 20px;
+    height: 30vh;
+}
+
 .skill {
     margin: 10px;
     width: 60px;
@@ -392,7 +397,7 @@ footer {
 .modal-content {
     margin: auto;
     display: block;
-    width: 80% !important;
+    height: auto !important;
     max-width: 1024px;
     padding: 3px !important;
 }
