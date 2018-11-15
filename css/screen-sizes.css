@@ -38,9 +38,7 @@
         word-wrap: break-word;
     }
 
-    #projects img {
-        width: 60vw !important;
-    }
+
 
 
     footer p {
@@ -126,7 +124,7 @@
     }
 
     #projects img {
-        width: 60vw;
+        height: 60vw;
     }
 
     h3.blog-text,
@@ -174,12 +172,11 @@
     #projects img:hover {
         transform: scale(1.4);
     }
-
-    #projects img {
-        width: 20vw;
-        margin-bottom: 20px;
+    .project-box img {
+        width: 70%;
+        padding: 30px;
     }
-
+   
     article.certs.well img {
         width: 20vw;
     }
@@ -196,8 +193,5 @@
         width: 90px;
     }
 
-    .project-box img {
-        width: 500px;
-        padding: 30px;
-    }
+
 }
