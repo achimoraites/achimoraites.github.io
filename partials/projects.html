@@ -20,18 +20,15 @@
           <p alt="project description" class="text-muted">{{::project.description}}</p>
         
           <picture alt="project image" id={{$index}} class="img-responsive center-block myImg" ng-click = "toggleModal('modal'+$index)">
-            <source type="image/webp" srcset={{project.imgWebp}}>
-            <source type="image/png" srcset={{project.img}}>
-              <img src={{project.imgWebp}} >
+            <source type="image/webp" srcset={{project.img.webp}}>
+            <source type="image/png" srcset={{project.img.sm}}>
+              <img src={{project.img.webp}} >
           </picture>
           <!-- The Modal -->
 
           <div id={{'modal'+$index}} class="modal">
             <span ng-click = "closeModal('modal'+$index)" class="close">&times;</span>
-            <!-- <img class="modal-content" id={{'img'+$index}} ng-src={{project.img}} 
-            > -->
-            <img alt="modal image" class="modal-content" id={{'img'+$index}} data-ng-src={{project.img}} class="lazyload"
-            >
+             <img id={{'img'+$index}} alt="modal image" class="modal-content" src={{::project.img.sm}} data-ng-srcset="{{project.img.sm}} 480w,{{project.img.lg}} 1080w" sizes="50vw">
             <div class="caption">{{::project.description}}</div>
           </div>
 
