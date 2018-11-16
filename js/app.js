@@ -115,9 +115,12 @@ app.controller("scrollCtrl", ["$scope", "$location", "$anchorScroll",
 app.service("bloggerApi", ["$http","$sce", function bloggerApiService($http,$sce) {
 	const apiUrl = "https://www.googleapis.com/blogger/v3/blogs/7900380589360458141/posts?key=AIzaSyDJZx2Tx3kW65FrvjXonMRSmNap4z7Rw-o";
 	const trustedUrl = $sce.trustAsResourceUrl(apiUrl);
+
+	
+
 	return {
 		getBlogPosts:  () => {
-			return $http.jsonp(trustedUrl,{jsonpCallbackParam: "callback"});
+			return $http.jsonp(trustedUrl,{jsonpCallbackParam: "callback", cache: true});
 		}
 	};
 }]);
