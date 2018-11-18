@@ -95,14 +95,105 @@
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
   -->
-  <script src="/lib/lazysizes/lazysizes.js" async></script>
+
+  <!-- <script src="/lib/lazysizes/lazysizes.js" async></script>
   <script src="/lib/jquery/dist/jquery.min.js"></script>
-  <script src="/lib/bootstrap-3.3.7-dist/js/bootstrap.min.js" defer="defer"></script>
+  <script src="/lib/bootstrap-3.3.7-dist/js/bootstrap.min.js" defer="defer"></script> -->
+
+  <script type="text/javasript" src="./lib/angular-loader/angular-loader.min.js"></script>
   <script type="text/javascript" src="/lib/angular/angular.min.js"></script>
   <script type="text/javascript" src="/lib/angular-route/angular-route.min.js"></script>
   <script type="text/javascript" src="/lib/angular-sanitize/angular-sanitize.min.js" defer="defer"></script>
-  <!-- -->
+
   <script type="text/javascript" src="/js/app.min.js"></script>
+
+
+  <script>
+    var scripts = [
+        "/lib/lazysizes/lazysizes.js",
+        "/lib/jquery/dist/jquery.min.js",
+        "/lib/bootstrap-3.3.7-dist/js/bootstrap.min.js",
+      ],
+      src,
+      script,
+      pendingScripts = [],
+      firstScript = document.scripts[0];
+
+    if (typeof Function.prototype.bind !== "function") {
+
+      scripts.unshift("js/polyfills/bind_polyfill.js");
+
+    }
+
+    if ("classList" in document.documentElement === false) {
+
+      scripts.unshift("js/polyfills/classlist_polyfill.js");
+
+    }
+
+    if (!window.requestAnimationFrame) {
+
+      scripts.unshift("js/polyfills/animframe_polyfill.js");
+
+    }
+
+    // Watch scripts load in IE
+    function stateChange() {
+      // Execute as many scripts in order as we can
+
+      var pendingScript;
+
+      while (pendingScripts[0] && pendingScripts[0].readyState == 'loaded') {
+        pendingScript = pendingScripts.shift();
+        // avoid future loading events from this script (eg, if src changes)
+        pendingScript.onreadystatechange = null;
+        // can't just appendChild, old IE bug if element isn't closed
+        firstScript.parentNode.insertBefore(pendingScript, firstScript);
+      }
+
+    }
+
+    // loop through our script urls
+    while (src = scripts.shift()) {
+
+      if ('async' in firstScript) { // modern browsers
+
+        script = document.createElement('script');
+        script.async = false;
+        script.src = src;
+        document.body.appendChild(script);
+
+      } else if (firstScript.readyState) { // IE<10
+        // create a script and add it to our todo pile
+        script = document.createElement('script');
+        pendingScripts.push(script);
+        // listen for state changes
+        script.onreadystatechange = stateChange;
+        // must set src AFTER adding onreadystatechange listener
+        // else we’ll miss the loaded event for cached scripts
+        script.src = src;
+      } else { // fall back to defer
+        document.write('<script src="' + src + '" defer></' + 'script>');
+      }
+    }
+  </script>
+
+  <script>
+
+    if ('serviceWorker' in navigator) {  
+
+      navigator.serviceWorker.register('/sw.js')
+        .then(function (registration) {    // Registration was successful
+             
+          console.log('ServiceWorker registration successful with scope: ', registration.scope);  
+
+        }).catch(function (err) {    // registration failed :(
+             
+          console.log('ServiceWorker registration failed: ', err);  
+        });
+
+    }
+  </script>
 
 
 </body>
