@@ -11,9 +11,9 @@ app.config(["$locationProvider",
 app.config($routeProvider => {
 
 	$routeProvider.when("/home", {
-		templateUrl: "/partials/home.html",
-		controller: "projectsCtrl"
-	})
+			templateUrl: "/partials/home.html",
+			controller: "projectsCtrl"
+		})
 		.when("/projects", {
 			templateUrl: "/partials/projects.html"
 		})
@@ -40,44 +40,44 @@ app.controller("projectsCtrl", ["$scope", function ($scope) {
 		modal.style.display = "none";
 	};
 	$scope.myProjects = [{
-		id: 0,
-		name: "QR Code Scanner",
-		img: {
-			sm: "/img/projects/qrCodeScanner.png",
-			lg: "/img/projects/large/qrCodeScanner.png",
-			webp: "/img/projects/qrCodeScanner.webp"
-		},
-		description: "An android app for scanning QR Codes. After scanning the user can use the information in the code : Contacts, emails, maps, products and more.",
-		skills: " Android , Java , XML , zxing ",
-		url: "https://play.google.com/store/apps/details?id=io.github.cyb3rn4u7.qrcodescanner"
+			id: 0,
+			name: "QR Code Scanner",
+			img: {
+				sm: "/img/projects/qrCodeScanner.png",
+				lg: "/img/projects/large/qrCodeScanner.png",
+				webp: "/img/projects/qrCodeScanner.webp"
+			},
+			description: "An android app for scanning QR Codes. After scanning the user can use the information in the code : Contacts, emails, maps, products and more.",
+			skills: " Android , Java , XML , zxing ",
+			url: "https://play.google.com/store/apps/details?id=io.github.cyb3rn4u7.qrcodescanner"
 
-	},
-	{
-		id: 1,
-		name: "Music Master ",
-		img: {
-			sm: "/img/projects/Music_Master.png",
-			lg: "/img/projects/large/Music_Master.png",
-			webp: "/img/projects/Music_Master.webp"
 		},
-		description: "React app that uses the Spotify api to search artists, play songs & recommend Artists based on the user preferences.",
-		skills: " React, JavaScript, Spotify API, HTML/CSS ",
-		url: "#"
+		{
+			id: 1,
+			name: "Music Master ",
+			img: {
+				sm: "/img/projects/Music_Master.png",
+				lg: "/img/projects/large/Music_Master.png",
+				webp: "/img/projects/Music_Master.webp"
+			},
+			description: "React app that uses the Spotify api to search artists, play songs & recommend Artists based on the user preferences.",
+			skills: " React, JavaScript, Spotify API, HTML/CSS ",
+			url: "#"
 
-	},
-	{
-		id: 2,
-		name: "Personality Test",
-		img: {
-			sm: "/img/projects/personalityTest.png",
-			lg: "/img/projects/large/personalityTest.png",
-			webp: "/img/projects/personalityTest.webp"
 		},
-		description: "Application for taking a color personality test made with JQuery, bootstrap and Django in the Back-end. ",
-		skills: " JavaScript, JQuery UI, Bootstrap, Django ",
-		url: "https://afternoon-headland-41285.herokuapp.com/"
+		{
+			id: 2,
+			name: "Personality Test",
+			img: {
+				sm: "/img/projects/personalityTest.png",
+				lg: "/img/projects/large/personalityTest.png",
+				webp: "/img/projects/personalityTest.webp"
+			},
+			description: "Application for taking a color personality test made with JQuery, bootstrap and Django in the Back-end. ",
+			skills: " JavaScript, JQuery UI, Bootstrap, Django ",
+			url: "https://afternoon-headland-41285.herokuapp.com/"
 
-	}
+		}
 	];
 
 }]);
@@ -85,21 +85,21 @@ app.controller("projectsCtrl", ["$scope", function ($scope) {
 // blog feed
 app.controller("bloggerCtrl", ["$scope", "bloggerApi", "$sce", function ($scope, bloggerApi) {
 	$scope.numLimit = 3;
-	
-
-	bloggerApi.getBlogPosts()
-		.then(result => {
-			const items = result.data.items;
-			$scope.posts = items;
-			$scope.content = items.content;
-		})
-		.catch((error, status) => {
-			$scope.error = "Status : " + status + " Something went wrong!";
-		});
 
 
-	
-	
+	$scope.$on("$viewContentLoaded", function () {
+		bloggerApi.getBlogPosts()
+			.then(result => {
+				const items = result.data.items;
+				$scope.posts = items;
+				$scope.content = items.content;
+			})
+			.catch((error, status) => {
+				$scope.error = "Status : " + status + " Something went wrong!";
+			});
+	});
+
+
 }]);
 
 app.controller("scrollCtrl", ["$scope", "$location", "$anchorScroll",
