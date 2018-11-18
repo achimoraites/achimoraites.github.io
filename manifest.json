@@ -1,127 +1,7 @@
 {
-  "name": "2048 - Progressive Web App",
+  "name": "Achilles PWA",
   "short_name": "2048 PWA",
-  "description": "This is a fork of the original 2048 web application source. It is upgraded to be a progressive web application and used as a reference application in the Packt Book - Progressive Web Applications By Example",
-  "icons": [
-    {
-      "src": "meta/2048-logo-70x70.png",
-      "sizes": "70x70",
-      "type": "image/png"
-    },
-    {
-      "src": "meta/2048-logo-120x120.png",
-      "sizes": "120x120",
-      "type": "image/png"
-    },
-    {
-      "src": "meta/2048-logo-144x144.png",
-      "sizes": "144x144",
-      "type": "image/png"
-    },
-    {
-      "src": "meta/2048-logo-152x152.png",
-      "sizes": "152x152",
-      "type": "image/png"
-    },
-    {
-      "src": "meta/2048-logo-192x192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "meta/2048-logo-310x174.png",
-      "sizes": "310x174",
-      "type": "image/png"
-    },
-    {
-      "src": "meta/2048-logo-310x310.png",
-      "sizes": "310x310",
-      "type": "image/png"
-    },
-    {
-      "src": "meta/2048-logo-340x340.png",
-      "sizes": "340x340",
-      "type": "image/png"
-    },
-    {
-      "src": "meta/2048-logo-600x310.png",
-      "sizes": "600x310",
-      "type": "image/png"
-    }
-  ],
-  "start_url": "/?hs=2349872398472894",
-  "scope": "/",
-  "display": "fullscreen",
-  "background_color": "#fff",
-  "theme_color": "#ECC400",
-  "orientation": "portrait",
-  "lang": "en",
-  "dir": "ltr"
-}
-{
-  "name": "2048 - Progressive Web App",
-  "short_name": "2048 PWA",
-  "description": "This is a fork of the original 2048 web application source. It is upgraded to be a progressive web application and used as a reference application in the Packt Book - Progressive Web Applications By Example",
-  "icons": [
-    {
-      "src": "meta/2048-logo-70x70.png",
-      "sizes": "70x70",
-      "type": "image/png"
-    },
-    {
-      "src": "meta/2048-logo-120x120.png",
-      "sizes": "120x120",
-      "type": "image/png"
-    },
-    {
-      "src": "meta/2048-logo-144x144.png",
-      "sizes": "144x144",
-      "type": "image/png"
-    },
-    {
-      "src": "meta/2048-logo-152x152.png",
-      "sizes": "152x152",
-      "type": "image/png"
-    },
-    {
-      "src": "meta/2048-logo-192x192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "meta/2048-logo-310x174.png",
-      "sizes": "310x174",
-      "type": "image/png"
-    },
-    {
-      "src": "meta/2048-logo-310x310.png",
-      "sizes": "310x310",
-      "type": "image/png"
-    },
-    {
-      "src": "meta/2048-logo-340x340.png",
-      "sizes": "340x340",
-      "type": "image/png"
-    },
-    {
-      "src": "meta/2048-logo-600x310.png",
-      "sizes": "600x310",
-      "type": "image/png"
-    }
-  ],
-  "start_url": "/?hs=2349872398472894",
-  "scope": "/",
-  "display": "fullscreen",
-  "background_color": "#fff",
-  "theme_color": "#ECC400",
-  "orientation": "portrait",
-  "lang": "en",
-  "dir": "ltr"
-} "name": "Achilles Moraites",
-{
-  "name": "2048 - Progressive Web App",
-  "short_name": "2048 PWA",
-  "description": "This is a fork of the original 2048 web application source. It is upgraded to be a progressive web application and used as a reference application in the Packt Book - Progressive Web Applications By Example",
+  "description": "Angularjs pwa",
   "icons": [
     {
       "src": "meta/2048-logo-70x70.png",
@@ -177,11 +57,11 @@
   "orientation": "portrait",
   "lang": "en",
   "dir": "ltr"
-} "short_name": "Achilles M",
+}
 {
-  "name": "2048 - Progressive Web App",
+  "name": "Achilles PWA",
   "short_name": "2048 PWA",
-  "description": "This is a fork of the original 2048 web application source. It is upgraded to be a progressive web application and used as a reference application in the Packt Book - Progressive Web Applications By Example",
+  "description": "Angularjs pwa",
   "icons": [
     {
       "src": "meta/2048-logo-70x70.png",
@@ -229,7 +109,127 @@
       "type": "image/png"
     }
   ],
-  "start_url": "/?hs=2349872398472894",
+  "start_url": "/",
+  "scope": "/",
+  "display": "fullscreen",
+  "background_color": "#fff",
+  "theme_color": "#ECC400",
+  "orientation": "portrait",
+  "lang": "en",
+  "dir": "ltr"
+} "name": "Achilles Moraites",
+{
+  "name": "Achilles PWA",
+  "short_name": "2048 PWA",
+  "description": "Angularjs pwa",
+  "icons": [
+    {
+      "src": "meta/2048-logo-70x70.png",
+      "sizes": "70x70",
+      "type": "image/png"
+    },
+    {
+      "src": "meta/2048-logo-120x120.png",
+      "sizes": "120x120",
+      "type": "image/png"
+    },
+    {
+      "src": "meta/2048-logo-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "meta/2048-logo-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "meta/2048-logo-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "meta/2048-logo-310x174.png",
+      "sizes": "310x174",
+      "type": "image/png"
+    },
+    {
+      "src": "meta/2048-logo-310x310.png",
+      "sizes": "310x310",
+      "type": "image/png"
+    },
+    {
+      "src": "meta/2048-logo-340x340.png",
+      "sizes": "340x340",
+      "type": "image/png"
+    },
+    {
+      "src": "meta/2048-logo-600x310.png",
+      "sizes": "600x310",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/#!/home",
+  "scope": "/",
+  "display": "fullscreen",
+  "background_color": "#fff",
+  "theme_color": "#ECC400",
+  "orientation": "portrait",
+  "lang": "en",
+  "dir": "ltr"
+} "short_name": "Achilles M",
+{
+  "name": "Achilles - Progressive Web App",
+  "short_name": "Achilles PWA",
+  "description": "AngularJs upgraded to PWA",
+  "icons": [
+    {
+      "src": "meta/2048-logo-70x70.png",
+      "sizes": "70x70",
+      "type": "image/png"
+    },
+    {
+      "src": "meta/2048-logo-120x120.png",
+      "sizes": "120x120",
+      "type": "image/png"
+    },
+    {
+      "src": "meta/2048-logo-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "meta/2048-logo-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "meta/2048-logo-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "meta/2048-logo-310x174.png",
+      "sizes": "310x174",
+      "type": "image/png"
+    },
+    {
+      "src": "meta/2048-logo-310x310.png",
+      "sizes": "310x310",
+      "type": "image/png"
+    },
+    {
+      "src": "meta/2048-logo-340x340.png",
+      "sizes": "340x340",
+      "type": "image/png"
+    },
+    {
+      "src": "meta/2048-logo-600x310.png",
+      "sizes": "600x310",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
   "scope": "/",
   "display": "fullscreen",
   "background_color": "#fff",
@@ -239,9 +239,9 @@
   "dir": "ltr"
 } "lang": "en-US",
 {
-  "name": "2048 - Progressive Web App",
-  "short_name": "2048 PWA",
-  "description": "This is a fork of the original 2048 web application source. It is upgraded to be a progressive web application and used as a reference application in the Packt Book - Progressive Web Applications By Example",
+  "name": "Achilles PWA",
+  "short_name": "Achilles PWA",
+  "description": "Angularjs pwa",
   "icons": [
     {
       "src": "meta/2048-logo-70x70.png",
@@ -289,7 +289,7 @@
       "type": "image/png"
     }
   ],
-  "start_url": "/?hs=2349872398472894",
+  "start_url": "/",
   "scope": "/",
   "display": "fullscreen",
   "background_color": "#fff",
@@ -299,9 +299,9 @@
   "dir": "ltr"
 } "start_url": "/",
 {
-  "name": "2048 - Progressive Web App",
-  "short_name": "2048 PWA",
-  "description": "This is a fork of the original 2048 web application source. It is upgraded to be a progressive web application and used as a reference application in the Packt Book - Progressive Web Applications By Example",
+  "name": "Achilles PWA",
+  "short_name": "Achilles PWA",
+  "description": "Angularjs pwa",
   "icons": [
     {
       "src": "meta/2048-logo-70x70.png",
@@ -349,7 +349,7 @@
       "type": "image/png"
     }
   ],
-  "start_url": "/?hs=2349872398472894",
+  "start_url": "/",
   "scope": "/",
   "display": "fullscreen",
   "background_color": "#fff",
@@ -359,9 +359,9 @@
   "dir": "ltr"
 } "display": "standalone",
 {
-  "name": "2048 - Progressive Web App",
+  "name": "Achilles PWA",
   "short_name": "2048 PWA",
-  "description": "This is a fork of the original 2048 web application source. It is upgraded to be a progressive web application and used as a reference application in the Packt Book - Progressive Web Applications By Example",
+  "description": "Angularjs pwa",
   "icons": [
     {
       "src": "meta/2048-logo-70x70.png",
@@ -409,7 +409,7 @@
       "type": "image/png"
     }
   ],
-  "start_url": "/?hs=2349872398472894",
+  "start_url": "/",
   "scope": "/",
   "display": "fullscreen",
   "background_color": "#fff",
@@ -419,9 +419,9 @@
   "dir": "ltr"
 } "theme_color": "#1f1b3e"
 {
-  "name": "2048 - Progressive Web App",
+  "name": "Achilles PWA",
   "short_name": "2048 PWA",
-  "description": "This is a fork of the original 2048 web application source. It is upgraded to be a progressive web application and used as a reference application in the Packt Book - Progressive Web Applications By Example",
+  "description": "Angularjs pwa",
   "icons": [
     {
       "src": "meta/2048-logo-70x70.png",
@@ -469,7 +469,7 @@
       "type": "image/png"
     }
   ],
-  "start_url": "/?hs=2349872398472894",
+  "start_url": "/",
   "scope": "/",
   "display": "fullscreen",
   "background_color": "#fff",
