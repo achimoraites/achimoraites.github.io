@@ -1,7 +1,7 @@
 {
   "name": "Achilles PWA",
   "short_name": "Achilles PWA",
-  "description": "Angularjs pwa",
+  "description": "Achilles portfolio",
   "icons": [
     {
       "src": "meta/2048-logo-70x70.png",
