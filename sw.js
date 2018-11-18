@@ -17,7 +17,8 @@ const version = "1.03",
 		"/lib/angular/angular.min.js",
 		"/lib/angular-route/angular-route.min.js",
 		"/lib/angular-sanitize/angular-sanitize.min.js",
-		"/js/app.min.js"
+		"/js/app.min.js",
+		"/manifest.json"
 	];
 
 /*  Service Worker Event Handlers */
