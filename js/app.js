@@ -1,5 +1,3 @@
-
-
 // eslint-disable-next-line no-undef
 var app = angular.module("myApp", ["ngRoute", "ngSanitize"]);
 
@@ -45,9 +43,9 @@ app.controller("projectsCtrl", ["$scope", function ($scope) {
 		id: 0,
 		name: "QR Code Scanner",
 		img: {
-			sm :"/img/projects/qrCodeScanner.png",
-			lg :"/img/projects/large/qrCodeScanner.png",
-			webp : "/img/projects/qrCodeScanner.webp"
+			sm: "/img/projects/qrCodeScanner.png",
+			lg: "/img/projects/large/qrCodeScanner.png",
+			webp: "/img/projects/qrCodeScanner.webp"
 		},
 		description: "An android app for scanning QR Codes. After scanning the user can use the information in the code : Contacts, emails, maps, products and more.",
 		skills: " Android , Java , XML , zxing ",
@@ -58,9 +56,9 @@ app.controller("projectsCtrl", ["$scope", function ($scope) {
 		id: 1,
 		name: "Music Master ",
 		img: {
-			sm :"/img/projects/Music_Master.png",
-			lg :"/img/projects/large/Music_Master.png",
-			webp : "/img/projects/Music_Master.webp"
+			sm: "/img/projects/Music_Master.png",
+			lg: "/img/projects/large/Music_Master.png",
+			webp: "/img/projects/Music_Master.webp"
 		},
 		description: "React app that uses the Spotify api to search artists, play songs & recommend Artists based on the user preferences.",
 		skills: " React, JavaScript, Spotify API, HTML/CSS ",
@@ -71,9 +69,9 @@ app.controller("projectsCtrl", ["$scope", function ($scope) {
 		id: 2,
 		name: "Personality Test",
 		img: {
-			sm :"/img/projects/personalityTest.png",
-			lg :"/img/projects/large/personalityTest.png",
-			webp : "/img/projects/personalityTest.webp"
+			sm: "/img/projects/personalityTest.png",
+			lg: "/img/projects/large/personalityTest.png",
+			webp: "/img/projects/personalityTest.webp"
 		},
 		description: "Application for taking a color personality test made with JQuery, bootstrap and Django in the Back-end. ",
 		skills: " JavaScript, JQuery UI, Bootstrap, Django ",
@@ -85,8 +83,9 @@ app.controller("projectsCtrl", ["$scope", function ($scope) {
 }]);
 
 // blog feed
-app.controller("bloggerCtrl", ["$scope", "bloggerApi", "$timeout", "$sce", function ($scope, bloggerApi) {
+app.controller("bloggerCtrl", ["$scope", "bloggerApi", "$sce", function ($scope, bloggerApi) {
 	$scope.numLimit = 3;
+	
 
 	bloggerApi.getBlogPosts()
 		.then(result => {
@@ -97,11 +96,15 @@ app.controller("bloggerCtrl", ["$scope", "bloggerApi", "$timeout", "$sce", funct
 		.catch((error, status) => {
 			$scope.error = "Status : " + status + " Something went wrong!";
 		});
+
+
+	
+	
 }]);
 
 app.controller("scrollCtrl", ["$scope", "$location", "$anchorScroll",
 	function ($scope, $location, $anchorScroll) {
-		$scope.goToTop =  () => {
+		$scope.goToTop = () => {
 			// set the location.hash to the id of
 			// the element you wish to scroll to.
 			$location.hash("top");
@@ -112,15 +115,18 @@ app.controller("scrollCtrl", ["$scope", "$location", "$anchorScroll",
 ]);
 
 
-app.service("bloggerApi", ["$http","$sce", function bloggerApiService($http,$sce) {
+app.service("bloggerApi", ["$http", "$sce", function bloggerApiService($http, $sce) {
 	const apiUrl = "https://www.googleapis.com/blogger/v3/blogs/7900380589360458141/posts?key=AIzaSyDJZx2Tx3kW65FrvjXonMRSmNap4z7Rw-o";
 	const trustedUrl = $sce.trustAsResourceUrl(apiUrl);
 
-	
+
 
 	return {
-		getBlogPosts:  () => {
-			return $http.jsonp(trustedUrl,{jsonpCallbackParam: "callback", cache: true});
+		getBlogPosts: () => {
+			return $http.jsonp(trustedUrl, {
+				jsonpCallbackParam: "callback",
+				cache: true
+			});
 		}
 	};
 }]);
@@ -128,13 +134,13 @@ app.service("bloggerApi", ["$http","$sce", function bloggerApiService($http,$sce
 // helpers
 const parseHTML = text => text ? String(text).replace(/<[^>]+>/gm, "") : "";
 
-app.filter("htmlToPlaintext",() => {
+app.filter("htmlToPlaintext", () => {
 	return text => {
 		return parseHTML(text);
 	};
 });
 app.filter("getTimeEstimate", () => {
-	return  text => {
+	return text => {
 		// remove html characters
 		const content = parseHTML(text);
 		// get the number of words
@@ -146,7 +152,7 @@ app.filter("getTimeEstimate", () => {
 		return `${mins} mins `;
 	};
 });
-app.filter("limitContent",() => {
+app.filter("limitContent", () => {
 	return text => {
 		// get the words from the text
 		const words = text.split(" ");
@@ -156,12 +162,12 @@ app.filter("limitContent",() => {
 		return content.join(" ");
 	};
 });
-app.filter("dotsInTheEnd",() => {
-	return  text => {
+app.filter("dotsInTheEnd", () => {
+	return text => {
 		return `${text} ...`;
 	};
 });
-app.filter("getImgUrl",() => {
+app.filter("getImgUrl", () => {
 	return text => {
 		// locate the 1st image src in the text
 		// eslint-disable-next-line no-useless-escape
@@ -169,6 +175,6 @@ app.filter("getImgUrl",() => {
 		const imgSrc = String(regex.exec(text));
 		// return the image in html tag for usage
 		return `<img alt='article' class='img-responsive center-block lazyload' ${imgSrc} />`;
-  
+
 	};
 });
