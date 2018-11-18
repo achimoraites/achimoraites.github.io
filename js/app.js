@@ -126,17 +126,17 @@ app.service("bloggerApi", ["$http","$sce", function bloggerApiService($http,$sce
 }]);
 
 // helpers
-const htmlParser = text => text ? String(text).replace(/<[^>]+>/gm, "") : "";
+const parseHTML = text => text ? String(text).replace(/<[^>]+>/gm, "") : "";
 
 app.filter("htmlToPlaintext",() => {
 	return text => {
-		return htmlParser(text);
+		return parseHTML(text);
 	};
 });
 app.filter("getTimeEstimate", () => {
 	return  text => {
 		// remove html characters
-		const content = htmlParser(text);
+		const content = parseHTML(text);
 		// get the number of words
 		const words = content.split(" ").length;
 		// get the number of minutes assuming 
