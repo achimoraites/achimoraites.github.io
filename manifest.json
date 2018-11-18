@@ -49,7 +49,7 @@
       "type": "image/png"
     }
   ],
-  "start_url": "/",
+  "start_url": "/#!/home",
   "scope": "/",
   "display": "fullscreen",
   "background_color": "#fff",
@@ -109,7 +109,7 @@
       "type": "image/png"
     }
   ],
-  "start_url": "/",
+  "start_url": "/#!/home",
   "scope": "/",
   "display": "fullscreen",
   "background_color": "#fff",
@@ -120,7 +120,7 @@
 } "name": "Achilles Moraites",
 {
   "name": "Achilles PWA",
-  "short_name": "2048 PWA",
+  "short_name": "Achilles PWA",
   "description": "Angularjs pwa",
   "icons": [
     {
@@ -229,7 +229,7 @@
       "type": "image/png"
     }
   ],
-  "start_url": "/",
+  "start_url": "/#!/home",
   "scope": "/",
   "display": "fullscreen",
   "background_color": "#fff",
@@ -289,7 +289,7 @@
       "type": "image/png"
     }
   ],
-  "start_url": "/",
+  "start_url": "/#!/home",
   "scope": "/",
   "display": "fullscreen",
   "background_color": "#fff",
@@ -297,7 +297,7 @@
   "orientation": "portrait",
   "lang": "en",
   "dir": "ltr"
-} "start_url": "/",
+} "start_url": "/#!/home",
 {
   "name": "Achilles PWA",
   "short_name": "Achilles PWA",
@@ -349,7 +349,7 @@
       "type": "image/png"
     }
   ],
-  "start_url": "/",
+  "start_url": "/#!/home",
   "scope": "/",
   "display": "fullscreen",
   "background_color": "#fff",
@@ -360,7 +360,7 @@
 } "display": "standalone",
 {
   "name": "Achilles PWA",
-  "short_name": "2048 PWA",
+  "short_name": "Achilles PWA",
   "description": "Angularjs pwa",
   "icons": [
     {
@@ -409,7 +409,7 @@
       "type": "image/png"
     }
   ],
-  "start_url": "/",
+  "start_url": "/#!/home",
   "scope": "/",
   "display": "fullscreen",
   "background_color": "#fff",
@@ -420,7 +420,7 @@
 } "theme_color": "#1f1b3e"
 {
   "name": "Achilles PWA",
-  "short_name": "2048 PWA",
+  "short_name": "Achilles PWA",
   "description": "Angularjs pwa",
   "icons": [
     {
@@ -469,7 +469,7 @@
       "type": "image/png"
     }
   ],
-  "start_url": "/",
+  "start_url": "/#!/home",
   "scope": "/",
   "display": "fullscreen",
   "background_color": "#fff",
