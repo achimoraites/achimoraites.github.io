@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-const version = "1.03",
+const version = "1.04",
 	preCache = "PRECACHE-" + version,
 	cacheList = [
 		"/",
