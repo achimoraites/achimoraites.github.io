@@ -44,6 +44,11 @@
       "type": "image/png"
     },
     {
+      "src": "meta/2048-logo-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
       "src": "meta/2048-logo-600x310.png",
       "sizes": "600x310",
       "type": "image/png"
