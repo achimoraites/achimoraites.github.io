@@ -86,18 +86,15 @@ app.controller("projectsCtrl", ["$scope", function ($scope) {
 app.controller("bloggerCtrl", ["$scope", "bloggerApi", "$sce", function ($scope, bloggerApi) {
 	$scope.numLimit = 3;
 
-
-	$scope.$on("$viewContentLoaded", function () {
-		bloggerApi.getBlogPosts()
-			.then(result => {
-				const items = result.data.items;
-				$scope.posts = items;
-				$scope.content = items.content;
-			})
-			.catch((error, status) => {
-				$scope.error = "Status : " + status + " Something went wrong!";
-			});
-	});
+	bloggerApi.getBlogPosts()
+		.then(result => {
+			const items = result.data.items;
+			$scope.posts = items;
+			$scope.content = items.content;
+		})
+		.catch((error, status) => {
+			$scope.error = "Status : " + status + " Something went wrong!";
+		});
 
 
 }]);
