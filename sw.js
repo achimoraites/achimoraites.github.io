@@ -9,7 +9,7 @@ const version = "1.03",
 		"css/screen-sizes.css",
 		"lib/bootstrap-3.3.7-dist/css/bootstrap.min.css",
 		"/lib/jquery/dist/jquery.min.js",
-        "/lib/bootstrap-3.3.7-dist/js/bootstrap.min.js",
+		"/lib/bootstrap-3.3.7-dist/js/bootstrap.min.js",
 		"lib/font-awesome/css/font-awesome.min.css",
 		"lib/lazysizes/lazysizes.js",
 		"/lib/jquery/dist/jquery.min.js",
@@ -17,7 +17,8 @@ const version = "1.03",
 		"/lib/angular/angular.min.js",
 		"/lib/angular-route/angular-route.min.js",
 		"/lib/angular-sanitize/angular-sanitize.min.js",
-		"/js/app.min.js"
+		"/js/app.min.js",
+		"/manifest.json"
 	];
 
 /*  Service Worker Event Handlers */
