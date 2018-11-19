@@ -10,9 +10,9 @@
       <hr style="border: 1px solid var(--base-color)" hr>
 
       <div aria-label="project" ng-repeat="project in myProjects track by project.id">
-        <div class="clearfix" ng-if="$index % 3 == 0"></div>
+        <div class="clearfix" ng-if="$index % 2 == 0"></div>
 
-        <article class="col-md-4 project-box">
+        <article class="col-md-6 project-box">
           <header>
             <h2>{{::project.name}}</h2>
           </header>

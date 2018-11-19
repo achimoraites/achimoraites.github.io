@@ -77,7 +77,20 @@ app.controller("projectsCtrl", ["$scope", function ($scope) {
 		skills: " JavaScript, JQuery UI, Bootstrap, Django ",
 		url: "https://afternoon-headland-41285.herokuapp.com/"
 
-	}
+	},
+	{
+		id: 3,
+		name: "My portfolio",
+		img: {
+			sm: "/img/projects/portfolio.png",
+			lg: "/img/projects/large/portfolio.png",
+			webp: "/img/projects/portfolio.webp"
+		},
+		description: "PWA AngularJS app, fetches blog posts from the Blogger API, responsive mobile first with responsive images. ",
+		skills: " AngularJS, PWA, Bootstrap, Blogger API ",
+		url: "#"
+
+	}	
 	];
 
 }]);
