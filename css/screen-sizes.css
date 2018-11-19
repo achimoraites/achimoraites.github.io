@@ -29,6 +29,10 @@
         font-size: 1.6em;
     }
 
+    .details {
+        padding: 0;
+    }
+
     .wrapper-box p {
         font-size: 1em;
     }
