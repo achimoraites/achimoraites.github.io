@@ -14,11 +14,6 @@
       "type": "image/png"
     },
     {
-      "src": "meta/2048-logo-144x144.png",
-      "sizes": "144x144",
-      "type": "image/png"
-    },
-    {
       "src": "meta/2048-logo-152x152.png",
       "sizes": "152x152",
       "type": "image/png"
