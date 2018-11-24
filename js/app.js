@@ -60,7 +60,8 @@ app.controller("projectsCtrl", ["$scope", function ($scope) {
 			lg: "/img/projects/large/musicMaster.png",
 			webp: "/img/projects/musicMaster.webp"
 		},
-		description: "React app that uses the Spotify api to search artists, play songs & recommend Artists based on the user preferences.",
+		description: `React app that uses the Spotify api to search artists, 
+		play songs & recommend Artists based on the user preferences.`,
 		skills: " React, JavaScript, Spotify API, HTML/CSS ",
 		url: "#"
 
