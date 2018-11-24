@@ -67,15 +67,21 @@ app.controller("projectsCtrl", ["$scope", function ($scope) {
 	},
 	{
 		id: 2,
-		name: "Personality Test",
+		name: "Emaily",
 		img: {
-			sm: "/img/projects/personalityTest.png",
-			lg: "/img/projects/large/personalityTest.png",
-			webp: "/img/projects/personalityTest.webp"
+			sm: "/img/projects/emaily.png",
+			lg: "/img/projects/large/emaily.png",
+			webp: "/img/projects/emaily.webp"
 		},
-		description: "Application for taking a color personality test made with JQuery, bootstrap and Django in the Back-end. ",
-		skills: " JavaScript, JQuery UI, Bootstrap, Django ",
-		url: "https://afternoon-headland-41285.herokuapp.com/"
+		description: `MERN stack application for sending email surveys. 
+		• Authentication with Google OAuth
+		• Cookie based
+		• Heroku ready
+		• Mongo DB on the cloud
+		• Payments with Stripe
+		• Sends emails with sendgrid API` ,
+		skills: " ReactJS, Heroku, Materialize, Node.js, Express.js, Stripe API, Redux, MongoDB ",
+		url: "https://vast-eyrie-10934.herokuapp.com/"
 
 	},
 	{
