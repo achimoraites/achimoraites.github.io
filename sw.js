@@ -15,7 +15,7 @@ const version = "1.05",
 		"/lib/angular/angular.min.js",
 		"/lib/angular-route/angular-route.min.js",
 		"/lib/angular-sanitize/angular-sanitize.min.js",
-		"/js/app.min.js"
+		"/js/app.js"
 	];
 
 /*  Service Worker Event Handlers */
