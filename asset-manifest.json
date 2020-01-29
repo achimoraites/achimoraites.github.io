@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.da41bb43.chunk.css",
+    "main.js": "/static/js/main.8cc9b64f.chunk.js",
+    "main.js.map": "/static/js/main.8cc9b64f.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.d05ad2ae.js",
+    "runtime~main.js.map": "/static/js/runtime~main.d05ad2ae.js.map",
+    "static/css/2.48c3d4a3.chunk.css": "/static/css/2.48c3d4a3.chunk.css",
+    "static/js/2.fe8f3a9c.chunk.js": "/static/js/2.fe8f3a9c.chunk.js",
+    "static/js/2.fe8f3a9c.chunk.js.map": "/static/js/2.fe8f3a9c.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.685dd1f8949f08aae11eceb7d6c9063a.js": "/precache-manifest.685dd1f8949f08aae11eceb7d6c9063a.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.48c3d4a3.chunk.css.map": "/static/css/2.48c3d4a3.chunk.css.map",
+    "static/css/main.da41bb43.chunk.css.map": "/static/css/main.da41bb43.chunk.css.map",
+    "static/media/slick-theme.css": "/static/media/slick.f97e3bbf.svg"
+  }
+}
