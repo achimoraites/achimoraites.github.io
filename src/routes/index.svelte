@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>Hello world!</title>
+	<title>Hello world!!!!</title>
 </svelte:head>
 
 <main>
