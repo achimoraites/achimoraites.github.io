@@ -1,11 +1,15 @@
 <script>
 	import '../app.postcss';
 	import BaseNav from '../components/BaseNav.svelte';
-	import BackgroundLines from '../components/BackgroundLines.svelte';
 </script>
 
-<div class="layout-wrapper">
-	<BackgroundLines />
+<div class="grid layout-wrapper">
 	<BaseNav />
 	<slot />
 </div>
+
+<style>
+	.layout-wrapper {
+		grid-template-columns: 20% 80%;
+	}
+</style>
