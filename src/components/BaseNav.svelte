@@ -31,13 +31,15 @@
 
 	<div>
 		<ul class="w-full flex flex-col text-center text-white">
-			<li class="w-full bg-blue-500">
+			<li class="bg-blue-800">
 				<a aria-current="page" class="active" href="/"><span>Home</span></a>
 			</li>
-			<li class="hover:bg-blue-500 hover:bg-opacity-50 hover:duration-300 ease-in-out">
+			<li class="hover:bg-blue-600 hover:bg-opacity-40 hover:duration-300 ease-in-out">
 				<a href="/resume"><span>Resume</span></a>
 			</li>
-			<li class="hover:bg-blue-500 hover:bg-opacity-50 hover:duration-300 ease-in-out"><a href="/articles"><span>Articles</span></a></li>
+			<li class="hover:bg-blue-600 hover:bg-opacity-40 hover:duration-300 ease-in-out">
+				<a href="/articles"><span>Articles</span></a>
+			</li>
 		</ul>
 	</div>
 
