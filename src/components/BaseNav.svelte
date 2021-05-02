@@ -1,14 +1,41 @@
 <script>
-	let navigationToggler = false;
+	import { onMount } from 'svelte';
 
 	const information = {
 		brandImageJPG: 'https://achimoraites.github.io/images/brand-image.jpg',
 		brandImage: 'https://achimoraites.github.io/images/brand-image.webp'
 	};
 
-	function handleNavigationToggler() {
-		navigationToggler = !navigationToggler;
+	const navLinkStyle = {
+		default: 'hover:bg-blue-600 hover:bg-opacity-40 hover:duration-300 ease-in-out',
+		active: 'bg-blue-800'
+	};
+
+	let navLinks = [
+		{
+			href: '/',
+			label: 'Home'
+		},
+		{
+			href: '/resume',
+			label: 'Resume'
+		},
+		{
+			href: '/blog',
+			label: 'Blog'
+		}
+	];
+
+	function updateLinks(href) {
+		navLinks = navLinks.map((l) =>
+			l.href === href ? { ...l, active: true } : { ...l, active: false }
+		);
 	}
+
+	onMount(() => {
+		const currPath = window.location.pathname || '/';
+		updateLinks(currPath);
+	});
 </script>
 
 <!-- component -->
@@ -31,15 +58,11 @@
 
 	<div>
 		<ul class="w-full flex flex-col text-center text-white">
-			<li class="bg-blue-800">
-				<a aria-current="page" class="active" href="/"><span>Home</span></a>
-			</li>
-			<li class="hover:bg-blue-600 hover:bg-opacity-40 hover:duration-300 ease-in-out">
-				<a href="/resume"><span>Resume</span></a>
-			</li>
-			<li class="hover:bg-blue-600 hover:bg-opacity-40 hover:duration-300 ease-in-out">
-				<a href="/articles"><span>Articles</span></a>
-			</li>
+			{#each navLinks as { href, active, label }}
+				<li class={active ? navLinkStyle.active : navLinkStyle.default}>
+					<a on:click={() => updateLinks(href)} {href}><span>{label}</span></a>
+				</li>
+			{/each}
 		</ul>
 	</div>
 
