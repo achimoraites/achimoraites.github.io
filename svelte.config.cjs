@@ -1,6 +1,9 @@
 const sveltePreprocess = require('svelte-preprocess');
 const static = require('@sveltejs/adapter-static');
+const node = require('@sveltejs/adapter-node');
 const pkg = require('./package.json');
+
+const isDev = process.env.NODE_ENV === 'development'
 
 /** @type {import('@sveltejs/kit').Config} */
 module.exports = {
@@ -19,7 +22,7 @@ module.exports = {
 		// By default, `npm run build` will create a standard Node app.
 		// You can create optimized builds for different platforms by
 		// specifying a different adapter
-		adapter: static({
+		adapter: isDev ? node() : static({
 			fallback: 'index.html'
 		}),
 
