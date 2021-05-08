@@ -46,7 +46,7 @@
 				<picture>
 					<source srcset={information.brandImageJPG} />
 					<img
-						class="w-full rounded-full p-1 bg-gray-600"
+						class="w-full max-w-xs rounded-full p-1 bg-gray-600"
 						src={information.brandImage}
 						alt="brandimage"
 					/>

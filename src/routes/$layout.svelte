@@ -3,7 +3,7 @@
 	import BaseNav from '../components/BaseNav.svelte';
 </script>
 
-<div class="grid layout-wrapper circuit-bg bg-white">
+<div class="grid layout-wrapper circuit-bg bg-white font-nunito">
 	<BaseNav />
 	<slot />
 </div>
