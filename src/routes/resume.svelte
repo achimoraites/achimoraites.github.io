@@ -1,4 +1,5 @@
 <script lang="ts">
+	import ShadowedHeading from '../components/ShadowedHeading.svelte';
 	import Card from '../components/Card.svelte';
 </script>
 
@@ -16,21 +17,33 @@
 	<meta property="og:site_name" content="Achilles Moraites" />
 </svelte:head>
 
-<main class="px-2 mt-24">
+<main class="px-2 mt-16">
 	<section class="max-w-4xl">
-		<h3>Skills</h3>
-		<div class="grid sm:grid-cols-2 grid-cols-1 gap-4">
+		<ShadowedHeading title="skills" />
+		<div class="grid sm:grid-cols-2 grid-cols-1 gap-4 mt-24">
 			<Card
 				title="Frontend Development"
 				text="Experienced in Angular, React and VueJS with the latest best practices in modern web development creating great user experiences."
-				image="https://images.pexels.com/photos/3861964/pexels-photo-3861964.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+				icon="/images/icons/code.svg"
 			/>
 			<Card
 				title="Mobile App Development"
 				text="Developing mobile applications using hybrid technologies: PWA with Responsive design, Ionic 4 with Angular or using React Native."
-				image="https://images.pexels.com/photos/3861964/pexels-photo-3861964.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+				icon="/images/icons/mobile.svg"
 			/>
 		</div>
+		<!-- <div class="grid sm:grid-cols-2 grid-cols-1 gap-4 mt-4">
+			<Card
+				title="Speed Optimization"
+				text="Using the latest tooling and guidelines."
+				icon="/images/icons/rocket.svg"
+			/>
+			<Card
+				title="Mobile App Development"
+				text="Developing mobile applications using hybrid technologies: PWA with Responsive design, Ionic 4 with Angular or using React Native."
+				icon="/images/icons/pallet.svg"
+			/>
+		</div> -->
 	</section>
 </main>
 
