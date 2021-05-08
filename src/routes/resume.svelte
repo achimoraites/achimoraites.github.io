@@ -18,7 +18,7 @@
 </svelte:head>
 
 <main class="px-2 mt-16">
-	<section class="max-w-4xl">
+	<section class="max-w-4xl mb-16">
 		<ShadowedHeading title="skills" />
 		<div class="grid sm:grid-cols-2 grid-cols-1 gap-4 mt-24">
 			<Card
@@ -32,18 +32,18 @@
 				icon="/images/icons/mobile.svg"
 			/>
 		</div>
-		<!-- <div class="grid sm:grid-cols-2 grid-cols-1 gap-4 mt-4">
+		<div class="grid sm:grid-cols-2 grid-cols-1 gap-4 my-4">
 			<Card
 				title="Speed Optimization"
-				text="Using the latest tooling and guidelines."
+				text="Using the latest tooling and guidelines, i create reliable and performant applications."
 				icon="/images/icons/rocket.svg"
 			/>
 			<Card
-				title="Mobile App Development"
-				text="Developing mobile applications using hybrid technologies: PWA with Responsive design, Ionic 4 with Angular or using React Native."
+				title="UX design"
+				text="Designing applications to be user friendly in any platform."
 				icon="/images/icons/pallet.svg"
 			/>
-		</div> -->
+		</div>
 	</section>
 </main>
 

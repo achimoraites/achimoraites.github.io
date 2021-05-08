@@ -4,7 +4,7 @@
 	import BaseFooter from '../components/BaseFooter.svelte';
 </script>
 
-<div class="grid layout-wrapper circuit-bg bg-white font-nunito">
+<div class="grid layout-wrapper circuit-bg bg-white font-monospace">
 	<BaseNav />
 	<slot />
 </div>

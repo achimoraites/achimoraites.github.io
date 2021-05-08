@@ -18,7 +18,7 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				nunito: '"Nunito", sans-serif'
+				monospace: 'monospace, sans-serif'
 			},
 			screens: {
 				'mobile': {'max': '640px'},

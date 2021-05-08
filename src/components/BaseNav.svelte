@@ -40,7 +40,7 @@
 </script>
 
 <!-- component -->
-<nav class="bg-gray-900 sm:h-screen sm:grid grid-cols-1 grid-rows-2 z-10 mobile:sticky mobile:top-0">
+<nav class="bg-gray-900 sm:h-screen sm:grid grid-cols-1 grid-rows-2 z-10 sticky top-0">
 	<div class="mobile:hidden">
 		<div class="image-box py-5 pl-4 pr-5 ">
 			<a href="/">
