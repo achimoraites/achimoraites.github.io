@@ -15,7 +15,7 @@
 	<meta property="og:site_name" content="Achilles Moraites" />
 </svelte:head>
 
-<div class="flex justify-center items-center">
+<div class="flex justify-center items-center mobile:h-screen">
 	<div class="container text-center">
 		<h1 class="text-5xl font-bold">Hi, I am <span class="text-blue-800">Achilles Moraites</span></h1>
 		<p>

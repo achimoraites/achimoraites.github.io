@@ -19,7 +19,10 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				nunito: '"Nunito", sans-serif'
-			}
+			},
+			screens: {
+				'mobile': {'max': '640px'},
+			},
 		}
 	},
 	variants: {

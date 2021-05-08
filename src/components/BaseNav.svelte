@@ -1,5 +1,6 @@
 <script>
 	import { onMount } from 'svelte';
+	import BaseFooter from './BaseFooter.svelte';
 
 	const information = {
 		brandImageJPG: 'https://achimoraites.github.io/images/brand-image.jpg',
@@ -7,8 +8,8 @@
 	};
 
 	const navLinkStyle = {
-		default: 'hover:bg-blue-600 hover:bg-opacity-40 hover:duration-300 ease-in-out',
-		active: 'bg-blue-800'
+		default: 'hover:bg-blue-600 hover:bg-opacity-40 hover:duration-300 ease-in-out mobile:w-1/4',
+		active: 'bg-blue-800 mobile:w-1/4'
 	};
 
 	let navLinks = [
@@ -39,9 +40,9 @@
 </script>
 
 <!-- component -->
-<nav class="bg-gray-900 h-screen grid grid-cols-1 grid-rows-2">
-	<div>
-		<div class="image-box py-5 pl-4 pr-5">
+<nav class="bg-gray-900 sm:h-screen sm:grid grid-cols-1 grid-rows-2 z-10 mobile:sticky mobile:top-0">
+	<div class="mobile:hidden">
+		<div class="image-box py-5 pl-4 pr-5 ">
 			<a href="/">
 				<picture>
 					<source srcset={information.brandImageJPG} />
@@ -57,7 +58,8 @@
 	</div>
 
 	<div>
-		<ul class="w-full flex flex-col text-center text-white">
+		<h2 class="text-white text-2xl mx-4 my-2 sm:hidden">Achilles Moraites</h2>
+		<ul class="w-full flex sm:flex-col mobile:justify-around mobile:pb-1 text-center text-white">
 			{#each navLinks as { href, active, label }}
 				<li class={active ? navLinkStyle.active : navLinkStyle.default}>
 					<a on:click={() => updateLinks(href)} {href}><span>{label}</span></a>
@@ -66,15 +68,9 @@
 		</ul>
 	</div>
 
-	<hr class="border-1 border-gray-600 w-full" />
-
-	<p class="text-gray-400 py-2 text-xs text-center">
-		© 2021 <b
-			><a rel="noopener noreferrer" target="_blank" href="https://achimoraites.github.io"
-				>Achilles Moraites</a
-			></b
-		>
-	</p>
+	<div class="mobile:hidden">
+		<BaseFooter />
+	</div>
 </nav>
 
 <style>
