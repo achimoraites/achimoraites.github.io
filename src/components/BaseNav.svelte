@@ -18,11 +18,11 @@
 			label: 'Home'
 		},
 		{
-			href: '/resume',
+			href: './resume',
 			label: 'Resume'
 		},
 		{
-			href: '/blog',
+			href: './blog',
 			label: 'Blog'
 		}
 	];

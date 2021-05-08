@@ -4,11 +4,11 @@
   "homepage": "https://achimoraites.github.io/",
   "scripts": {
     "dev": "svelte-kit dev",
-    "build": "svelte-kit build",
+    "build": "svelte-kit build && touch build/.nojekyll",
     "start": "svelte-kit start",
     "lint": "prettier --check . && eslint --ignore-path .gitignore .",
     "format": "prettier --write .",
-    "deploy": "npm run build && gh-pages -d build"
+    "deploy": "npm run build && gh-pages -d build -t true"
   },
   "devDependencies": {
     "@sveltejs/adapter-node": "next",

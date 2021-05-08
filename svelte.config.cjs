@@ -22,18 +22,20 @@ module.exports = {
 		// By default, `npm run build` will create a standard Node app.
 		// You can create optimized builds for different platforms by
 		// specifying a different adapter
-		adapter: isDev ? node() : static({
-			fallback: 'index.html'
-		}),
+		// adapter: isDev ? node() : static({
+		// 	fallback: '200.html'
+		// }),
+		adapter: static(),
 
 		// hydrate the <div id="svelte"> element in src/app.html
 		target: '#svelte',
 		prerender: {
-			crawl: true,
+			force: true,
 		},
-		paths: {
-			base: isDev ? '/' : '/achimoraites.github.io/'
-		},
+		// paths: {
+		// 	base: '/achimoraites.github.io',
+		// 	assets: '/achimoraites.github.io'
+		// },
 
 		vite: {
 			ssr: {
