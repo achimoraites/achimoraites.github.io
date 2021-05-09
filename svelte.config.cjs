@@ -29,13 +29,13 @@ module.exports = {
 
 		// hydrate the <div id="svelte"> element in src/app.html
 		target: '#svelte',
-		prerender: {
-			force: true,
-		},
-		// paths: {
-		// 	base: '/achimoraites.github.io',
-		// 	assets: '/achimoraites.github.io'
+		// prerender: {
+		// 	force: true,
 		// },
+		paths: {
+			base: '',
+			assets: ''
+		},
 
 		vite: {
 			ssr: {

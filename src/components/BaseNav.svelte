@@ -2,11 +2,6 @@
 	import { onMount } from 'svelte';
 	import BaseFooter from './BaseFooter.svelte';
 
-	const information = {
-		brandImageJPG: 'https://achimoraites.github.io/images/brand-image.jpg',
-		brandImage: 'https://achimoraites.github.io/images/brand-image.webp'
-	};
-
 	const navLinkStyle = {
 		default: 'hover:bg-blue-600 hover:bg-opacity-40 hover:duration-300 ease-in-out mobile:w-1/4',
 		active: 'bg-blue-800 mobile:w-1/4'
@@ -18,11 +13,11 @@
 			label: 'Home'
 		},
 		{
-			href: './resume',
+			href: '/resume',
 			label: 'Resume'
 		},
 		{
-			href: './blog',
+			href: '/blog',
 			label: 'Blog'
 		}
 	];
@@ -45,10 +40,9 @@
 		<div class="image-box py-5 pl-4 pr-5 ">
 			<a href="/">
 				<picture>
-					<source srcset={information.brandImageJPG} />
 					<img
 						class="w-full max-w-xs rounded-full p-1 bg-gray-600"
-						src={information.brandImage}
+						src="/images/avatar.jpg"
 						alt="brandimage"
 					/>
 				</picture>
