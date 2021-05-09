@@ -22,9 +22,7 @@ module.exports = {
 		// By default, `npm run build` will create a standard Node app.
 		// You can create optimized builds for different platforms by
 		// specifying a different adapter
-		// adapter: isDev ? node() : static({
-		// 	fallback: '200.html'
-		// }),
+		adapter: isDev ? node() : static(),
 		adapter: static(),
 
 		// hydrate the <div id="svelte"> element in src/app.html

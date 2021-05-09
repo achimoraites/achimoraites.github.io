@@ -8,9 +8,9 @@
 	<BaseNav />
 	<slot />
 </div>
-<div class="sm:hidden bg-gray-900">
+<footer class="sm:hidden bg-gray-900">
 	<BaseFooter />
-</div>
+</footer>
 
 <style>
 	.circuit-bg {

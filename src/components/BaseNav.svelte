@@ -13,8 +13,8 @@
 			label: 'Home'
 		},
 		{
-			href: '/resume',
-			label: 'Resume'
+			href: '/about',
+			label: 'About'
 		},
 		{
 			href: '/blog',
@@ -52,7 +52,7 @@
 	</div>
 
 	<div>
-		<h2 class="text-white text-2xl mx-4 my-2 sm:hidden">Achilles Moraites</h2>
+		<h2 class="text-white text-2xl mx-4 my-1 sm:hidden">Achilles Moraites</h2>
 		<ul class="w-full flex sm:flex-col mobile:justify-around mobile:pb-1 text-center text-white">
 			{#each navLinks as { href, active, label }}
 				<li class={active ? navLinkStyle.active : navLinkStyle.default}>

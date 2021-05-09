@@ -5,7 +5,7 @@
 </script>
 
 <div class="shadow-md rounded-sm p-4 bg-white border-solid border-t-4 border-gray-400 hover:border-gray-500">
-	<img alt="moto" src={icon} class="h-auto w-10 mb-4" />
+	<img alt={title + ' icon'} src={icon} class="h-auto w-10 mb-4" />
 	<div class="">
 		<h5 class="text-gray-800 text-xl font-bold mb-2">
 			{title}
