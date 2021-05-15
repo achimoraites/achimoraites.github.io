@@ -43,7 +43,9 @@
 					<img
 						class="w-full max-w-xs rounded-full p-1 bg-gray-600"
 						src="/images/avatar.jpg"
-						alt="brandimage"
+						alt="Achilles Moraites avatar"
+						width="148"
+						height="148"
 					/>
 				</picture>
 			</a>

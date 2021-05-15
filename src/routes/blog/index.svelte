@@ -1,6 +1,5 @@
 <script lang="ts">
 	import ShadowedHeading from '../../components/ShadowedHeading.svelte';
-	import Card from '../../components/Card.svelte';
 </script>
 
 <svelte:head>
