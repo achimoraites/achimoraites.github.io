@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+
+		
+
+		<link rel="modulepreload" href="/./app/start-fac70dc0.js">
+		<link rel="modulepreload" href="/./app/chunks/vendor-3b929796.js">
+		<link rel="modulepreload" href="/./app/pages/blog/$layout.reset.svelte-deed169a.js">
+		<link rel="modulepreload" href="/./app/chunks/TopNav-5c3da289.js">
+		<link rel="modulepreload" href="/./app/pages/blog/test-post.md-1a386267.js">
+		<link rel="modulepreload" href="/./app/chunks/blog-post-layout-a1aeab29.js">
+		<link rel="stylesheet" href="/./app/assets/start-0826e215.css">
+
+		<script type="module">
+			import { start } from "/./app/start-fac70dc0.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":"/."},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/./app/pages/blog/$layout.reset.svelte-deed169a.js"),
+						import("/./app/pages/blog/test-post.md-1a386267.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "/blog/test-post",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div id="svelte">
+
+
+<nav id="header" class="fixed w-full z-10 top-0 bg-gray-800 font-mono"><div class="w-full md:max-w-4xl mx-auto flex flex-wrap items-center justify-between mt-0 py-3"><div class="pl-4"><a class="text-gray-300 no-underline hover:no-underline font-extrabold text-xl" href="/blog">Achilles Moraites</a></div>
+
+<div class="block lg:hidden pr-4"><button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-900 hover:border-green-500 appearance-none focus:outline-none"><svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg></button></div>
+
+<div class="w-full flex-grow lg:items-center lg:w-auto lg:block mt-2 lg:mt-0 bg-gray-900 md:bg-transparent z-20 hidden" id="nav-content"><ul class="list-reset lg:flex justify-end flex-1 items-center"><li class="mr-3"><a class="inline-block text-gray-300 no-underline hover:text-gray-400 hover:text-underline py-2 px-4" href="/"><span>Home</span></a>
+			</li><li class="mr-3"><a class="inline-block py-2 px-4 text-blue-500 font-bold no-underline" href="/blog"><span>Blog</span></a>
+			</li></ul></div></div></nav>
+<main><article class="mt-20"><h1>Achilles Blog - Test Post</h1>
+	<p class="mb-8">By <span class=" font-semibold">achimoraites</span> <span>Jul 31, 2018</span></p>
+	<p>This is a test</p>
+<pre class="language-typescript"><code class="language-typescript"><span class="token keyword">const</span> x <span class="token operator">=</span> <span class="token number">100</span><span class="token punctuation">;</span></code></pre></article></main>
+
+<footer class="bg-gray-900 mt-5"><hr class="border-1 border-gray-600 w-full">
+
+<p class="text-gray-400 py-2 text-xs text-center">© 2021 <b><a rel="noopener noreferrer" target="_blank" href="https://achimoraites.github.io">Achilles Moraites</a></b></p></footer>
+
+
+
+	
+</div>
+	</body>
+</html>

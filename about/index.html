@@ -8,17 +8,18 @@
 
 		
 
-		<link rel="modulepreload" href="../app/start-3d574f1a.js">
-		<link rel="modulepreload" href="../app/chunks/vendor-099561a7.js">
-		<link rel="modulepreload" href="../app/pages/$layout.svelte-a8dc039f.js">
-		<link rel="modulepreload" href="../app/pages/about.svelte-e2ddd966.js">
-		<link rel="modulepreload" href="../app/chunks/ShadowedHeading-99bfac31.js">
-		<link rel="stylesheet" href="../app/assets/start-0826e215.css">
-		<link rel="stylesheet" href="../app/assets/pages/$layout.svelte-d5412933.css">
-		<link rel="stylesheet" href="../app/assets/ShadowedHeading-7042ab29.css">
+		<link rel="modulepreload" href="/./app/start-fac70dc0.js">
+		<link rel="modulepreload" href="/./app/chunks/vendor-3b929796.js">
+		<link rel="modulepreload" href="/./app/pages/$layout.svelte-f0c41b49.js">
+		<link rel="modulepreload" href="/./app/chunks/TopNav-5c3da289.js">
+		<link rel="modulepreload" href="/./app/pages/about.svelte-5dfdaea9.js">
+		<link rel="modulepreload" href="/./app/chunks/ShadowedHeading-b82433bb.js">
+		<link rel="stylesheet" href="/./app/assets/start-0826e215.css">
+		<link rel="stylesheet" href="/./app/assets/pages/$layout.svelte-90c898dc.css">
+		<link rel="stylesheet" href="/./app/assets/ShadowedHeading-7042ab29.css">
 
 		<script type="module">
-			import { start } from "../app/start-3d574f1a.js";
+			import { start } from "/./app/start-fac70dc0.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base":"","assets":"/."},
@@ -30,8 +31,8 @@
 					status: 200,
 					error: null,
 					nodes: [
-						import("../app/pages/$layout.svelte-a8dc039f.js"),
-						import("../app/pages/about.svelte-e2ddd966.js")
+						import("/./app/pages/$layout.svelte-f0c41b49.js"),
+						import("/./app/pages/about.svelte-5dfdaea9.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
@@ -47,20 +48,28 @@
 		<div id="svelte">
 
 
-<div class="grid layout-wrapper circuit-bg bg-white font-monospace svelte-12xm86q">
-<nav class="bg-gray-900 sm:h-screen sm:grid grid-cols-1 grid-rows-2 z-10 sticky top-0"><div class="mobile:hidden"><div class="image-box py-5 pl-4 pr-5  svelte-tenp37"><a href="/"><picture><img class="w-full max-w-xs rounded-full p-1 bg-gray-600" src="/images/avatar.jpg" alt="brandimage"></picture></a></div>
+<div class="sm:hidden"><nav id="header" class="fixed w-full z-10 top-0 bg-gray-800 font-mono"><div class="w-full md:max-w-4xl mx-auto flex flex-wrap items-center justify-between mt-0 py-3"><div class="pl-4"><a class="text-gray-300 no-underline hover:no-underline font-extrabold text-xl" href="/blog">Achilles Moraites</a></div>
+
+<div class="block lg:hidden pr-4"><button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-900 hover:border-green-500 appearance-none focus:outline-none"><svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg></button></div>
+
+<div class="w-full flex-grow lg:items-center lg:w-auto lg:block mt-2 lg:mt-0 bg-gray-900 md:bg-transparent z-20 hidden" id="nav-content"><ul class="list-reset lg:flex justify-end flex-1 items-center"><li class="mr-3"><a class="inline-block text-gray-300 no-underline hover:text-gray-400 hover:text-underline py-2 px-4" href="/"><span>Home</span></a>
+			</li><li class="mr-3"><a class="inline-block text-gray-300 no-underline hover:text-gray-400 hover:text-underline py-2 px-4" href="/about"><span>About</span></a>
+			</li><li class="mr-3"><a class="inline-block text-gray-300 no-underline hover:text-gray-400 hover:text-underline py-2 px-4" href="/blog"><span>Blog</span></a>
+			</li></ul></div></div></nav></div>
+<div class="grid layout-wrapper circuit-bg bg-white font-monospace svelte-12xm86q"><div class="mobile:hidden">
+<nav class="side-nav svelte-1qv21fv"><div><div class="image-box py-5 pl-4 pr-5 mobile:hidden svelte-1qv21fv"><a href="/"><picture><img class="w-full max-w-xs rounded-full p-1 bg-gray-600" src="/images/avatar.jpg" alt="Achilles Moraites avatar" width="148" height="148"></picture></a></div>
 <hr class="border-1 border-gray-600 w-full"></div>
 
 	<div><h2 class="text-white text-2xl mx-4 my-1 sm:hidden">Achilles Moraites</h2>
-<ul class="w-full flex sm:flex-col mobile:justify-around mobile:pb-1 text-center text-white"><li class="hover:bg-blue-600 hover:bg-opacity-40 hover:duration-300 ease-in-out mobile:w-1/4 svelte-tenp37"><a href="/"><span>Home</span></a>
-		</li><li class="hover:bg-blue-600 hover:bg-opacity-40 hover:duration-300 ease-in-out mobile:w-1/4 svelte-tenp37"><a href="/about"><span>About</span></a>
-		</li><li class="hover:bg-blue-600 hover:bg-opacity-40 hover:duration-300 ease-in-out mobile:w-1/4 svelte-tenp37"><a href="/blog"><span>Blog</span></a>
+<ul class="w-full flex sm:flex-col mobile:justify-around mobile:pb-1 text-center text-white"><li class="hover:bg-blue-600 hover:bg-opacity-40 hover:duration-300 ease-in-out mobile:w-1/4 svelte-1qv21fv"><a href="/"><span>Home</span></a>
+		</li><li class="hover:bg-blue-600 hover:bg-opacity-40 hover:duration-300 ease-in-out mobile:w-1/4 svelte-1qv21fv"><a href="/about"><span>About</span></a>
+		</li><li class="hover:bg-blue-600 hover:bg-opacity-40 hover:duration-300 ease-in-out mobile:w-1/4 svelte-1qv21fv"><a href="/blog"><span>Blog</span></a>
 		</li></ul></div>
 
 	<div class="mobile:hidden"><hr class="border-1 border-gray-600 w-full">
 
 <p class="text-gray-400 py-2 text-xs text-center">© 2021 <b><a rel="noopener noreferrer" target="_blank" href="https://achimoraites.github.io">Achilles Moraites</a></b></p></div>
-</nav>
+</nav></div>
 	
 
 <main class="px-2 mt-16 min-h-screen h-auto"><section class="max-w-4xl mb-8"><header><div class="relative"><h2 class="text-4xl font-black uppercase z-10">About</h2>
@@ -78,10 +87,10 @@
 	<span class="uppercase transform translate-x-1 -translate-y-4 text-5xl font-bold absolute left-0 top-8 svelte-1i2v6w">Services</span>
 </div></header>
 
-<div class="grid sm:grid-cols-2 grid-cols-1 gap-4 mt-12"><div class="shadow-md rounded-sm p-4 bg-white border-solid border-t-4 border-gray-400 hover:border-gray-500"><img alt="Frontend Development icon" src="/images/icons/code.svg" class="h-auto w-10 mb-4">
+<div class="grid sm:grid-cols-2 grid-cols-1 gap-4 mt-12"><div class="shadow-md rounded-sm p-4 bg-white border-solid border-t-4 border-gray-400 hover:border-gray-500"><img alt="Frontend Development icon" src="/images/icons/code.svg" width="40" height="40" class="h-auto w-10 mb-4">
 	<div class=""><h5 class="text-gray-800 text-xl font-bold mb-2">Frontend Development</h5>
 <p class="text-gray-700 text-md">Experienced in Angular, React, VueJS and Svelte with the latest best practices in modern web development creating great user experiences.</p></div></div>
-	<div class="shadow-md rounded-sm p-4 bg-white border-solid border-t-4 border-gray-400 hover:border-gray-500"><img alt="Speed Optimization icon" src="/images/icons/rocket.svg" class="h-auto w-10 mb-4">
+	<div class="shadow-md rounded-sm p-4 bg-white border-solid border-t-4 border-gray-400 hover:border-gray-500"><img alt="Speed Optimization icon" src="/images/icons/rocket.svg" width="40" height="40" class="h-auto w-10 mb-4">
 	<div class=""><h5 class="text-gray-800 text-xl font-bold mb-2">Speed Optimization</h5>
 <p class="text-gray-700 text-md">Using the latest tooling and guidelines, i create reliable, accesible and performant applications.</p></div></div></div></section></main></div>
 <footer class="sm:hidden bg-gray-900"><hr class="border-1 border-gray-600 w-full">
