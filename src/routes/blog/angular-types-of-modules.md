@@ -5,7 +5,7 @@ excerpt: Crafting high quality Angular apps requires to have knowledge of how to
 image: test.jpg
 slug: angular-types-of-modules
 subtitle: Improve the scalabillity of your Angular project by using the module type pattern! 
-title: Types of Modules in Angular - Achilles Blog
+title: Types of Modules in Angular
 url: https://achimoraites.github.io/blog/angular-types-of-modules
 ---
 
@@ -13,7 +13,6 @@ url: https://achimoraites.github.io/blog/angular-types-of-modules
   export const prerender = true;
 </script>
 
-# Types of Modules in Angular
 
 Crafting high quality Angular apps requires to have knowledge of how to use the different types of modules to ensure readability, performance and scalability.
 
@@ -125,4 +124,8 @@ export class SharedModule {}
 
 This was a brief introduction to the 3 most common Modules types used in Angular Applications.
 
-Happy coding :) 
+Happy coding 😄
+
+ ### Credits
+
+Photo by [Digital Buggu](https://www.pexels.com/@digitalbuggu?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels)  from [Pexels](https://www.pexels.com/photo/colorful-toothed-wheels-171198/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels)
