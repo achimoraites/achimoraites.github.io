@@ -1,7 +1,19 @@
 <script lang="ts">
-	import BlogNav from '../../components/blog/BlogNav.svelte';
+	import TopNav from '../../components/TopNav.svelte';
+
+	let navLinks = [
+		{
+			href: '/',
+			label: 'Home'
+		},
+		{
+			href: '/blog',
+			label: 'Blog',
+			active: true,
+		}
+	];
 </script>
 
-<BlogNav />
+<TopNav navLinks={navLinks} />
 <slot><!-- optional fallback --></slot>
 

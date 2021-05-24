@@ -7,20 +7,7 @@
 		active: 'bg-blue-800 mobile:w-1/4'
 	};
 
-	let navLinks = [
-		{
-			href: '/',
-			label: 'Home'
-		},
-		{
-			href: '/about',
-			label: 'About'
-		},
-		{
-			href: '/blog',
-			label: 'Blog'
-		}
-	];
+	export let navLinks = [];
 
 	function updateLinks(href) {
 		navLinks = navLinks.map((l) =>
@@ -35,9 +22,9 @@
 </script>
 
 <!-- component -->
-<nav class="bg-gray-900 sm:h-screen sm:grid grid-cols-1 grid-rows-2 z-10 sticky top-0">
-	<div class="mobile:hidden">
-		<div class="image-box py-5 pl-4 pr-5 ">
+<nav class="side-nav">
+	<div>
+		<div class="image-box py-5 pl-4 pr-5 mobile:hidden">
 			<a href="/">
 				<picture>
 					<img
@@ -69,7 +56,13 @@
 	</div>
 </nav>
 
+
 <style>
+	.side-nav {
+		max-width: 250px;
+
+		@apply bg-gray-900 sm:h-screen sm:grid grid-cols-1 grid-rows-2 z-10 sticky top-0 mobile:max-w-full;
+	}
 	.image-box {
 		max-width: 90%;
 		margin: 0 auto;
