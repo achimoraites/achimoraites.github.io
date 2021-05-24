@@ -1,4 +1,5 @@
 <script lang="ts">
+	import BaseFooter from '../../components/BaseFooter.svelte';
 	import TopNav from '../../components/TopNav.svelte';
 
 	let navLinks = [
@@ -9,11 +10,16 @@
 		{
 			href: '/blog',
 			label: 'Blog',
-			active: true,
+			active: true
 		}
 	];
 </script>
 
-<TopNav navLinks={navLinks} />
-<slot><!-- optional fallback --></slot>
+<TopNav {navLinks} />
+<main>
+	<slot><!-- optional fallback --></slot>
+</main>
 
+<footer class="bg-gray-900 mt-5">
+	<BaseFooter />
+</footer>

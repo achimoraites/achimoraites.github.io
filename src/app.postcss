@@ -4,9 +4,33 @@
 @tailwind utilities;
 
 pre {
-	@apply bg-gray-900 rounded text-white font-mono text-base p-2 md:p-4 m-2 max-w-max;
+	@apply bg-gray-900 rounded text-white font-mono text-base p-2 md:p-4 my-2 max-w-max;
 }
 
 code {
 	@apply break-words whitespace-pre-wrap;
+}
+
+article {
+	@apply mx-auto max-w-screen-lg px-4 mobile:px-2;
+}
+
+article h1 {
+	@apply text-5xl mb-10;
+}
+article h2 {
+	@apply text-4xl mb-2 mt-8;
+}
+article h3 {
+	@apply text-3xl mb-2 mt-8;
+}
+article h4 {
+	@apply text-2xl mb-2 mt-5;
+}
+
+article ol,
+article ul {
+	list-style: initial !important;
+
+	@apply ml-5 my-2;
 }
