@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+
+		
+
+		<link rel="modulepreload" href="/./app/start-fac70dc0.js">
+		<link rel="modulepreload" href="/./app/chunks/vendor-3b929796.js">
+		<link rel="modulepreload" href="/./app/pages/blog/$layout.reset.svelte-deed169a.js">
+		<link rel="modulepreload" href="/./app/chunks/TopNav-5c3da289.js">
+		<link rel="modulepreload" href="/./app/pages/blog/angular-types-of-modules.md-ce785ae1.js">
+		<link rel="modulepreload" href="/./app/chunks/blog-post-layout-a1aeab29.js">
+		<link rel="stylesheet" href="/./app/assets/start-0826e215.css">
+
+		<script type="module">
+			import { start } from "/./app/start-fac70dc0.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":"/."},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/./app/pages/blog/$layout.reset.svelte-deed169a.js"),
+						import("/./app/pages/blog/angular-types-of-modules.md-ce785ae1.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "/blog/angular-types-of-modules",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div id="svelte">
+
+
+<nav id="header" class="fixed w-full z-10 top-0 bg-gray-800 font-mono"><div class="w-full md:max-w-4xl mx-auto flex flex-wrap items-center justify-between mt-0 py-3"><div class="pl-4"><a class="text-gray-300 no-underline hover:no-underline font-extrabold text-xl" href="/blog">Achilles Moraites</a></div>
+
+<div class="block lg:hidden pr-4"><button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-900 hover:border-green-500 appearance-none focus:outline-none"><svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg></button></div>
+
+<div class="w-full flex-grow lg:items-center lg:w-auto lg:block mt-2 lg:mt-0 bg-gray-900 md:bg-transparent z-20 hidden" id="nav-content"><ul class="list-reset lg:flex justify-end flex-1 items-center"><li class="mr-3"><a class="inline-block text-gray-300 no-underline hover:text-gray-400 hover:text-underline py-2 px-4" href="/"><span>Home</span></a>
+			</li><li class="mr-3"><a class="inline-block py-2 px-4 text-blue-500 font-bold no-underline" href="/blog"><span>Blog</span></a>
+			</li></ul></div></div></nav>
+<main><article class="mt-20"><h1>Types of Modules in Angular</h1>
+	<p class="mb-8">By <span class=" font-semibold">achimoraites</span> <span>May 10, 2020</span></p>
+	<p>Crafting high quality Angular apps requires to have knowledge of how to use the different types of modules to ensure readability, performance and scalability.</p>
+<p>By setting up your project to use each module type properly you will have better control over your project to add more advanced features such as Lazy Loading and a more organized structure to work with. </p>
+<p>We have 3 types of modules:</p>
+<ul><li><strong>Feature modules</strong></li>
+<li><strong>Core Module</strong></li>
+<li><strong>Shared Module</strong></li></ul>
+<h2>Feature Modules</h2>
+<p>those are the modules that encapsulate a specific feature at a logic level, for example you have a dashboard page that allows the users to see their projects.</p>
+<p>The dashboard module will have everything that is needed to allow a user to see their projects:</p>
+<ul><li>components</li>
+<li>services</li>
+<li>pipes</li>
+<li>directives</li></ul>
+<p>In general feature specific functionality is included in the module.</p>
+<p>If we need to use some common functionality in our Feature Modules we import the Shared Module in the Modules that needs it.</p>
+<p>We will talk more about shared functionality later.</p>
+<pre class="language-typescript"><code class="language-typescript"><span class="token comment">// feature module example</span>
+<span class="token keyword">import</span> <span class="token punctuation">&#123;</span> NgModule <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'@angular/core'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">&#123;</span> SharedModule <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'../shared/SharedModule'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> <span class="token punctuation">&#123;</span> DashboardComponent <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'./dashboard/dashboard.component'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">&#123;</span> ProjectComponent <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'./project/project.component'</span><span class="token punctuation">;</span>
+
+@<span class="token function">NgModule</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
+  imports<span class="token operator">:</span> <span class="token punctuation">[</span>
+    NgModule<span class="token punctuation">,</span>
+    SharedModule
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  declarations<span class="token operator">:</span> <span class="token punctuation">[</span> DashboardComponent<span class="token punctuation">,</span> ProjectComponent <span class="token punctuation">]</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">DashboardModule</span> <span class="token punctuation">&#123;</span> <span class="token punctuation">&#125;</span></code></pre>
+<h2>Core Module</h2>
+<p>Here we include functionality that will be used only ONCE!</p>
+<p><strong>The Core module is used ONLY in the root (app) Module!</strong></p>
+<p>Common <strong>services are placed in the Core Module</strong> to ensure we have only a single instance of the services to avoid unexpected behaviors.</p>
+<p>In this type of module we also place components that are used only ONCE for example the NavBar and the Footer components.</p>
+<pre class="language-typescript"><code class="language-typescript"><span class="token comment">// core module example</span>
+<span class="token keyword">import</span> <span class="token punctuation">&#123;</span> NgModule<span class="token punctuation">,</span> Optional<span class="token punctuation">,</span> SkipSelf <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'@angular/core'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> <span class="token punctuation">&#123;</span> ApiService <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'./services/api.service'</span><span class="token punctuation">;</span>
+
+@<span class="token function">NgModule</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
+  providers<span class="token operator">:</span> <span class="token punctuation">[</span> ApiService <span class="token punctuation">]</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">CoreModule</span> <span class="token punctuation">&#123;</span>
+   <span class="token comment">// do not allow to be used more than ONCE!!!</span>
+  <span class="token keyword">constructor</span><span class="token punctuation">(</span>@<span class="token function">Optional</span><span class="token punctuation">(</span><span class="token punctuation">)</span> @<span class="token function">SkipSelf</span><span class="token punctuation">(</span><span class="token punctuation">)</span> parent<span class="token operator">:</span> CoreModule<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>parent<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+      <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">Error</span><span class="token punctuation">(</span>
+        <span class="token string">'Import CoreModule in the root module only!!!'</span>
+      <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span></code></pre>
+<h2>Shared Module</h2>
+<p>This is the most missunderstooded kind of Module!</p>
+<p>The purpose of the SharedModule is to make available commonly used:</p>
+<ul><li>components</li>
+<li>directives</li>
+<li>pipes</li></ul>
+<p>We use the SharedModule in the feature modules to make common functionality available.</p>
+<p>We also make sure to have only one Shared Module.</p>
+<p>We avoid placing services here!</p>
+<pre class="language-typescript"><code class="language-typescript"><span class="token comment">// shared module example</span>
+<span class="token keyword">import</span> <span class="token punctuation">&#123;</span> CommonModule <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'@angular/common'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">&#123;</span> NgModule <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'@angular/core'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> <span class="token punctuation">&#123;</span> CustomerComponent <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'./components/customer/customer.component'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">&#123;</span> PercentagePipe <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'./pipes/percentage/percentange.pipe'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">&#123;</span> CustomerStyleDirective <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'./directives/customer-style/customer-style.directive'</span><span class="token punctuation">;</span>
+
+@<span class="token function">NgModule</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
+  imports<span class="token operator">:</span> <span class="token punctuation">[</span> CommonModule <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  exports<span class="token operator">:</span> <span class="token punctuation">[</span>
+    CommonModule<span class="token punctuation">,</span>
+    CustomerComponent<span class="token punctuation">,</span>
+    PercentagePipe<span class="token punctuation">,</span>
+    CustomerStyleDirective 
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  declarations<span class="token operator">:</span> <span class="token punctuation">[</span> CustomerComponent<span class="token punctuation">,</span> CustomerStyleDirective<span class="token punctuation">,</span> PercentagePipe <span class="token punctuation">]</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">SharedModule</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span></code></pre>
+<p>This was a brief introduction to the 3 most common Modules types used in Angular Applications.</p>
+<p>Happy coding 😄</p>
+<h3>Credits</h3>
+<p>Photo by <a href="https://www.pexels.com/@digitalbuggu?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels" rel="nofollow">Digital Buggu</a>  from <a href="https://www.pexels.com/photo/colorful-toothed-wheels-171198/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels" rel="nofollow">Pexels</a></p></article></main>
+
+<footer class="bg-gray-900 mt-5"><hr class="border-1 border-gray-600 w-full">
+
+<p class="text-gray-400 py-2 text-xs text-center">© 2021 <b><a rel="noopener noreferrer" target="_blank" href="https://achimoraites.github.io">Achilles Moraites</a></b></p></footer>
+
+
+
+	
+</div>
+	</body>
+</html>

@@ -16,7 +16,7 @@
 			<h5 class="text-gray-800 text-2xl font-bold mb-1">{title}</h5>
 			<p class="text-gray-700 text-md mb-2">{text.slice(0, 80)}...</p>
 		</div>
-		<img alt="post" src={image} class="h-auto mb-4" width="517" height="277" />
+		<img alt={title + ' image'} src={image} class="h-auto mb-4" width="517" height="277" />
 	</a>
 	<div class="flex">
 		{#each tags as tag}

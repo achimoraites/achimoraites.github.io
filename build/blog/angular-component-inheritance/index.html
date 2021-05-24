@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+
+		
+
+		<link rel="modulepreload" href="/./app/start-fac70dc0.js">
+		<link rel="modulepreload" href="/./app/chunks/vendor-3b929796.js">
+		<link rel="modulepreload" href="/./app/pages/blog/$layout.reset.svelte-deed169a.js">
+		<link rel="modulepreload" href="/./app/chunks/TopNav-5c3da289.js">
+		<link rel="modulepreload" href="/./app/pages/blog/angular-component-inheritance.md-7c540abd.js">
+		<link rel="modulepreload" href="/./app/chunks/blog-post-layout-a1aeab29.js">
+		<link rel="stylesheet" href="/./app/assets/start-0826e215.css">
+
+		<script type="module">
+			import { start } from "/./app/start-fac70dc0.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":"/."},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/./app/pages/blog/$layout.reset.svelte-deed169a.js"),
+						import("/./app/pages/blog/angular-component-inheritance.md-7c540abd.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "/blog/angular-component-inheritance",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div id="svelte">
+
+
+<nav id="header" class="fixed w-full z-10 top-0 bg-gray-800 font-mono"><div class="w-full md:max-w-4xl mx-auto flex flex-wrap items-center justify-between mt-0 py-3"><div class="pl-4"><a class="text-gray-300 no-underline hover:no-underline font-extrabold text-xl" href="/blog">Achilles Moraites</a></div>
+
+<div class="block lg:hidden pr-4"><button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-900 hover:border-green-500 appearance-none focus:outline-none"><svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg></button></div>
+
+<div class="w-full flex-grow lg:items-center lg:w-auto lg:block mt-2 lg:mt-0 bg-gray-900 md:bg-transparent z-20 hidden" id="nav-content"><ul class="list-reset lg:flex justify-end flex-1 items-center"><li class="mr-3"><a class="inline-block text-gray-300 no-underline hover:text-gray-400 hover:text-underline py-2 px-4" href="/"><span>Home</span></a>
+			</li><li class="mr-3"><a class="inline-block py-2 px-4 text-blue-500 font-bold no-underline" href="/blog"><span>Blog</span></a>
+			</li></ul></div></div></nav>
+<main><article class="mt-20"><h1>Angular Component inheritance</h1>
+	<p class="mb-8">By <span class=" font-semibold">achimoraites</span> <span>May 8, 2020</span></p>
+	<h2>About</h2>
+<p>Component inheritance can be useful when you
+have duplicated/shared code between your components.</p>
+<p>Think about having a situation where you have 3 components
+that share a <code>theme @Input()</code></p>
+<p>This could be the case where you want to have your components to adapt based on a provided theme.</p>
+<h2>Why</h2>
+<p>When you have 2-3 components with shared functionality
+you might say “well why to bother with inheritance?“.</p>
+<p>And in the most common cases that’s okay, you don’t need to.</p>
+<p>But by using inheritance you do more than just to avoid to type the shared functionality between your components.</p>
+<p>The benefit of inheritance is when we have shared functionality in many components!</p>
+<h2>How</h2>
+<p>Using component inheritance is simple, you need:</p>
+<ul><li>A Base component</li>
+<li>The Component/s to extend the Base component</li></ul>
+<h2>A simple example</h2>
+<p>Here we will use only one component to extend the Base component but the same process applies to no matter how many components we are going to use.</p>
+<h3>Base component</h3>
+<pre class="language-typescript"><code class="language-typescript"><span class="token comment">// base.component.ts</span>
+<span class="token comment">//....</span>
+@<span class="token function">Component</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
+selector<span class="token operator">:</span> <span class="token string">'my-base'</span><span class="token punctuation">,</span>
+template<span class="token operator">:</span> <span class="token string">''</span> <span class="token comment">// notice that the template is empty!</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">BaseComponent</span> <span class="token keyword">implements</span> <span class="token class-name">OnInit</span> <span class="token punctuation">&#123;</span>
+    @<span class="token function">Input</span><span class="token punctuation">(</span><span class="token punctuation">)</span> theme<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span>
+
+    <span class="token function">ngOnInit</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span></code></pre>
+<h3>ThemedInput component</h3>
+<p>By extending the Base component the ThemedInput has the theme input!</p>
+<p>Anything added / updated in the Base component will be reflected here too!</p>
+<pre class="language-typescript"><code class="language-typescript"><span class="token comment">// themed-input.component.ts</span>
+<span class="token comment">//....</span>
+@<span class="token function">Component</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
+selector<span class="token operator">:</span> <span class="token string">'my-themed-input'</span><span class="token punctuation">,</span>
+templateUrl<span class="token operator">:</span> <span class="token string">'./themed-input-component.html'</span><span class="token punctuation">.</span>
+styleUrls<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'./themed-input-component.scss'</span><span class="token punctuation">]</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">ThemedInputComponent</span> <span class="token keyword">extends</span> <span class="token class-name">BaseComponent</span> <span class="token keyword">implements</span> <span class="token class-name">OnInit</span> <span class="token punctuation">&#123;</span>
+
+    <span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+        <span class="token keyword">super</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span>
+
+    <span class="token function">ngOnInit</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span></code></pre>
+<h3>Changing/Updating shared functionality</h3>
+<p>Having a base component with the shared functionality you can now <strong>change/update the shared functionality in one place</strong> instead of doing it in every component that exists or will be created in the future!</p>
+<p>A good scenario would be when you decide to use a service that is common to all the components to share state.</p>
+<p>Imagine that one day you need to switch to NgRx:</p>
+<ul><li><strong>Case 1 - You are using inheritance</strong>: all you need to do is to update the base component to start using it.</li>
+<li><strong>Case 2 - You are NOT using inheritance</strong>: oh poor soul… you will need to go to all of the components and you will need to update the code for each one of them!</li></ul>
+<p>I believe the first Case is faster, simpler and less error prone ;)</p>
+<p><strong>Adding new shared functionality becomes simple!</strong></p>
+<h3>Testing shared code</h3>
+<p>Testing the shared functionality is simpler, all we need to do is to test the base class.</p>
+<p>This way we avoid having to write tests that are actually testing the same shared code across components.</p>
+<h2>Summary</h2>
+<p>Using the right tool for the job is important, here we explored using component inheritance to:</p>
+<ul><li>simplify the usage of shared component code</li>
+<li>allow for easier future change / update</li>
+<li>optimizing the testing of our shared code</li></ul>
+<p><strong>Inheritance is powerful yet keep in mind that to use it only when it makes sense.</strong></p>
+<p>Most of the times composition does the trick!</p>
+<p>Happy coding!!!</p></article></main>
+
+<footer class="bg-gray-900 mt-5"><hr class="border-1 border-gray-600 w-full">
+
+<p class="text-gray-400 py-2 text-xs text-center">© 2021 <b><a rel="noopener noreferrer" target="_blank" href="https://achimoraites.github.io">Achilles Moraites</a></b></p></footer>
+
+
+
+	
+</div>
+	</body>
+</html>
