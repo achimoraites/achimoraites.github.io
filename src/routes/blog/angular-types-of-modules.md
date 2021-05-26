@@ -2,6 +2,7 @@
 author: achimoraites
 date: Sun May 10 2020 00:00:00 GMT+0300
 excerpt: Crafting high quality Angular apps requires to have knowledge of how to use the different types of modules to ensure readability, performance and scalability.
+tags: ['typescript', 'angular', 'javascript']
 image: https://images.pexels.com/photos/171198/pexels-photo-171198.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=225&w=400
 slug: angular-types-of-modules
 subtitle: Improve the scalabillity of your Angular project by using the module type pattern! 

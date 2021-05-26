@@ -35,7 +35,7 @@
 			<ShadowedHeading title="Recent Posts" />
 		</header>
 
-		<div class="recent-posts">
+		<div class="grid sm:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-4 mt-12">
 			{#each posts as { title, excerpt, image, uri, tags }}
 				<ArticleCard {title} text={excerpt} {image} {uri} {tags} />
 			{/each}
@@ -43,8 +43,3 @@
 	</section>
 </main>
 
-<style>
-	.recent-posts {
-		@apply grid sm:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-4 mt-12;
-	}
-</style>
