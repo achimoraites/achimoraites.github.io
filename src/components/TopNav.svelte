@@ -10,8 +10,8 @@
 
 	const navLinkStyle = {
 		default:
-			'inline-block text-gray-300 no-underline hover:text-gray-400 hover:text-underline py-2 px-4',
-		active: 'inline-block py-2 px-4 text-blue-500 font-bold no-underline'
+			'mobile:w-full inline-block text-gray-300 no-underline hover:text-gray-400 hover:text-underline py-2 px-4',
+		active: 'mobile:w-full inline-block py-2 px-4 text-blue-500 font-bold no-underline'
 	};
 
 	let openMenu = false;
@@ -50,7 +50,7 @@
 		>
 			<ul class="list-reset lg:flex justify-end flex-1 items-center">
 				{#each navLinks as { href, active, label }}
-					<li class="mr-3" on:click={() => updateLinks(href)}>
+					<li class="sm:mr-3 mobile:text-center mobile:border-t-2 mobile:border-gray-800" on:click={() => updateLinks(href)}>
 						<a class={active ? navLinkStyle.active : navLinkStyle.default} {href}
 							><span>{label}</span></a
 						>
