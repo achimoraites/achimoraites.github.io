@@ -1,11 +1,12 @@
 ---
 author: achimoraites
 date: Fri May 08 2020 00:00:00 GMT+0300
-excerpt: Ever been curius how to apply inheritance in an Angular component?
-image: test.jpg
+excerpt: When testing our apps there are times when we need to control things that are beyond our control, like the window object
+image: https://images.pexels.com/photos/5726788/pexels-photo-5726788.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=255&w=400
+tags: ['angular', 'javascript', 'typescript', 'testing']
 slug: advanced-angular-testing-using-jasmine
 subtitle: Improve the scalabillity of your Angular project by using inheritance! 
-title: Angular Component inheritance
+title: Angular Testing with Jasmine
 url: https://achimoraites.github.io/blog/advanced-angular-testing-using-jasmine
 ---
 

@@ -2,7 +2,8 @@
 author: achimoraites
 date: Wed Jan 29 2020 00:00:00 GMT+0200
 excerpt: Here are two Typescript tricks to make your life as a software developer easier.
-image: test.jpg
+image: https://images.pexels.com/photos/1701206/pexels-photo-1701206.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=225&w=400
+tags: ['typescript', 'oop', 'productivity']
 slug: typescript-tips-and-tricks
 subtitle: Here are two Typescript tricks to make your life as a software developer easier. 
 title: Typescript Tips and Tricks

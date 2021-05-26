@@ -1,44 +1,18 @@
+<script lang="ts" context="module">
+	export const prerender = true;
+	export async function load({ session }) {
+		const posts = session.posts;
+		return { props: { posts } };
+	}
+</script>
+
 <script lang="ts">
+	import type Post from '../../types/blog/Post';
+
 	import ArticleCard from '../../components/blog/ArticleCard.svelte';
 	import ShadowedHeading from '../../components/ShadowedHeading.svelte';
 
-	interface Post {
-		title?: string;
-		text?: string;
-		image?: string;
-		uri?: string;
-		tags?: Array<string>;
-	}
-
-	const posts: Post[] = [
-		{
-			title: 'Angular Component Inheritance',
-			text:
-				'Component inheritance can be useful when you have duplicated/shared code between your components.',
-			uri: '/blog/angular-component-inheritance',
-			tags: ['typescript', 'angular', 'oop', 'javascript']
-		},
-		{
-			title: 'Angular Testing using Jasmine',
-			text:
-				'When testing our apps there are times when we need to control things that are beyond our control, like the window object.',
-			uri: '/blog/advanced-angular-testing-using-jasmine',
-			tags: ['angular', 'javascript', 'typescript', 'testing'],
-			image:
-				'https://images.pexels.com/photos/5726788/pexels-photo-5726788.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=255&w=400'
-		},
-		{
-			image: "https://images.pexels.com/photos/171198/pexels-photo-171198.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=225&w=400"
-		},
-		{
-			title: 'Typescript Tips and Tricks',
-			text: 'Here are two Typescript tricks to make your life as a software developer easier.',
-			uri: '/blog/typescript-tips-and-tricks',
-			tags: ['typescript', 'oop', 'productivity'],
-			image:
-				'https://images.pexels.com/photos/1701206/pexels-photo-1701206.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=225&w=400'
-		}
-	];
+	export let posts: Post[] = [];
 </script>
 
 <svelte:head>
@@ -62,8 +36,8 @@
 		</header>
 
 		<div class="recent-posts">
-			{#each posts as { title, text, image, uri, tags }}
-				<ArticleCard {title} {text} {image} {uri} {tags} />
+			{#each posts as { title, excerpt, image, uri, tags }}
+				<ArticleCard {title} text={excerpt} {image} {uri} {tags} />
 			{/each}
 		</div>
 	</section>

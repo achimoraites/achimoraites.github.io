@@ -1,8 +1,8 @@
 ---
 author: achimoraites
 date: Fri May 08 2020 00:00:00 GMT+0300
-excerpt: Ever been curius how to apply inheritance in an Angular component?
-image: test.jpg
+excerpt: Component inheritance can be useful when you have duplicated/shared code between your components.
+tags: ['typescript', 'angular', 'oop', 'javascript']
 slug: angular-component-inheritance
 subtitle: Improve the scalabillity of your Angular project by using inheritance! 
 title: Angular Component inheritance
