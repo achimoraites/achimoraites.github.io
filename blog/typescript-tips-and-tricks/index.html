@@ -4,21 +4,23 @@
 		<meta charset="utf-8" />
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		
+		<title>Typescript Tips and Tricks</title><meta name="keywords" content="web development, achilles moraites,typescript,oop,productivity" data-svelte="svelte-150ru2a"><meta name="description" content="Here are two Typescript tricks to make your life as a software developer easier." data-svelte="svelte-150ru2a"><meta property="og:image" content="https://images.pexels.com/photos/1701206/pexels-photo-1701206.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=225&amp;w=400" data-svelte="svelte-150ru2a"><meta property="og:description" content="Here are two Typescript tricks to make your life as a software developer easier." data-svelte="svelte-150ru2a"><meta property="og:title" content="Typescript Tips and Tricks" data-svelte="svelte-150ru2a"><meta property="og:type" content="article" data-svelte="svelte-150ru2a"><meta property="og:url" data-svelte="svelte-150ru2a"><meta property="og:article:author" content="Achilles Moraites" data-svelte="svelte-150ru2a">
+		<meta property="og:article:tag" content="typescript,oop,productivity" data-svelte="svelte-150ru2a">
+		<meta property="og:article:published_time" content="Wed Jan 29 2020 00:00:00 GMT+0200" data-svelte="svelte-150ru2a"><meta name="twitter:card" content="summary" data-svelte="svelte-150ru2a"><meta name="twitter:site" content="@achimoraites" data-svelte="svelte-150ru2a"><meta name="twitter:creator" content="@achimoraites" data-svelte="svelte-150ru2a"><meta name="twitter:image" content="https://images.pexels.com/photos/1701206/pexels-photo-1701206.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=225&amp;w=400" data-svelte="svelte-150ru2a">
 
 		
 
-		<link rel="modulepreload" href="/./app/start-19059e9f.js">
+		<link rel="modulepreload" href="/./app/start-0b458f19.js">
 		<link rel="modulepreload" href="/./app/chunks/vendor-3b929796.js">
-		<link rel="modulepreload" href="/./app/pages/blog/$layout.reset.svelte-1208efa2.js">
-		<link rel="modulepreload" href="/./app/chunks/TopNav-1a408012.js">
-		<link rel="modulepreload" href="/./app/pages/blog/typescript-tips-and-tricks.md-ab5bd419.js">
-		<link rel="modulepreload" href="/./app/chunks/blog-post-layout-61c11458.js">
+		<link rel="modulepreload" href="/./app/pages/blog/$layout.reset.svelte-d4d345ac.js">
+		<link rel="modulepreload" href="/./app/chunks/TopNav-d606c00f.js">
+		<link rel="modulepreload" href="/./app/pages/blog/typescript-tips-and-tricks.md-685b096c.js">
+		<link rel="modulepreload" href="/./app/chunks/blog-post-layout-947906f2.js">
 		<link rel="modulepreload" href="/./app/chunks/Tags-038f9674.js">
 		<link rel="stylesheet" href="/./app/assets/start-0826e215.css">
 
 		<script type="module">
-			import { start } from "/./app/start-19059e9f.js";
+			import { start } from "/./app/start-0b458f19.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base":"","assets":"/."},
@@ -30,8 +32,8 @@
 					status: 200,
 					error: null,
 					nodes: [
-						import("/./app/pages/blog/$layout.reset.svelte-1208efa2.js"),
-						import("/./app/pages/blog/typescript-tips-and-tricks.md-ab5bd419.js")
+						import("/./app/pages/blog/$layout.reset.svelte-d4d345ac.js"),
+						import("/./app/pages/blog/typescript-tips-and-tricks.md-685b096c.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
@@ -52,9 +54,11 @@
 <div class="block lg:hidden pr-4"><button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-900 hover:border-green-500 appearance-none focus:outline-none"><svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg></button></div>
 
 <div class="w-full flex-grow lg:items-center lg:w-auto lg:block mt-2 lg:mt-0 bg-gray-900 md:bg-transparent z-20 hidden" id="nav-content"><ul class="list-reset lg:flex justify-end flex-1 items-center"><li class="sm:mr-3 mobile:text-center mobile:border-t-2 mobile:border-gray-800"><a class="mobile:w-full inline-block text-gray-300 no-underline hover:text-gray-400 hover:text-underline py-2 px-4" href="/"><span>Home</span></a>
-			</li><li class="sm:mr-3 mobile:text-center mobile:border-t-2 mobile:border-gray-800"><a class="mobile:w-full inline-block py-2 px-4 text-blue-500 font-bold no-underline" href="/blog"><span>Blog</span></a>
+			</li><li class="sm:mr-3 mobile:text-center mobile:border-t-2 mobile:border-gray-800"><a class="mobile:w-full inline-block py-2 px-4 text-blue-400 font-bold no-underline" href="/blog"><span>Blog</span></a>
 			</li></ul></div></div></nav>
-<main><article class="mt-20"><h1>Typescript Tips and Tricks</h1>
+<main>
+
+<article class="mt-20"><h1>Typescript Tips and Tricks</h1>
 	<div class="mt-4 mb-2"><div class="flex flex-wrap"><a class="my-1" href="/blog"><span class="mr-2 rounded-full py-1 px-2 typescript">#typescript</span></a><a class="my-1" href="/blog"><span class="mr-2 rounded-full py-1 px-2 oop">#oop</span></a><a class="my-1" href="/blog"><span class="mr-2 rounded-full py-1 px-2 productivity">#productivity</span></a></div></div>
 	<p class="mb-8">By <span class=" font-semibold">achimoraites</span> <span>Jan 28, 2020</span></p>
 	<p>Here are two Typescript tricks to make your life as a software developer easier.</p>
