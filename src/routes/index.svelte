@@ -17,7 +17,9 @@
 
 <div class="flex justify-center items-center mobile:h-screen">
 	<div class="container text-center">
-		<h1 class="text-4xl font-bold mb-2">Hi, I am <span class="text-blue-800">Achilles Moraites</span></h1>
+		<h1 class="text-4xl font-bold mb-2">
+			Hi, I am <span class="text-blue-800">Achilles Moraites</span>
+		</h1>
 		<p>
 			I am a software engineering lover that actively looks for ways to improve the quality of my
 			work, while trying to make the complex as simple and efficient.
@@ -30,7 +32,13 @@
 					aria-label="twitter"
 					href="https://twitter.com/achimoraites"
 				>
-				<img class="icon" src="/images/icons/twitter.svg" alt="twitter icon"></a
+					<img
+						class="icon"
+						src="/images/icons/twitter.svg"
+						alt="twitter icon"
+						width="25"
+						height="25"
+					/></a
 				>
 			</li>
 			<li class="mx-5">
@@ -40,7 +48,13 @@
 					aria-label="linkedin"
 					href="https://www.linkedin.com/in/achimoraitis"
 				>
-				<img class="icon" src="/images/icons/linkedin.svg" alt="linkedin icon"></a
+					<img
+						class="icon"
+						src="/images/icons/linkedin.svg"
+						alt="linkedin icon"
+						width="25"
+						height="25"
+					/></a
 				>
 			</li>
 			<li>
@@ -50,7 +64,13 @@
 					aria-label="github"
 					href="https://github.com/achimoraites"
 				>
-					<img class="icon" src="/images/icons/github.svg" alt="github icon">
+					<img
+						class="icon"
+						src="/images/icons/github.svg"
+						alt="github icon"
+						width="25"
+						height="25"
+					/>
 				</a>
 			</li>
 		</ul>

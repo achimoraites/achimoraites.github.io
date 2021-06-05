@@ -1,11 +1,32 @@
 <script>
 	import '../app.postcss';
-	import BaseNav from '../components/BaseNav.svelte';
+	import SideNav from '../components/SideNav.svelte';
 	import BaseFooter from '../components/BaseFooter.svelte';
+	import TopNav from '../components/TopNav.svelte';
+
+	let navLinks = [
+		{
+			href: '/',
+			label: 'Home'
+		},
+		{
+			href: '/about',
+			label: 'About'
+		},
+		{
+			href: '/blog',
+			label: 'Blog'
+		}
+	];
 </script>
 
+<div class="sm:hidden">
+	<TopNav navLinks={navLinks} />
+</div>
 <div class="grid layout-wrapper circuit-bg bg-white font-monospace">
-	<BaseNav />
+	<div class="mobile:hidden">
+		<SideNav navLinks={navLinks} />
+	</div>
 	<slot />
 </div>
 <footer class="sm:hidden bg-gray-900">
