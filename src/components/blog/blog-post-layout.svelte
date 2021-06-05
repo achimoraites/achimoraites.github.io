@@ -1,4 +1,5 @@
 <script lang="ts">
+	import OpenGraph from '../OpenGraph.svelte';
 	import Tags from './Tags.svelte';
 
 	// PROPS
@@ -6,11 +7,23 @@
 	export let author;
 	export let title;
 	export let tags;
+	export let excerpt;
+	export let image;
 
 	function dateFormatter(date, config = { year: 'numeric', month: 'short', day: 'numeric' }) {
 		return new Date(Date.parse(date)).toLocaleDateString(undefined, config);
 	}
 </script>
+
+<OpenGraph
+	data={{
+		description: excerpt,
+		title,
+		image,
+		tags,
+		date,
+	}}
+/>
 
 <article class="mt-20">
 	<h1>{title}</h1>

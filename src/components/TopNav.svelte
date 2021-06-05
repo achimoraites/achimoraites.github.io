@@ -11,7 +11,7 @@
 	const navLinkStyle = {
 		default:
 			'mobile:w-full inline-block text-gray-300 no-underline hover:text-gray-400 hover:text-underline py-2 px-4',
-		active: 'mobile:w-full inline-block py-2 px-4 text-blue-500 font-bold no-underline'
+		active: 'mobile:w-full inline-block py-2 px-4 text-blue-400 font-bold no-underline'
 	};
 
 	let openMenu = false;

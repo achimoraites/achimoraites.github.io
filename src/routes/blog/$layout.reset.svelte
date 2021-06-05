@@ -1,3 +1,7 @@
+<script lang="ts" context="module">
+	export const hydrate = false;
+</script>
+
 <script lang="ts">
 	import BaseFooter from '../../components/BaseFooter.svelte';
 	import TopNav from '../../components/TopNav.svelte';
