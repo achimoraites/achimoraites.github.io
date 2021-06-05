@@ -15,7 +15,7 @@
 >
 	<a href={uri}>
 		<div class="">
-			<h5 class="text-gray-800 text-2xl font-bold mb-1">{title}</h5>
+			<h3 class="text-gray-800 text-2xl font-bold mb-1">{title}</h3>
 			<p class="text-gray-700 text-md mb-2">{text.slice(0, 80)}...</p>
 		</div>
 		<img alt={title + ' image'} src={image} class="h-auto mb-4" width="517" height="277" />
