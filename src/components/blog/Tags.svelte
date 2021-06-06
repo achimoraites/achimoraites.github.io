@@ -2,9 +2,8 @@
 	export let tags: Array<string> = [];
 </script>
 
-<div class="flex flex-wrap">
+<div class="article-tags">
 	{#each tags as tag}
-		<a class="my-1" href="/blog"><span class="mr-2 rounded-full py-1 px-2 {tag}">#{tag}</span></a>
+		<a href="/blog"><span class="{tag}">#{tag}</span></a>
 	{/each}
 </div>
-

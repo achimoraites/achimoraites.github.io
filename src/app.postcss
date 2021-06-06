@@ -3,59 +3,71 @@
 @tailwind components;
 @tailwind utilities;
 
-pre {
-	@apply bg-gray-900 rounded text-white font-mono text-base p-2 md:p-4 my-2 max-w-max;
+/* TOP NAV */
+
+.header.top-nav {
+	@apply fixed w-full z-10 top-0 bg-gray-800 font-mono lg:max-h-16;
+}
+.top-nav .header__container {
+	@apply w-full md:max-w-4xl mx-auto flex flex-wrap items-center justify-between mt-0 py-3;
 }
 
-code {
-	@apply break-words whitespace-pre-wrap;
+.top-nav .brand {
+	@apply pl-4;
 }
 
-article {
-	@apply mx-auto max-w-screen-lg px-4 mobile:px-2;
+.top-nav .brand__link {
+	@apply text-gray-300 no-underline hover:no-underline font-extrabold text-xl;
 }
 
-article h1 {
-	@apply text-5xl mb-3;
-}
-article h2 {
-	@apply text-4xl mb-2 mt-8;
-}
-article h3 {
-	@apply text-3xl mb-2 mt-8;
-}
-article h4 {
-	@apply text-2xl mb-2 mt-5;
+.top-nav .burger-menu {
+	@apply block lg:hidden pr-4;
 }
 
-article ol,
-article ul {
-	list-style: initial !important;
-
-	@apply ml-5 my-2;
+.top-nav .burger-menu__button {
+	@apply flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-900 hover:border-green-500 appearance-none focus:outline-none;
 }
 
-/* Tags */
-.typescript {
-	@apply bg-blue-600 text-white;
+.top-nav .navlinks {
+	@apply w-full flex-grow lg:items-center lg:w-auto lg:block mt-2 lg:mt-0 bg-gray-900 md:bg-transparent z-20;
 }
-.javascript {
-	@apply bg-blue-800 text-white;
+
+.top-nav .navlinks__list {
+	@apply lg:flex justify-end flex-1 items-center list-none;
 }
-.testing,
-.git {
-	@apply bg-green-800 text-white;
+
+.top-nav .navlinks__list-element {
+	@apply sm:mr-3 mobile:text-center mobile:border-t-2 mobile:border-gray-800 lg:w-min w-full;
 }
-.vue,
-.react,
-.angular,
-.svelte {
-	@apply bg-gray-600 text-white;
+
+.top-nav .navlinks__list-element a {
+	@apply w-full lg:w-min;
 }
-.oop,
-.ci {
-	@apply bg-yellow-300 font-bold;
+
+.top-nav .navlinks__default {
+	@apply mobile:w-full inline-block text-gray-300 no-underline hover:text-gray-400 hover:no-underline py-2 px-4;
 }
-.productivity {
-	@apply bg-purple-700 text-white;
+
+.top-nav .navlinks__active {
+	@apply mobile:w-full inline-block py-2 px-4 text-blue-400 font-bold no-underline;
+}
+.top-nav .hidden-bar {
+	@apply hidden lg:inline;
+}
+
+/* SHADOWED HEADING */
+
+.shadowed-heading {
+	min-height: 40px;
+
+	@apply relative;
+}
+
+.shadowed-heading__text {
+	@apply text-4xl font-black uppercase z-10;
+}
+.shadowed-heading__shadow {
+	color: #00000008;
+
+	@apply uppercase transform translate-x-1 -translate-y-4 text-5xl font-bold absolute left-0 top-8;
 }
