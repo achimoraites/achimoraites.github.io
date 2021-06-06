@@ -47,7 +47,7 @@
 			<ul class="navlinks__list list-reset">
 				{#each navLinks as { href, active, label }}
 					<li
-						class="sm:mr-3 mobile:text-center mobile:border-t-2 mobile:border-gray-800"
+						class="navlinks__list-element"
 						on:click={() => updateLinks(href)}
 					>
 						<a class={active ? navLinkStyle.active : navLinkStyle.default} {href}

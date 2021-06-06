@@ -36,6 +36,14 @@
 	@apply lg:flex justify-end flex-1 items-center list-none;
 }
 
+.top-nav .navlinks__list-element {
+	@apply sm:mr-3 mobile:text-center mobile:border-t-2 mobile:border-gray-800 lg:w-min w-full;
+}
+
+.top-nav .navlinks__list-element a {
+	@apply w-full lg:w-min;
+}
+
 .top-nav .navlinks__default {
 	@apply mobile:w-full inline-block text-gray-300 no-underline hover:text-gray-400 hover:no-underline py-2 px-4;
 }
@@ -62,75 +70,4 @@
 	color: #00000008;
 
 	@apply uppercase transform translate-x-1 -translate-y-4 text-5xl font-bold absolute left-0 top-8;
-}
-
-/* BLOG */
-
-.blog {
-	@apply mt-24 px-2 font-mono;
-}
-
-.blog section {
-	@apply mb-16
-}
-
-.blog__recent-posts {
-	@apply grid sm:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-4 mt-12;
-}
-
-pre {
-	@apply bg-gray-900 rounded text-white font-mono text-base p-2 md:p-4 my-2 max-w-max;
-}
-
-code {
-	@apply break-words whitespace-pre-wrap;
-}
-
-article {
-	@apply mx-auto max-w-screen-lg px-4 mobile:px-2;
-}
-
-article h1 {
-	@apply text-5xl mb-3;
-}
-article h2 {
-	@apply text-4xl mb-2 mt-8;
-}
-article h3 {
-	@apply text-3xl mb-2 mt-8;
-}
-article h4 {
-	@apply text-2xl mb-2 mt-5;
-}
-
-article ol,
-article ul {
-	list-style: initial !important;
-
-	@apply ml-5 my-2;
-}
-
-/* Tags */
-.typescript {
-	@apply bg-blue-600 text-white;
-}
-.javascript {
-	@apply bg-blue-800 text-white;
-}
-.testing,
-.git {
-	@apply bg-green-800 text-white;
-}
-.vue,
-.react,
-.angular,
-.svelte {
-	@apply bg-gray-600 text-white;
-}
-.oop,
-.ci {
-	@apply bg-yellow-300 font-bold;
-}
-.productivity {
-	@apply bg-purple-700 text-white;
 }

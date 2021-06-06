@@ -3,6 +3,7 @@
 </script>
 
 <script lang="ts">
+	import '../../blog.postcss'
 	import BaseFooter from '../../components/BaseFooter.svelte';
 	import TopNav from '../../components/TopNav.svelte';
 
@@ -20,7 +21,7 @@
 </script>
 
 <TopNav {navLinks} />
-<main>
+<main style="margin-top: 3rem;">
 	<slot><!-- optional fallback --></slot>
 </main>
 
