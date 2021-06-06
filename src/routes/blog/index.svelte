@@ -22,7 +22,7 @@
 		description: 'Achilles Moraites Tech Blog, Coding, Tutorials and thoughts...',
 		title: 'Blog | Achilles Moraites',
 		type: 'blog',
-		image: '/images/preview.jpg',
+		image: 'https://achimoraites.github.io/images/preview.jpg',
 		tags: [
 			'Achilles Moraites is a software engineer with skills in both the front end and the back end, skills include Angular, React, Vue, Node, AWS, Python and more...'
 		]
