@@ -4,23 +4,25 @@
 		<meta charset="utf-8" />
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Angular Component inheritance</title><meta name="keywords" content="web development, achilles moraites,typescript,angular,oop,javascript" data-svelte="svelte-150ru2a"><meta name="description" content="Component inheritance can be useful when you have duplicated/shared code between your components." data-svelte="svelte-150ru2a"><meta property="og:image" data-svelte="svelte-150ru2a"><meta property="og:description" content="Component inheritance can be useful when you have duplicated/shared code between your components." data-svelte="svelte-150ru2a"><meta property="og:title" content="Angular Component inheritance" data-svelte="svelte-150ru2a"><meta property="og:type" content="article" data-svelte="svelte-150ru2a"><meta property="og:url" data-svelte="svelte-150ru2a"><meta property="og:article:author" content="Achilles Moraites" data-svelte="svelte-150ru2a">
-		<meta property="og:article:tag" content="typescript,angular,oop,javascript" data-svelte="svelte-150ru2a">
-		<meta property="og:article:published_time" content="Fri May 08 2020 00:00:00 GMT+0300" data-svelte="svelte-150ru2a"><meta name="twitter:card" content="summary" data-svelte="svelte-150ru2a"><meta name="twitter:site" content="@achimoraites" data-svelte="svelte-150ru2a"><meta name="twitter:creator" content="@achimoraites" data-svelte="svelte-150ru2a"><meta name="twitter:image" data-svelte="svelte-150ru2a">
+		<title>Angular Component inheritance</title><meta name="keywords" content="web development, achilles moraites,typescript,angular,oop,javascript" data-svelte="svelte-1k0b6ih"><meta name="description" content="Component inheritance can be useful when you have duplicated/shared code between your components." data-svelte="svelte-1k0b6ih"><meta name="author" content="Achilles Moraites" data-svelte="svelte-1k0b6ih"><meta property="og:image" data-svelte="svelte-1k0b6ih"><meta property="og:description" content="Component inheritance can be useful when you have duplicated/shared code between your components." data-svelte="svelte-1k0b6ih"><meta property="og:title" content="Angular Component inheritance" data-svelte="svelte-1k0b6ih"><meta property="og:type" content="article" data-svelte="svelte-1k0b6ih"><meta property="og:url" data-svelte="svelte-1k0b6ih"><meta property="og:article:author" content="Achilles Moraites" data-svelte="svelte-1k0b6ih">
+		<meta property="og:article:tag" content="typescript,angular,oop,javascript" data-svelte="svelte-1k0b6ih">
+		<meta property="og:article:published_time" content="Fri May 08 2020 00:00:00 GMT+0300" data-svelte="svelte-1k0b6ih"><meta name="twitter:card" content="summary" data-svelte="svelte-1k0b6ih"><meta name="twitter:site" content="@achimoraites" data-svelte="svelte-1k0b6ih"><meta name="twitter:creator" content="@achimoraites" data-svelte="svelte-1k0b6ih"><meta name="twitter:image" data-svelte="svelte-1k0b6ih">
 
 		
 
-		<link rel="modulepreload" href="/./app/start-0b458f19.js">
-		<link rel="modulepreload" href="/./app/chunks/vendor-3b929796.js">
-		<link rel="modulepreload" href="/./app/pages/blog/$layout.reset.svelte-d4d345ac.js">
-		<link rel="modulepreload" href="/./app/chunks/TopNav-d606c00f.js">
-		<link rel="modulepreload" href="/./app/pages/blog/angular-component-inheritance.md-8170e5da.js">
-		<link rel="modulepreload" href="/./app/chunks/blog-post-layout-947906f2.js">
-		<link rel="modulepreload" href="/./app/chunks/Tags-038f9674.js">
+		<link rel="modulepreload" href="/./app/start-072906a6.js">
+		<link rel="modulepreload" href="/./app/chunks/vendor-4d2c4da8.js">
+		<link rel="modulepreload" href="/./app/pages/blog/$layout.reset.svelte-2b217d8f.js">
+		<link rel="modulepreload" href="/./app/chunks/TopNav-f74f91dd.js">
+		<link rel="modulepreload" href="/./app/pages/blog/angular-component-inheritance.md-5dce3358.js">
+		<link rel="modulepreload" href="/./app/chunks/blog-post-layout-56840a44.js">
+		<link rel="modulepreload" href="/./app/chunks/OpenGraph-a53e9ebf.js">
+		<link rel="modulepreload" href="/./app/chunks/Tags-bf290eaa.js">
 		<link rel="stylesheet" href="/./app/assets/start-0826e215.css">
+		<link rel="stylesheet" href="/./app/assets/pages/blog/$layout.reset.svelte-ae38d9e4.css">
 
 		<script type="module">
-			import { start } from "/./app/start-0b458f19.js";
+			import { start } from "/./app/start-072906a6.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base":"","assets":"/."},
@@ -32,8 +34,8 @@
 					status: 200,
 					error: null,
 					nodes: [
-						import("/./app/pages/blog/$layout.reset.svelte-d4d345ac.js"),
-						import("/./app/pages/blog/angular-component-inheritance.md-8170e5da.js")
+						import("/./app/pages/blog/$layout.reset.svelte-2b217d8f.js"),
+						import("/./app/pages/blog/angular-component-inheritance.md-5dce3358.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
@@ -49,18 +51,18 @@
 		<div id="svelte">
 
 
-<nav id="header" class="fixed w-full z-10 top-0 bg-gray-800 font-mono"><div class="w-full md:max-w-4xl mx-auto flex flex-wrap items-center justify-between mt-0 py-3"><div class="pl-4"><a class="text-gray-300 no-underline hover:no-underline font-extrabold text-xl" href="/blog">Achilles Moraites</a></div>
+<nav class="header top-nav"><div class="header__container"><div class="brand"><a class="brand__link" href="/blog">Achilles Moraites</a></div>
 
-<div class="block lg:hidden pr-4"><button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-900 hover:border-green-500 appearance-none focus:outline-none"><svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg></button></div>
+<div class="burger-menu"><button id="nav-toggle" class="burger-menu__button"><svg width="12" height="12" class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg></button></div>
 
-<div class="w-full flex-grow lg:items-center lg:w-auto lg:block mt-2 lg:mt-0 bg-gray-900 md:bg-transparent z-20 hidden" id="nav-content"><ul class="list-reset lg:flex justify-end flex-1 items-center"><li class="sm:mr-3 mobile:text-center mobile:border-t-2 mobile:border-gray-800"><a class="mobile:w-full inline-block text-gray-300 no-underline hover:text-gray-400 hover:text-underline py-2 px-4" href="/"><span>Home</span></a>
-			</li><li class="sm:mr-3 mobile:text-center mobile:border-t-2 mobile:border-gray-800"><a class="mobile:w-full inline-block py-2 px-4 text-blue-400 font-bold no-underline" href="/blog"><span>Blog</span></a>
+<div class="navlinks hidden-bar" id="nav-content"><ul class="navlinks__list list-reset"><li class="navlinks__list-element"><a class="navlinks__default" href="/"><span>Home</span></a>
+			</li><li class="navlinks__list-element"><a class="navlinks__active" href="/blog"><span>Blog</span></a>
 			</li></ul></div></div></nav>
-<main>
+<main style="margin-top: 3rem;">
 
-<article class="mt-20"><h1>Angular Component inheritance</h1>
-	<div class="mt-4 mb-2"><div class="flex flex-wrap"><a class="my-1" href="/blog"><span class="mr-2 rounded-full py-1 px-2 typescript">#typescript</span></a><a class="my-1" href="/blog"><span class="mr-2 rounded-full py-1 px-2 angular">#angular</span></a><a class="my-1" href="/blog"><span class="mr-2 rounded-full py-1 px-2 oop">#oop</span></a><a class="my-1" href="/blog"><span class="mr-2 rounded-full py-1 px-2 javascript">#javascript</span></a></div></div>
-	<p class="mb-8">By <span class=" font-semibold">achimoraites</span> <span>May 7, 2020</span></p>
+<article class="blog-post"><h1 style="font-size: 3rem;">Angular Component inheritance</h1>
+	<div class="tags"><div class="article-tags"><a href="/blog"><span class="typescript">#typescript</span></a><a href="/blog"><span class="angular">#angular</span></a><a href="/blog"><span class="oop">#oop</span></a><a href="/blog"><span class="javascript">#javascript</span></a></div></div>
+	<p class="author">By <span style="font-weight: 600">achimoraites</span> <span>May 7, 2020</span></p>
 	<h2>About</h2>
 <p>Component inheritance can be useful when you
 have duplicated/shared code between your components.</p>

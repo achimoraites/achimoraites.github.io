@@ -4,23 +4,24 @@
 		<meta charset="utf-8" />
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Achilles Moraites</title><meta name="description" content="Achilles Moraites is a software engineer with skills in both the front end and the back end, skills include Angular, React, Vue, Node, AWS, Python and more..." data-svelte="svelte-a1dp7h"><meta name="keywords" content="Achilles Moraites is a software engineer with skills in both the front end and the back end, skills include Angular, React, Vue, Node, AWS, Python and more..." data-svelte="svelte-a1dp7h"><meta property="og:type" content="blog" data-svelte="svelte-a1dp7h"><meta property="og:site_name" content="Achilles Moraites" data-svelte="svelte-a1dp7h">
+		<title>Blog | Achilles Moraites</title><meta name="keywords" content="web development, achilles moraites,Achilles Moraites is a software engineer with skills in both the front end and the back end, skills include Angular, React, Vue, Node, AWS, Python and more..." data-svelte="svelte-1k0b6ih"><meta name="description" content="Achilles Moraites Tech Blog, Coding, Tutorials and thoughts..." data-svelte="svelte-1k0b6ih"><meta name="author" content="Achilles Moraites" data-svelte="svelte-1k0b6ih"><meta property="og:image" content="/images/preview.jpg" data-svelte="svelte-1k0b6ih"><meta property="og:description" content="Achilles Moraites Tech Blog, Coding, Tutorials and thoughts..." data-svelte="svelte-1k0b6ih"><meta property="og:title" content="Blog | Achilles Moraites" data-svelte="svelte-1k0b6ih"><meta property="og:type" content="blog" data-svelte="svelte-1k0b6ih"><meta property="og:url" data-svelte="svelte-1k0b6ih"><meta name="twitter:card" content="summary" data-svelte="svelte-1k0b6ih"><meta name="twitter:site" content="@achimoraites" data-svelte="svelte-1k0b6ih"><meta name="twitter:creator" content="@achimoraites" data-svelte="svelte-1k0b6ih"><meta name="twitter:image" content="/images/preview.jpg" data-svelte="svelte-1k0b6ih">
 
 		
 
-		<link rel="modulepreload" href="/./app/start-0b458f19.js">
-		<link rel="modulepreload" href="/./app/chunks/vendor-3b929796.js">
-		<link rel="modulepreload" href="/./app/pages/blog/$layout.reset.svelte-d4d345ac.js">
-		<link rel="modulepreload" href="/./app/chunks/TopNav-d606c00f.js">
-		<link rel="modulepreload" href="/./app/pages/blog/index.svelte-acbb71e9.js">
-		<link rel="modulepreload" href="/./app/chunks/Tags-038f9674.js">
-		<link rel="modulepreload" href="/./app/chunks/ShadowedHeading-cf48b1fa.js">
+		<link rel="modulepreload" href="/./app/start-072906a6.js">
+		<link rel="modulepreload" href="/./app/chunks/vendor-4d2c4da8.js">
+		<link rel="modulepreload" href="/./app/pages/blog/$layout.reset.svelte-2b217d8f.js">
+		<link rel="modulepreload" href="/./app/chunks/TopNav-f74f91dd.js">
+		<link rel="modulepreload" href="/./app/pages/blog/index.svelte-00f6207a.js">
+		<link rel="modulepreload" href="/./app/chunks/Tags-bf290eaa.js">
+		<link rel="modulepreload" href="/./app/chunks/ShadowedHeading-b2e9fa23.js">
+		<link rel="modulepreload" href="/./app/chunks/OpenGraph-a53e9ebf.js">
 		<link rel="stylesheet" href="/./app/assets/start-0826e215.css">
-		<link rel="stylesheet" href="/./app/assets/pages/blog/index.svelte-b20b9901.css">
-		<link rel="stylesheet" href="/./app/assets/ShadowedHeading-7042ab29.css">
+		<link rel="stylesheet" href="/./app/assets/pages/blog/$layout.reset.svelte-ae38d9e4.css">
+		<link rel="stylesheet" href="/./app/assets/pages/blog/index.svelte-7b8cc057.css">
 
 		<script type="module">
-			import { start } from "/./app/start-0b458f19.js";
+			import { start } from "/./app/start-072906a6.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base":"","assets":"/."},
@@ -28,7 +29,20 @@
 				host: location.host,
 				route: true,
 				spa: false,
-				hydrate: null
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/./app/pages/blog/$layout.reset.svelte-2b217d8f.js"),
+						import("/./app/pages/blog/index.svelte-00f6207a.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "/blog",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
 			});
 		</script>
 	</head>
@@ -36,35 +50,34 @@
 		<div id="svelte">
 
 
-<nav id="header" class="fixed w-full z-10 top-0 bg-gray-800 font-mono"><div class="w-full md:max-w-4xl mx-auto flex flex-wrap items-center justify-between mt-0 py-3"><div class="pl-4"><a class="text-gray-300 no-underline hover:no-underline font-extrabold text-xl" href="/blog">Achilles Moraites</a></div>
+<nav class="header top-nav"><div class="header__container"><div class="brand"><a class="brand__link" href="/blog">Achilles Moraites</a></div>
 
-<div class="block lg:hidden pr-4"><button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-900 hover:border-green-500 appearance-none focus:outline-none"><svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg></button></div>
+<div class="burger-menu"><button id="nav-toggle" class="burger-menu__button"><svg width="12" height="12" class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg></button></div>
 
-<div class="w-full flex-grow lg:items-center lg:w-auto lg:block mt-2 lg:mt-0 bg-gray-900 md:bg-transparent z-20 hidden" id="nav-content"><ul class="list-reset lg:flex justify-end flex-1 items-center"><li class="sm:mr-3 mobile:text-center mobile:border-t-2 mobile:border-gray-800"><a class="mobile:w-full inline-block text-gray-300 no-underline hover:text-gray-400 hover:text-underline py-2 px-4" href="/"><span>Home</span></a>
-			</li><li class="sm:mr-3 mobile:text-center mobile:border-t-2 mobile:border-gray-800"><a class="mobile:w-full inline-block py-2 px-4 text-blue-400 font-bold no-underline" href="/blog"><span>Blog</span></a>
+<div class="navlinks hidden-bar" id="nav-content"><ul class="navlinks__list list-reset"><li class="navlinks__list-element"><a class="navlinks__default" href="/"><span>Home</span></a>
+			</li><li class="navlinks__list-element"><a class="navlinks__active" href="/blog"><span>Blog</span></a>
 			</li></ul></div></div></nav>
-<main>
+<main style="margin-top: 3rem;">
 
-<main class="px-2 mt-24 font-mono"><section class="mb-16"><header><div class="relative"><h2 class="text-4xl font-black uppercase z-10">Recent Posts</h2>
-	<span class="uppercase transform translate-x-1 -translate-y-4 text-5xl font-bold absolute left-0 top-8 svelte-1i2v6w">Recent Posts</span>
-</div></header>
+<main class="blog"><section><header><div class="shadowed-heading"><h2 class="shadowed-heading__text">Recent Posts</h2>
+	<span class="shadowed-heading__shadow">Recent Posts</span></div></header>
 
-<div class="grid sm:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-4 mt-12"><div class="shadow-lg rounded-sm p-4 bg-white border-solid border-t-2 border-gray-400 hover:border-gray-500"><a href="/blog/angular-types-of-modules"><div class=""><h3 class="text-gray-800 text-2xl font-bold mb-1">Types of Modules in Angular</h3>
+<div class="blog__recent-posts"><div class="card svelte-1k1c8t3"><a href="/blog/angular-types-of-modules"><div class=""><h3 class="card__title svelte-1k1c8t3">Types of Modules in Angular</h3>
 	<p class="text-gray-700 text-md mb-2">Crafting high quality Angular apps requires to have knowledge of how to use the ...</p></div>
-<img alt="Types of Modules in Angular image" src="https://images.pexels.com/photos/171198/pexels-photo-171198.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=225&amp;w=400" class="h-auto mb-4 svelte-ek4bog" width="517" height="277"></a>
-	<div class="flex flex-wrap"><a class="my-1" href="/blog"><span class="mr-2 rounded-full py-1 px-2 typescript">#typescript</span></a><a class="my-1" href="/blog"><span class="mr-2 rounded-full py-1 px-2 angular">#angular</span></a><a class="my-1" href="/blog"><span class="mr-2 rounded-full py-1 px-2 javascript">#javascript</span></a></div>
-</div><div class="shadow-lg rounded-sm p-4 bg-white border-solid border-t-2 border-gray-400 hover:border-gray-500"><a href="/blog/advanced-angular-testing-using-jasmine"><div class=""><h3 class="text-gray-800 text-2xl font-bold mb-1">Angular Testing with Jasmine</h3>
+<img alt="Types of Modules in Angular image" src="https://images.pexels.com/photos/171198/pexels-photo-171198.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=225&amp;w=400" class="card__img svelte-1k1c8t3" width="517" height="277"></a>
+	<div class="article-tags"><a href="/blog"><span class="typescript">#typescript</span></a><a href="/blog"><span class="angular">#angular</span></a><a href="/blog"><span class="javascript">#javascript</span></a></div>
+</div><div class="card svelte-1k1c8t3"><a href="/blog/advanced-angular-testing-using-jasmine"><div class=""><h3 class="card__title svelte-1k1c8t3">Angular Testing with Jasmine</h3>
 	<p class="text-gray-700 text-md mb-2">When testing our apps there are times when we need to control things that are be...</p></div>
-<img alt="Angular Testing with Jasmine image" src="https://images.pexels.com/photos/5726788/pexels-photo-5726788.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=255&amp;w=400" class="h-auto mb-4 svelte-ek4bog" width="517" height="277"></a>
-	<div class="flex flex-wrap"><a class="my-1" href="/blog"><span class="mr-2 rounded-full py-1 px-2 angular">#angular</span></a><a class="my-1" href="/blog"><span class="mr-2 rounded-full py-1 px-2 javascript">#javascript</span></a><a class="my-1" href="/blog"><span class="mr-2 rounded-full py-1 px-2 typescript">#typescript</span></a><a class="my-1" href="/blog"><span class="mr-2 rounded-full py-1 px-2 testing">#testing</span></a></div>
-</div><div class="shadow-lg rounded-sm p-4 bg-white border-solid border-t-2 border-gray-400 hover:border-gray-500"><a href="/blog/angular-component-inheritance"><div class=""><h3 class="text-gray-800 text-2xl font-bold mb-1">Angular Component inheritance</h3>
+<img alt="Angular Testing with Jasmine image" src="https://images.pexels.com/photos/5726788/pexels-photo-5726788.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=255&amp;w=400" class="card__img svelte-1k1c8t3" width="517" height="277"></a>
+	<div class="article-tags"><a href="/blog"><span class="angular">#angular</span></a><a href="/blog"><span class="javascript">#javascript</span></a><a href="/blog"><span class="typescript">#typescript</span></a><a href="/blog"><span class="testing">#testing</span></a></div>
+</div><div class="card svelte-1k1c8t3"><a href="/blog/angular-component-inheritance"><div class=""><h3 class="card__title svelte-1k1c8t3">Angular Component inheritance</h3>
 	<p class="text-gray-700 text-md mb-2">Component inheritance can be useful when you have duplicated/shared code between...</p></div>
-<img alt="Angular Component inheritance image" src="https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=225&amp;w=400" class="h-auto mb-4 svelte-ek4bog" width="517" height="277"></a>
-	<div class="flex flex-wrap"><a class="my-1" href="/blog"><span class="mr-2 rounded-full py-1 px-2 typescript">#typescript</span></a><a class="my-1" href="/blog"><span class="mr-2 rounded-full py-1 px-2 angular">#angular</span></a><a class="my-1" href="/blog"><span class="mr-2 rounded-full py-1 px-2 oop">#oop</span></a><a class="my-1" href="/blog"><span class="mr-2 rounded-full py-1 px-2 javascript">#javascript</span></a></div>
-</div><div class="shadow-lg rounded-sm p-4 bg-white border-solid border-t-2 border-gray-400 hover:border-gray-500"><a href="/blog/typescript-tips-and-tricks"><div class=""><h3 class="text-gray-800 text-2xl font-bold mb-1">Typescript Tips and Tricks</h3>
+<img alt="Angular Component inheritance image" src="https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=225&amp;w=400" class="card__img svelte-1k1c8t3" width="517" height="277"></a>
+	<div class="article-tags"><a href="/blog"><span class="typescript">#typescript</span></a><a href="/blog"><span class="angular">#angular</span></a><a href="/blog"><span class="oop">#oop</span></a><a href="/blog"><span class="javascript">#javascript</span></a></div>
+</div><div class="card svelte-1k1c8t3"><a href="/blog/typescript-tips-and-tricks"><div class=""><h3 class="card__title svelte-1k1c8t3">Typescript Tips and Tricks</h3>
 	<p class="text-gray-700 text-md mb-2">Here are two Typescript tricks to make your life as a software developer easier....</p></div>
-<img alt="Typescript Tips and Tricks image" src="https://images.pexels.com/photos/1701206/pexels-photo-1701206.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=225&amp;w=400" class="h-auto mb-4 svelte-ek4bog" width="517" height="277"></a>
-	<div class="flex flex-wrap"><a class="my-1" href="/blog"><span class="mr-2 rounded-full py-1 px-2 typescript">#typescript</span></a><a class="my-1" href="/blog"><span class="mr-2 rounded-full py-1 px-2 oop">#oop</span></a><a class="my-1" href="/blog"><span class="mr-2 rounded-full py-1 px-2 productivity">#productivity</span></a></div>
+<img alt="Typescript Tips and Tricks image" src="https://images.pexels.com/photos/1701206/pexels-photo-1701206.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=225&amp;w=400" class="card__img svelte-1k1c8t3" width="517" height="277"></a>
+	<div class="article-tags"><a href="/blog"><span class="typescript">#typescript</span></a><a href="/blog"><span class="oop">#oop</span></a><a href="/blog"><span class="productivity">#productivity</span></a></div>
 </div></div></section></main></main>
 
 <footer class="bg-gray-900 mt-5"><hr class="border-1 border-gray-600 w-full">
