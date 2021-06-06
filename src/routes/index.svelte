@@ -1,19 +1,19 @@
 <script lang="ts">
+	import OpenGraph from '../components/OpenGraph.svelte';
 </script>
 
-<svelte:head>
-	<title>Achilles Moraites</title>
-	<meta
-		name="description"
-		content="Achilles Moraites is a software engineer with skills in both the front end and the back end, skills include Angular, React, Vue, Node, AWS, Python and more..."
-	/>
-	<meta
-		name="keywords"
-		content="Achilles Moraites is a software engineer with skills in both the front end and the back end, skills include Angular, React, Vue, Node, AWS, Python and more..."
-	/>
-	<meta property="og:type" content="blog" />
-	<meta property="og:site_name" content="Achilles Moraites" />
-</svelte:head>
+<OpenGraph
+	data={{
+		description:
+			'Achilles Moraites is a software engineer with skills in both the front end and the back end, skills include Angular, React, Vue, Node, AWS, Python and more...',
+		title: 'Achilles Moraites',
+		type: 'website',
+		image: '/images/preview.jpg',
+		tags: [
+			'Achilles Moraites is a software engineer with skills in both the front end and the back end, skills include Angular, React, Vue, Node, AWS, Python and more...'
+		]
+	}}
+/>
 
 <div class="flex justify-center items-center mobile:h-screen">
 	<div class="container text-center">

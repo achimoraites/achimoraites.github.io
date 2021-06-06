@@ -1,6 +1,6 @@
 <script lang="ts" context="module">
 	export const prerender = true;
-	export const hydrate = false;
+
 	export async function load({ session }) {
 		const posts = session.posts;
 		return { props: { posts } };
@@ -12,23 +12,22 @@
 
 	import ArticleCard from '../../components/blog/ArticleCard.svelte';
 	import ShadowedHeading from '../../components/ShadowedHeading.svelte';
+	import OpenGraph from '../../components/OpenGraph.svelte';
 
 	export let posts: Post[] = [];
 </script>
 
-<svelte:head>
-	<title>Achilles Moraites</title>
-	<meta
-		name="description"
-		content="Achilles Moraites is a software engineer with skills in both the front end and the back end, skills include Angular, React, Vue, Node, AWS, Python and more..."
-	/>
-	<meta
-		name="keywords"
-		content="Achilles Moraites is a software engineer with skills in both the front end and the back end, skills include Angular, React, Vue, Node, AWS, Python and more..."
-	/>
-	<meta property="og:type" content="blog" />
-	<meta property="og:site_name" content="Achilles Moraites" />
-</svelte:head>
+<OpenGraph
+	data={{
+		description: 'Achilles Moraites Tech Blog, Coding, Tutorials and thoughts...',
+		title: 'Blog | Achilles Moraites',
+		type: 'blog',
+		image: '/images/preview.jpg',
+		tags: [
+			'Achilles Moraites is a software engineer with skills in both the front end and the back end, skills include Angular, React, Vue, Node, AWS, Python and more...'
+		]
+	}}
+/>
 
 <main class="blog">
 	<section>
