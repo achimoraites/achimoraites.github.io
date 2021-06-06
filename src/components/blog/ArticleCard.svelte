@@ -10,21 +10,28 @@
 	export let tags: Array<string> = ['typescript', 'angular', 'oop', 'javascript'];
 </script>
 
-<div
-	class="shadow-lg rounded-sm p-4 bg-white border-solid border-t-2 border-gray-400 hover:border-gray-500"
->
+<div class="card">
 	<a href={uri}>
 		<div class="">
-			<h3 class="text-gray-800 text-2xl font-bold mb-1">{title}</h3>
+			<h3 class="card__title">{title}</h3>
 			<p class="text-gray-700 text-md mb-2">{text.slice(0, 80)}...</p>
 		</div>
-		<img alt={title + ' image'} src={image} class="h-auto mb-4" width="517" height="277" />
+		<img alt={title + ' image'} src={image} class="card__img" width="517" height="277" />
 	</a>
 	<Tags {tags} />
 </div>
 
 <style>
-	img {
+	.card {
+		@apply shadow-lg rounded-sm p-4 bg-white border-solid border-t-2 border-gray-400 hover:border-gray-500;
+	}
+
+	.card__title {
+		@apply text-gray-800 text-2xl font-bold mb-1;
+	}
+	.card__img {
 		object-fit: fill;
+
+		@apply h-auto mb-4;
 	}
 </style>

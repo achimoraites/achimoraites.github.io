@@ -20,7 +20,7 @@
 </script>
 
 <TopNav {navLinks} />
-<main >
+<main>
 	<slot><!-- optional fallback --></slot>
 </main>
 

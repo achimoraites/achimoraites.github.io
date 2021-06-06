@@ -30,17 +30,16 @@
 	<meta property="og:site_name" content="Achilles Moraites" />
 </svelte:head>
 
-<main class="px-2 mt-24 font-mono">
-	<section class="mb-16">
+<main class="blog">
+	<section>
 		<header>
 			<ShadowedHeading title="Recent Posts" />
 		</header>
 
-		<div class="grid sm:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-4 mt-12">
+		<div class="blog__recent-posts">
 			{#each posts as { title, excerpt, image, uri, tags }}
 				<ArticleCard {title} text={excerpt} {image} {uri} {tags} />
 			{/each}
 		</div>
 	</section>
 </main>
-

@@ -2,15 +2,8 @@
 	export let title: string;
 </script>
 
-<div class="relative">
-	<h2 class="text-4xl font-black uppercase z-10">{title}</h2>
-	<span class="uppercase transform translate-x-1 -translate-y-4 text-5xl font-bold absolute left-0 top-8"
-		>{title}</span
-	>
+<div class="shadowed-heading">
+	<h2 class="shadowed-heading__text">{title}</h2>
+	<span class="shadowed-heading__shadow">{title}</span>
 </div>
 
-<style>
-	span {
-		color: #00000008;
-	}
-</style>

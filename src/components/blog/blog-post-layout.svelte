@@ -21,17 +21,31 @@
 		title,
 		image,
 		tags,
-		date,
+		date
 	}}
 />
 
-<article class="mt-20">
+<article class="article">
 	<h1>{title}</h1>
-	<div class="mt-4 mb-2">
+	<div class="tags">
 		<Tags {tags} />
 	</div>
-	<p class="mb-8">
+	<p class="author">
 		By <span class=" font-semibold"> {author}</span> <span>{dateFormatter(date)}</span>
 	</p>
 	<slot />
 </article>
+
+<style>
+	.article {
+		@apply mt-20;
+	}
+
+	.tags {
+		@apply mt-4 mb-2;
+	}
+
+	.author {
+		@apply mb-8;
+	}
+</style>
