@@ -23,6 +23,9 @@ module.exports = {
 			screens: {
 				'mobile': {'max': '640px'},
 			},
+			height: {
+				'90vh': '90vh',
+			   }
 		}
 	},
 	variants: {

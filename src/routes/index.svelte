@@ -1,4 +1,6 @@
 <script lang="ts">
+	import ShadowedHeading from '../components/ShadowedHeading.svelte';
+	import Card from '../components/Card.svelte';
 	import OpenGraph from '../components/OpenGraph.svelte';
 </script>
 
@@ -15,8 +17,8 @@
 	}}
 />
 
-<div class="flex justify-center items-center mobile:h-screen">
-	<div class="container text-center">
+<div class="flex justify-center items-center h-90vh">
+	<section class="container text-center">
 		<h1 class="text-4xl font-bold mb-2">
 			Hi, I am <span class="text-blue-800">Achilles Moraites</span>
 		</h1>
@@ -74,7 +76,7 @@
 				</a>
 			</li>
 		</ul>
-	</div>
+	</section>
 </div>
 
 <style>
