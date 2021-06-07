@@ -25,7 +25,8 @@
 		title,
 		image,
 		tags,
-		date
+		date,
+		preloadImage: Boolean(image)
 	}}
 />
 
@@ -37,5 +38,8 @@
 	<p class="author">
 		By <span style="font-weight: 600"> {author}</span> <span>{dateFormatter(date)}</span>
 	</p>
+	{#if image}
+		<img class="mt-4 mb-6" alt={title} src={image} width="800" height="450" />
+	{/if}
 	<slot />
 </article>
