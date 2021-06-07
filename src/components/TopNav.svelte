@@ -1,10 +1,18 @@
 <script>
+	import { onMount } from 'svelte';
 	export let navLinks = [];
 	export let title = 'Achilles Moraites';
 
+	let openMenu = false;
+	let localNavlinks;
+
+	$: localNavlinks = [...navLinks];
+
 	function updateLinks(href) {
-		navLinks = navLinks.map((l) =>
-			l.href === href ? { ...l, active: true } : { ...l, active: false }
+		localNavlinks = navLinks.map((l) =>
+			(href.startsWith('/blog/') && l.href.includes('blog')) || l.href === href
+				? { ...l, active: true }
+				: { ...l, active: false }
 		);
 	}
 
@@ -13,11 +21,13 @@
 		active: 'navlinks__active'
 	};
 
-	let openMenu = false;
-
 	function toggleMenu() {
 		openMenu = !openMenu;
 	}
+
+	onMount(() => {
+		updateLinks(window.location.pathname);
+	});
 </script>
 
 <nav class="header top-nav">
@@ -45,11 +55,8 @@
 
 		<div class="navlinks {openMenu ? '' : 'hidden-bar'}" id="nav-content">
 			<ul class="navlinks__list list-reset">
-				{#each navLinks as { href, active, label }}
-					<li
-						class="navlinks__list-element"
-						on:click={() => updateLinks(href)}
-					>
+				{#each localNavlinks as { href, active, label }}
+					<li class="navlinks__list-element" on:click={() => updateLinks(href)}>
 						<a class={active ? navLinkStyle.active : navLinkStyle.default} {href}
 							><span>{label}</span></a
 						>
@@ -59,4 +66,3 @@
 		</div>
 	</div>
 </nav>
-

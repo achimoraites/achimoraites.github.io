@@ -11,12 +11,11 @@
 	let navLinks = [
 		{
 			href: '/',
-			label: 'Home',
-			active: true,
+			label: 'Home'
 		},
 		{
 			href: '/blog',
-			label: 'Blog',
+			label: 'Blog'
 		}
 	];
 </script>
