@@ -8,7 +8,8 @@
 		url,
 		tags = [],
 		author = 'Achilles Moraites',
-		date = new Date()
+		date = new Date(),
+		preloadImage = false,
 	} = data || {};
 </script>
 
@@ -41,4 +42,9 @@
 	<meta name="twitter:site" content="@achimoraites" />
 	<meta name="twitter:creator" content="@achimoraites" />
 	<meta name="twitter:image" content={image} />
+
+	<!-- PRELOAD -->
+	{#if preloadImage && image}
+	<link rel="preload" as="image" href={image} />
+	{/if}
 </svelte:head>
