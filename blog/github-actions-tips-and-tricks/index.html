@@ -10,10 +10,10 @@
 
 		
 
-		<link rel="modulepreload" href="/./app/start-a0b1fb49.js">
+		<link rel="modulepreload" href="/./app/start-93f8d0a1.js">
 		<link rel="modulepreload" href="/./app/chunks/vendor-1ec63ec4.js">
 		<link rel="modulepreload" href="/./app/pages/$layout.svelte-db8c2263.js">
-		<link rel="modulepreload" href="/./app/pages/blog/github-actions-tips-and-tricks.md-8f02e857.js">
+		<link rel="modulepreload" href="/./app/pages/blog/github-actions-tips-and-tricks.md-b85b5cbe.js">
 		<link rel="modulepreload" href="/./app/chunks/blog-post-layout-7879c791.js">
 		<link rel="modulepreload" href="/./app/chunks/OpenGraph-09d9fd23.js">
 		<link rel="modulepreload" href="/./app/chunks/Tags-fbac4788.js">
@@ -21,7 +21,7 @@
 		<link rel="stylesheet" href="/./app/assets/pages/$layout.svelte-5b56fc98.css">
 
 		<script type="module">
-			import { start } from "/./app/start-a0b1fb49.js";
+			import { start } from "/./app/start-93f8d0a1.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base":"","assets":"/."},
@@ -34,7 +34,7 @@
 					error: null,
 					nodes: [
 						import("/./app/pages/$layout.svelte-db8c2263.js"),
-						import("/./app/pages/blog/github-actions-tips-and-tricks.md-8f02e857.js")
+						import("/./app/pages/blog/github-actions-tips-and-tricks.md-b85b5cbe.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
@@ -97,18 +97,18 @@ The most common case is when you want to create a path using one or more env var
 	    <span class="token key atrule">env</span><span class="token punctuation">:</span>
 	      <span class="token key atrule">IMAGES_PATH</span><span class="token punctuation">:</span> <span class="token string">"$&#123;&#123; env.BASE_URL &#125;&#125;assets/img/"</span></code></pre>
 <h2>Use a custom npm config</h2>
-<p>This is very handly when you are working with private packages 📦
-The idea is to store your PAT TOKEN for accessing your packages in your repository secrets and then use it on a custom npm config file.</p>
+<p>This is very handly when you are working with private packages 📦</p>
+<p>The idea is to store your PAT TOKEN for accessing your packages in your repository secrets and then use it on a custom npm config file.</p>
 <blockquote><p>📝Note that we can just use the default <code>.npmrc</code> but it is a good idea to keep the npm config for your github actions separated.</p></blockquote>
 <h3>How</h3>
 <p>In order for it to work we need to:</p>
-<ol><li>an npm config file 🦄<ul><li>includes the configuration for our private github packages</li>
+<ol><li>Create an npm config file 🦄<ul><li>includes the configuration for our private github packages</li>
 <li>we will take the PAT TOKEN from an env variable</li>
 <li>we can name it anything that we want</li>
 <li>place it in the project root folder</li></ul></li>
 <li>set our action to use our npm config file ✨</li>
-<li>create a PAT TOKEN</li>
-<li>place the PAT TOKEN in our repository secrets</li></ol>
+<li>Generate a PAT TOKEN</li>
+<li>Place the PAT TOKEN in our repository secrets</li></ol>
 <p>Lets have a look at a case where we are using private github packages</p>
 <ol><li><strong>Create the npm config file</strong></li></ol>
 <p>Create a file named <code>.ci.npmrc</code> in the root folder of your project and place the following contents:</p>
