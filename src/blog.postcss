@@ -16,8 +16,12 @@ pre {
 	@apply bg-gray-900 rounded text-white font-mono text-base p-2 md:p-4 my-2 max-w-max;
 }
 
+pre code {
+	@apply break-words whitespace-pre-wrap bg-transparent p-0;
+}
+
 code {
-	@apply break-words whitespace-pre-wrap;
+	@apply bg-gray-100 p-1;
 }
 
 article {
@@ -84,14 +88,22 @@ article ul {
 /* POST LAYOUT */
 
 .blog-post {
-	@apply mt-20;
+	@apply mt-20 bg-white bg-opacity-60 text-lg;
 }
 
 .blog-post .tags {
-	@apply mt-4 mb-2;
+	@apply mt-4 mb-2 text-base;
+}
+
+.blog-post p {
+	@apply my-3;
+}
+
+.blog-post img {
+	@apply my-4;
 }
 
 .blog-post .blog-post__img,
 .blog-post .author {
-	@apply mb-8;
+	@apply mb-8 text-base;
 }

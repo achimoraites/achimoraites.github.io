@@ -128,9 +128,8 @@ Create a file named `.ci.npmrc` in the root folder of your project and place the
 
 ### Summary 👨🏻‍💻
 We have explored ways to improve the performance of our github actions using caching.
-Then we explored how we can create strings dynamically from env variables and finnaly we had a look in configuring our npm config for using private github packages in a secure and scalable way 😉.
 
-I hope you enjoyed it!
+Then we explored how we can create strings dynamically from env variables and finnaly we had a look in configuring our npm config for using private github packages in a secure and scalable way 😉.
 
 Happy coding 😄 !!!
 
