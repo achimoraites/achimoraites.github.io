@@ -65,6 +65,7 @@ jobs:
 ## Use a custom npm config
 
 This is very handly when you are working with private packages 📦
+
 The idea is to store your PAT TOKEN for accessing your packages in your repository secrets and then use it on a custom npm config file.
 
 > 📝Note that we can just use the default `.npmrc` but it is a good idea to keep the npm config for your github actions separated.
@@ -73,14 +74,14 @@ The idea is to store your PAT TOKEN for accessing your packages in your reposito
 
 In order for it to work we need to:
 
-1. an npm config file 🦄
+1. Create an npm config file 🦄
    - includes the configuration for our private github packages
    - we will take the PAT TOKEN from an env variable
    - we can name it anything that we want
    - place it in the project root folder
 2. set our action to use our npm config file ✨
-3. create a PAT TOKEN
-4. place the PAT TOKEN in our repository secrets
+3. Generate a PAT TOKEN
+4. Place the PAT TOKEN in our repository secrets
 
 Lets have a look at a case where we are using private github packages
 
