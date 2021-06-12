@@ -25,7 +25,7 @@
 	<slot><!-- optional fallback --></slot>
 </main>
 
-<footer class="bg-gray-900 mt-5">
+<footer class="bg-gray-900 mt-8">
 	<BaseFooter />
 </footer>
 
