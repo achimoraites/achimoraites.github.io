@@ -2,7 +2,7 @@
 	export let data;
 	const {
 		description,
-		image,
+		image = 'https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=225&w=400',
 		title,
 		type = 'article',
 		url,

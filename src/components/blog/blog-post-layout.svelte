@@ -4,6 +4,7 @@
 
 <script lang="ts">
 	import OpenGraph from '../OpenGraph.svelte';
+	import SocialShare from './SocialShare.svelte';
 	import Tags from './Tags.svelte';
 
 	// PROPS
@@ -13,6 +14,7 @@
 	export let tags;
 	export let excerpt;
 	export let image;
+	export let url;
 
 	function dateFormatter(date, config = { year: 'numeric', month: 'short', day: 'numeric' }) {
 		return new Date(Date.parse(date)).toLocaleDateString(undefined, config);
@@ -31,13 +33,16 @@
 />
 
 <article class="blog-post">
+
 	<h1 style="font-size: 3rem;">{title}</h1>
 	<div class="tags">
 		<Tags {tags} />
 	</div>
+	<SocialShare {url} />
 	<p class="author">
 		By <span style="font-weight: 600"> {author}</span> <span>{dateFormatter(date)}</span>
 	</p>
+
 	{#if image}
 		<img class="mt-4 mb-6" alt={title} src={image} width="800" height="450" />
 	{/if}
