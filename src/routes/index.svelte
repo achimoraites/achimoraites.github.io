@@ -10,7 +10,7 @@
 			'Achilles Moraites is a software engineer with skills in both the front end and the back end, skills include Angular, React, Vue, Node, AWS, Python and more...',
 		title: 'Achilles Moraites',
 		type: 'website',
-		image: 'https://achimoraites.github.io/images/preview.jpg',
+		image: '/images/preview.jpg',
 		tags: [
 			'Achilles Moraites is a software engineer with skills in both the front end and the back end, skills include Angular, React, Vue, Node, AWS, Python and more...'
 		]
