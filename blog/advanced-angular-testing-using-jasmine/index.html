@@ -10,18 +10,18 @@
 
 		
 
-		<link rel="modulepreload" href="/./app/start-97dcded1.js">
+		<link rel="modulepreload" href="/./app/start-d0d6d6c5.js">
 		<link rel="modulepreload" href="/./app/chunks/vendor-1ec63ec4.js">
-		<link rel="modulepreload" href="/./app/pages/$layout.svelte-e9b64170.js">
-		<link rel="modulepreload" href="/./app/pages/blog/advanced-angular-testing-using-jasmine.md-120c37f3.js">
+		<link rel="modulepreload" href="/./app/pages/$layout.svelte-ac4df60d.js">
+		<link rel="modulepreload" href="/./app/pages/blog/advanced-angular-testing-using-jasmine.md-99c1e363.js">
 		<link rel="modulepreload" href="/./app/chunks/blog-post-layout-4d242ba6.js">
 		<link rel="modulepreload" href="/./app/chunks/OpenGraph-d6d3dbc2.js">
 		<link rel="modulepreload" href="/./app/chunks/Tags-fbac4788.js">
 		<link rel="stylesheet" href="/./app/assets/start-0826e215.css">
-		<link rel="stylesheet" href="/./app/assets/pages/$layout.svelte-e1c2dd6e.css">
+		<link rel="stylesheet" href="/./app/assets/pages/$layout.svelte-935c7f77.css">
 
 		<script type="module">
-			import { start } from "/./app/start-97dcded1.js";
+			import { start } from "/./app/start-d0d6d6c5.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base":"","assets":"/."},
@@ -33,8 +33,8 @@
 					status: 200,
 					error: null,
 					nodes: [
-						import("/./app/pages/$layout.svelte-e9b64170.js"),
-						import("/./app/pages/blog/advanced-angular-testing-using-jasmine.md-120c37f3.js")
+						import("/./app/pages/$layout.svelte-ac4df60d.js"),
+						import("/./app/pages/blog/advanced-angular-testing-using-jasmine.md-99c1e363.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
@@ -74,14 +74,14 @@ One common scenario is when we need to test our code against browser specific AP
 <pre class="language-typescript"><code class="language-typescript"><span class="token comment">// history.component.ts</span>
 <span class="token keyword">import</span> <span class="token punctuation">&#123;</span> Component<span class="token punctuation">,</span> OnInit <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'@angular/core'</span><span class="token punctuation">;</span>
 
-@<span class="token function">Component</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
+<span class="token decorator"><span class="token at operator">@</span><span class="token function">Component</span></span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
   selector<span class="token operator">:</span> <span class="token string">'app-history'</span><span class="token punctuation">,</span>
   templateUrl<span class="token operator">:</span> <span class="token string">'./history.component.html'</span><span class="token punctuation">,</span>
   styleUrls<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'./history.component.css'</span><span class="token punctuation">]</span>
 <span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
 <span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">HistoryComponent</span> <span class="token keyword">implements</span> <span class="token class-name">OnInit</span> <span class="token punctuation">&#123;</span>
 
-  <span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> <span class="token punctuation">&#125;</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> <span class="token punctuation">&#125;</span>
 
   <span class="token function">ngOnInit</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
   <span class="token punctuation">&#125;</span>
@@ -96,7 +96,7 @@ One common scenario is when we need to test our code against browser specific AP
 
   <span class="token function">saveFile</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
     <span class="token keyword">const</span> blob <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Blob</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">''</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">&#123;</span>
-      <span class="token keyword">type</span><span class="token operator">:</span> <span class="token string">'text/html'</span>
+      type<span class="token operator">:</span> <span class="token string">'text/html'</span>
     <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token comment">// IE</span>
     <span class="token keyword">if</span> <span class="token punctuation">(</span>window<span class="token punctuation">.</span>navigator <span class="token operator">&amp;&amp;</span> window<span class="token punctuation">.</span>navigator<span class="token punctuation">.</span>msSaveOrOpenBlob<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>

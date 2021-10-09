@@ -10,18 +10,18 @@
 
 		
 
-		<link rel="modulepreload" href="/./app/start-97dcded1.js">
+		<link rel="modulepreload" href="/./app/start-d0d6d6c5.js">
 		<link rel="modulepreload" href="/./app/chunks/vendor-1ec63ec4.js">
-		<link rel="modulepreload" href="/./app/pages/$layout.svelte-e9b64170.js">
-		<link rel="modulepreload" href="/./app/pages/blog/angular-types-of-modules.md-3af5f89d.js">
+		<link rel="modulepreload" href="/./app/pages/$layout.svelte-ac4df60d.js">
+		<link rel="modulepreload" href="/./app/pages/blog/angular-types-of-modules.md-ebf55199.js">
 		<link rel="modulepreload" href="/./app/chunks/blog-post-layout-4d242ba6.js">
 		<link rel="modulepreload" href="/./app/chunks/OpenGraph-d6d3dbc2.js">
 		<link rel="modulepreload" href="/./app/chunks/Tags-fbac4788.js">
 		<link rel="stylesheet" href="/./app/assets/start-0826e215.css">
-		<link rel="stylesheet" href="/./app/assets/pages/$layout.svelte-e1c2dd6e.css">
+		<link rel="stylesheet" href="/./app/assets/pages/$layout.svelte-935c7f77.css">
 
 		<script type="module">
-			import { start } from "/./app/start-97dcded1.js";
+			import { start } from "/./app/start-d0d6d6c5.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base":"","assets":"/."},
@@ -33,8 +33,8 @@
 					status: 200,
 					error: null,
 					nodes: [
-						import("/./app/pages/$layout.svelte-e9b64170.js"),
-						import("/./app/pages/blog/angular-types-of-modules.md-3af5f89d.js")
+						import("/./app/pages/$layout.svelte-ac4df60d.js"),
+						import("/./app/pages/blog/angular-types-of-modules.md-ebf55199.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
@@ -90,7 +90,7 @@
 <span class="token keyword">import</span> <span class="token punctuation">&#123;</span> DashboardComponent <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'./dashboard/dashboard.component'</span><span class="token punctuation">;</span>
 <span class="token keyword">import</span> <span class="token punctuation">&#123;</span> ProjectComponent <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'./project/project.component'</span><span class="token punctuation">;</span>
 
-@<span class="token function">NgModule</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
+<span class="token decorator"><span class="token at operator">@</span><span class="token function">NgModule</span></span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
   imports<span class="token operator">:</span> <span class="token punctuation">[</span>
     NgModule<span class="token punctuation">,</span>
     SharedModule
@@ -108,12 +108,12 @@
 
 <span class="token keyword">import</span> <span class="token punctuation">&#123;</span> ApiService <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'./services/api.service'</span><span class="token punctuation">;</span>
 
-@<span class="token function">NgModule</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
+<span class="token decorator"><span class="token at operator">@</span><span class="token function">NgModule</span></span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
   providers<span class="token operator">:</span> <span class="token punctuation">[</span> ApiService <span class="token punctuation">]</span>
 <span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
 <span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">CoreModule</span> <span class="token punctuation">&#123;</span>
    <span class="token comment">// do not allow to be used more than ONCE!!!</span>
-  <span class="token keyword">constructor</span><span class="token punctuation">(</span>@<span class="token function">Optional</span><span class="token punctuation">(</span><span class="token punctuation">)</span> @<span class="token function">SkipSelf</span><span class="token punctuation">(</span><span class="token punctuation">)</span> parent<span class="token operator">:</span> CoreModule<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token decorator"><span class="token at operator">@</span><span class="token function">Optional</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token decorator"><span class="token at operator">@</span><span class="token function">SkipSelf</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span> parent<span class="token operator">:</span> CoreModule<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
     <span class="token keyword">if</span> <span class="token punctuation">(</span>parent<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
       <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">Error</span><span class="token punctuation">(</span>
         <span class="token string">'Import CoreModule in the root module only!!!'</span>
@@ -138,7 +138,7 @@
 <span class="token keyword">import</span> <span class="token punctuation">&#123;</span> PercentagePipe <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'./pipes/percentage/percentange.pipe'</span><span class="token punctuation">;</span>
 <span class="token keyword">import</span> <span class="token punctuation">&#123;</span> CustomerStyleDirective <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'./directives/customer-style/customer-style.directive'</span><span class="token punctuation">;</span>
 
-@<span class="token function">NgModule</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
+<span class="token decorator"><span class="token at operator">@</span><span class="token function">NgModule</span></span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
   imports<span class="token operator">:</span> <span class="token punctuation">[</span> CommonModule <span class="token punctuation">]</span><span class="token punctuation">,</span>
   exports<span class="token operator">:</span> <span class="token punctuation">[</span>
     CommonModule<span class="token punctuation">,</span>
