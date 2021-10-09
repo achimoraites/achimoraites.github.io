@@ -1,6 +1,4 @@
 <script lang="ts">
-	import ShadowedHeading from '../components/ShadowedHeading.svelte';
-	import Card from '../components/Card.svelte';
 	import OpenGraph from '../components/OpenGraph.svelte';
 </script>
 
