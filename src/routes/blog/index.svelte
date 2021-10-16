@@ -15,6 +15,14 @@
 	import OpenGraph from '../../components/OpenGraph.svelte';
 
 	export let posts: Post[] = [];
+	let searchQuery = '';
+
+	$: filteredPosts = posts.filter(
+		(post) =>
+			post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+			post.excerpt.toLowerCase().includes(searchQuery.toLowerCase()) ||
+			post.tags.some(tag => tag.includes(searchQuery.toLowerCase()))
+	);
 </script>
 
 <OpenGraph
@@ -29,16 +37,27 @@
 	}}
 />
 
-<main class="blog">
-	<section>
-		<header>
-			<ShadowedHeading title="Recent Posts" />
+<main class="blog flex justify-center">
+	<section class="min-h-screen max-w-6xl w-full">
+		<header class="md:flex md:justify-between w-full">
+			<ShadowedHeading title="Blog Posts" />
+				<input
+					class="border-2 px-2 mt-8 md:mt-0"
+					type="text"
+					placeholder="Search"
+					bind:value={searchQuery}
+				/>
 		</header>
-
+		{#if filteredPosts.length}
 		<div class="blog__recent-posts">
-			{#each posts as { title, excerpt, image, uri, tags }}
+			{#each filteredPosts as { title, excerpt, image, uri, tags }}
 				<ArticleCard {title} text={excerpt} {image} {uri} {tags} />
 			{/each}
 		</div>
+		{:else}
+		<p class="md:float-right text-red-800 font-bold">
+			No results found for "{searchQuery}"
+		</p>
+		{/if}
 	</section>
 </main>
