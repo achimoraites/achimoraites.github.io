@@ -3,7 +3,10 @@
 </script>
 
 <script lang="ts">
+import getPosts from '$lib/getPosts';
+
 	import OpenGraph from '../OpenGraph.svelte';
+import RelatedArticles from './RelatedArticles.svelte';
 	import SocialShare from './SocialShare.svelte';
 	import Tags from './Tags.svelte';
 
@@ -15,6 +18,12 @@
 	export let excerpt;
 	export let image;
 	export let url;
+	export let slug;
+
+
+	let posts = []
+	getPosts().then(p => posts = p)
+
 
 	function dateFormatter(date, config = { year: 'numeric', month: 'short', day: 'numeric' }) {
 		return new Date(Date.parse(date)).toLocaleDateString(undefined, config);
@@ -47,4 +56,6 @@
 		<img class="mt-4 mb-6" alt={title} src={image} width="800" height="450" />
 	{/if}
 	<slot />
+
+	<RelatedArticles {slug} {posts} />
 </article>
