@@ -5,7 +5,7 @@
 	export let slug: string;
 	export let posts: Post[];
 	export let minPosts: number = 1
-	export let show: number = 2
+	export let show: number = 4
 
 
 	$: currentPost = posts.find((p) => p.slug === slug);
