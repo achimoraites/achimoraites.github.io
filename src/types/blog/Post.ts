@@ -5,4 +5,5 @@ export default interface Post {
     image?: string;
     uri?: string;
     tags?: Array<string>;
+    slug?: string;
 }
