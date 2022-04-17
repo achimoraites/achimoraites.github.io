@@ -1,6 +1,6 @@
 {
   "name": "achimoraites",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "homepage": "https://achimoraites.github.io/",
   "private": true,
   "scripts": {
@@ -12,6 +12,8 @@
     "deploy": "gh-pages -d build -t true"
   },
   "devDependencies": {
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/git": "^10.0.1",
     "@sveltejs/adapter-node": "next",
     "@sveltejs/adapter-static": "next",
     "@sveltejs/kit": "next",
