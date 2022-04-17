@@ -3,7 +3,7 @@ name: Release 📦
 on:
   workflow_run:
     workflows:
-      - deploy
+      - Deploy GH Pages 🚀
     types:
       - completed
 
