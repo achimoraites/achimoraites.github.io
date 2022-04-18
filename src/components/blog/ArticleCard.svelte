@@ -1,6 +1,8 @@
 <script lang="ts">
 	import Tags from './Tags.svelte';
 
+	import { createEventDispatcher } from 'svelte';
+
 	export let title: string = 'Types of Modules in Angular';
 	export let text: string =
 		'Crafting high quality Angular apps requires to have knowledge of how to use the different types of modules to ensure readability, performance and scalability.';
@@ -8,6 +10,14 @@
 		'https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=225&w=400';
 	export let uri: string = '/blog/angular-types-of-modules';
 	export let tags: Array<string> = ['typescript', 'angular', 'oop', 'javascript'];
+
+	const dispatch = createEventDispatcher();
+
+	function tagClicked(event) {
+		dispatch('tagClicked', {
+			value: event.detail.value
+		});
+	}
 </script>
 
 <div class="card">
@@ -18,7 +28,7 @@
 		</div>
 		<img alt={title + ' image'} src={image} class="card__img" width="517" height="277" />
 	</a>
-	<Tags {tags} />
+	<Tags on:tagClicked={tagClicked} {tags} />
 </div>
 
 <style>

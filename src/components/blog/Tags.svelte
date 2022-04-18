@@ -1,9 +1,18 @@
 <script lang="ts">
+	import { createEventDispatcher } from 'svelte';
+	const dispatch = createEventDispatcher();
+
+	function tagClicked(tag) {
+		dispatch('tagClicked', {
+			value: tag
+		});
+	}
+
 	export let tags: Array<string> = [];
 </script>
 
 <div class="article-tags">
 	{#each tags as tag}
-		<a href="/blog"><span class="{tag}">#{tag}</span></a>
+		<span on:click={() => tagClicked(tag)} class={tag}>#{tag}</span>
 	{/each}
 </div>
