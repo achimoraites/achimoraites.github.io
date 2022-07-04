@@ -1,3 +1,10 @@
+## [2.1.1](https://github.com/achimoraites/achimoraites.github.io/compare/v2.1.0...v2.1.1) (2022-07-04)
+
+
+### Bug Fixes
+
+* **security:** bump package versions ([e9a0bd2](https://github.com/achimoraites/achimoraites.github.io/commit/e9a0bd2961024c7dfa1f221b2ef76e87a2cc040b))
+
 # [2.1.0](https://github.com/achimoraites/achimoraites.github.io/compare/v2.0.0...v2.1.0) (2022-04-17)
 
 
