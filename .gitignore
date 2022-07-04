@@ -3,3 +3,6 @@
 /build/
 .DS_Store
 /.svelte/
+/test-results/
+/playwright-report/
+/playwright/.cache/
