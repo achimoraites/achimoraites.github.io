@@ -12,7 +12,7 @@
 
 <div class="card">
 	<a href={uri}>
-		<div class="">
+		<div class="card-content">
 			<h3 class="card__title">{title}</h3>
 			<p class="text-gray-700 text-md mb-2">{text.slice(0, 80)}...</p>
 		</div>
@@ -33,5 +33,14 @@
 		object-fit: fill;
 
 		@apply h-auto mb-4;
+	}
+
+	.card,
+	.card-content,
+	.card__title,
+	.card__img {
+		flex-basis: 4rem;
+		display: flex;
+		flex-direction: column;
 	}
 </style>
