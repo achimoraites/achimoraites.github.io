@@ -1,6 +1,6 @@
 {
   "name": "achimoraites",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "homepage": "https://achimoraites.github.io/",
   "private": true,
   "scripts": {
@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.23.1",
-    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
     "@sveltejs/adapter-node": "next",
     "@sveltejs/adapter-static": "next",

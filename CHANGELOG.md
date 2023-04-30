@@ -1,3 +1,10 @@
+## [2.1.2](https://github.com/achimoraites/achimoraites.github.io/compare/v2.1.1...v2.1.2) (2023-04-30)
+
+
+### Bug Fixes
+
+* blog post cards alignment ([118fe45](https://github.com/achimoraites/achimoraites.github.io/commit/118fe452f30d4acfdf00829e9e5db22a64e70744))
+
 ## [2.1.1](https://github.com/achimoraites/achimoraites.github.io/compare/v2.1.0...v2.1.1) (2022-07-04)
 
 
