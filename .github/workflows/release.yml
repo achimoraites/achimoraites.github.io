@@ -1,11 +1,8 @@
 name: Release 📦
 
 on:
-  workflow_run:
-    workflows:
-      - Deploy GH Pages 🚀
-    types:
-      - completed
+  workflow_dispatch:
+    
 
 jobs:
   release:
