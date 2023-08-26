@@ -1,19 +1,35 @@
 <script>
 	import { onMount } from 'svelte';
+	import { afterNavigate } from '$app/navigation';
+	/**
+	 * @type {any[]}
+	 */
 	export let navLinks = [];
 	export let title = 'Achilles Moraites';
 
 	let openMenu = false;
+	/**
+	 * @type {any[]}
+	 */
 	let localNavlinks;
 
 	$: localNavlinks = [...navLinks];
 
+	/**
+	 * @param {string} href
+	 */
 	function updateLinks(href) {
-		localNavlinks = navLinks.map((l) =>
-			(href.startsWith('/blog/') && l.href.includes('blog')) || l.href === href
-				? { ...l, active: true }
-				: { ...l, active: false }
+		console.log(href);
+		if (href == '/') {
+			localNavlinks = navLinks.map((l) =>
+				l.href === href ? { ...l, active: true } : { ...l, active: false }
+			);
+		} else {
+			localNavlinks = navLinks.map((l) =>
+			l.href !== '/' && href.includes(l.href) ? { ...l, active: true } : { ...l, active: false }
 		);
+		}
+
 	}
 
 	const navLinkStyle = {
@@ -28,12 +44,15 @@
 	onMount(() => {
 		updateLinks(window.location.pathname);
 	});
+	afterNavigate(() => {
+		updateLinks(window.location.pathname);
+	});
 </script>
 
 <nav class="header top-nav">
 	<div class="header__container">
 		<div class="brand">
-			<a class="brand__link" href="/blog">
+			<a class="brand__link" href="/">
 				{title}
 			</a>
 		</div>
@@ -56,7 +75,7 @@
 		<div class="navlinks {openMenu ? '' : 'hidden-bar'}" id="nav-content">
 			<ul class="navlinks__list list-reset">
 				{#each localNavlinks as { href, active, label }}
-					<li class="navlinks__list-element" on:click={() => updateLinks(href)}>
+					<li class="navlinks__list-element">
 						<a class={active ? navLinkStyle.active : navLinkStyle.default} {href}
 							><span>{label}</span></a
 						>

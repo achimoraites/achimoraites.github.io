@@ -27,7 +27,8 @@
 
 		position: relative;
 		display: inline-block;
-		width: 350px;
+		min-width: 350px;
+		max-width: 500px;
 		padding: 20px;
 		margin: 20px;
 		background-color: rgba(255, 255, 255, 0.1);

@@ -6,4 +6,5 @@ export default interface Post {
     uri?: string;
     tags?: Array<string>;
     slug?: string;
+    filename?: string;
 }
