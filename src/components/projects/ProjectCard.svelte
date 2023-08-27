@@ -14,7 +14,7 @@
 	<a href={uri}>
 		<div class="card-content">
 			<h3 class="card__title">{title}</h3>
-			<p class="text-gray-700 text-md mb-2">{text.slice(0, 80)}...</p>
+			<p class="text-gray-700 text-md mb-2">{text.slice(0, 1000)}</p>
 		</div>
 		<img alt={title + ' image'} src={image} class="card__img" width="517" height="277" />
 	</a>
@@ -37,6 +37,7 @@
 		transform-style: preserve-3d;
 		backdrop-filter: blur(10px);
 		overflow: hidden;
+		height: -webkit-fill-available;
 	}
 
 	.card__title {

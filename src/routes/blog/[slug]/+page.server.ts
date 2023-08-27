@@ -12,7 +12,7 @@ export async function load({ params }) {
             posts,
         }
     }
-    let postContent = await import(`../../../data/blog/${post.slug}.md`)
+    let postContent = await import(`../../../content/blog/${post.slug}.md`)
     postContent = await postContent.default.render()
     return {
         post,

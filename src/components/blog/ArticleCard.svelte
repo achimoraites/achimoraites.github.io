@@ -36,6 +36,7 @@
 		transform-style: preserve-3d;
 		backdrop-filter: blur(10px);
 		overflow: hidden;
+		height: -webkit-fill-available;
 	}
 
 	.card__title {

@@ -18,8 +18,8 @@
 
 <OpenGraph
 	data={{
-		description: 'Achilles Moraites Tech Blog, Coding, Tutorials and thoughts...',
-		title: 'Blog | Achilles Moraites',
+		description: 'Achilles Moraites Projects...',
+		title: 'Projects | Achilles Moraites',
 		type: 'blog',
 		image: 'https://achimoraites.io/images/preview.jpg',
 		tags: [
@@ -40,7 +40,7 @@
 				/>
 		</header>
 		{#if filteredPosts.length}
-		<div class="grid grid-cols-1 gap-4 mt-12 place-items-center">
+		<div class="grid grid-cols-1 mt-12 place-items-center">
 			{#each filteredPosts as { title, excerpt, image, uri, tags }}
 				<ProjectCard {title} text={excerpt} {image} {uri} {tags} />
 			{/each}

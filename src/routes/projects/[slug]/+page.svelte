@@ -44,5 +44,5 @@
 
 	{@html content}
 
-	<RelatedArticles {slug} {posts} />
+	<!-- <RelatedArticles {slug} {posts} /> -->
 </article>
