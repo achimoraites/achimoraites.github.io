@@ -19,7 +19,6 @@
 	 * @param {string} href
 	 */
 	function updateLinks(href) {
-		console.log(href);
 		if (href == '/') {
 			localNavlinks = navLinks.map((l) =>
 				l.href === href ? { ...l, active: true } : { ...l, active: false }

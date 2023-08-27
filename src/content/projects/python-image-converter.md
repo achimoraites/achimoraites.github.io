@@ -40,7 +40,8 @@ The application will create a folder 'converted' where all your converted images
 And you are done! 
 
 ## ScreenShot
-<img src='https://raw.githubusercontent.com/achimoraites/Python-Image-Converter/master/sample.png' alt='Python Image Converter'>
+
+<img src='https://raw.githubusercontent.com/achimoraites/Python-Image-Converter/master/sample.png' alt='preview' />
 
 ### Check it out
 - [**GitHub**](https://github.com/achimoraites/Python-Image-Converter)
