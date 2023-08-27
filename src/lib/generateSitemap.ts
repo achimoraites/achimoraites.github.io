@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
-const website = 'https://achimoraites.github.io';
+const website = 'https://achimoraites.io';
 
 export default function generateSitemap(posts, pages) {
 	return `<?xml version="1.0" encoding="UTF-8" ?>

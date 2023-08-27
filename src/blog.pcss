@@ -1,0 +1,135 @@
+/* BLOG */
+
+.blog {
+	@apply pt-24 px-2 font-mono;
+}
+
+.blog section {
+	@apply mb-16;
+}
+
+.blog__recent-posts {
+	@apply grid sm:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-4 mt-12;
+}
+
+.blog__related-posts {
+	@apply grid sm:grid-cols-2 grid-cols-1 gap-4 mt-12;
+}
+
+pre {
+	@apply bg-gray-900 rounded text-white font-mono text-base p-2 md:p-4 my-2 max-w-max;
+}
+
+pre code {
+	@apply break-words whitespace-pre-wrap bg-transparent p-0;
+}
+
+code {
+	@apply bg-gray-100 p-1;
+}
+
+article {
+	@apply mx-auto max-w-screen-md px-4 mobile:px-2;
+}
+
+article h1 {
+	@apply text-5xl mb-3;
+}
+article h2 {
+	@apply text-4xl mb-2 mt-8;
+}
+article h3 {
+	@apply text-3xl mb-2 mt-8;
+}
+article h4 {
+	@apply text-2xl mb-2 mt-5;
+}
+
+article ol,
+article ul {
+	list-style: initial !important;
+
+	@apply ml-5 my-2;
+}
+
+/* Links */
+article a {
+	color: #621dd1;
+    text-decoration: inherit;
+    font-weight: 500;
+}
+
+/* Tags */
+.article-tags {
+	@apply flex flex-wrap;
+}
+
+.article-tags span {
+	@apply mr-2 rounded-full py-1 px-2 my-1;
+}
+.transformers,
+.typescript {
+	@apply bg-blue-600 text-white;
+}
+.javascript {
+	@apply bg-blue-800 text-white;
+}
+.testing,
+.git {
+	@apply bg-green-800 text-white;
+}
+.vue,
+.react,
+.angular,
+.svelte {
+	@apply bg-gray-600 text-white;
+}
+.oop,
+.ci,
+.cli {
+	@apply bg-yellow-300 font-bold;
+}
+.productivity {
+	@apply bg-purple-700 text-white;
+}
+.machine.learning {
+	@apply bg-red-500 text-gray-100;
+}
+
+.python {
+	@apply bg-green-600 text-gray-100;
+}
+
+.nlp {
+	@apply bg-yellow-400 text-black;
+}
+.pytorch {
+	@apply bg-orange-600 text-white;
+}
+/* POST LAYOUT */
+
+.blog-post {
+	@apply mt-20 bg-white bg-opacity-60 text-lg;
+}
+
+.blog-post .tags {
+	@apply mt-4 mb-2 text-base;
+}
+
+.blog-post p {
+	@apply my-3;
+}
+
+.blog-post img {
+	@apply my-4;
+}
+
+.blog-post .blog-post__img,
+.blog-post .author {
+	@apply mb-8 text-base;
+}
+
+/* SOCIAL SHARE */
+.blog-post .social-share > ul {
+	@apply list-none !important;
+}

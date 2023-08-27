@@ -1,5 +1,5 @@
 <script lang="ts">
-	export let url = 'https://achimoraites.github.io/blog/github-actions-tips-and-tricks';
+	export let url = 'https://achimoraites.io/blog/github-actions-tips-and-tricks';
 	const shareOptions = [
 		{
 			icon: 'linkedin',

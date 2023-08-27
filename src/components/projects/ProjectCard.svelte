@@ -14,7 +14,7 @@
 	<a href={uri}>
 		<div class="card-content">
 			<h3 class="card__title">{title}</h3>
-			<p class="text-gray-700 text-md mb-2">{text.slice(0, 80)}...</p>
+			<p class="text-gray-700 text-md mb-2">{text.slice(0, 1000)}</p>
 		</div>
 		<img alt={title + ' image'} src={image} class="card__img" width="517" height="277" />
 	</a>
@@ -27,7 +27,8 @@
 
 		position: relative;
 		display: inline-block;
-		width: 350px;
+		min-width: 350px;
+		max-width: 500px;
 		padding: 20px;
 		margin: 20px;
 		background-color: rgba(255, 255, 255, 0.1);
